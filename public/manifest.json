@@ -1,16 +1,14 @@
 {
   "name": "Minuto com Deus Pai",
-  "short_name": "Minuto com Deus",
-  "description": "Uma mensagem diária para inspirar seu dia.",
+  "short_name": "MinutoDeus",
+  "description": "Uma mensagem de paz e paternidade divina todos os dias.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FAFAFA",
-  "theme_color": "#A0CFEC",
+  "background_color": "#FFFDFB",
+  "theme_color": "#FFFDFB",
+  "orientation": "portrait",
   "icons": [
-    {
-      "src": "/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
-    }
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }

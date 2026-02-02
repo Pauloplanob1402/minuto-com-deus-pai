@@ -48,3 +48,4 @@ export const bancoDeDados = {
   '11': { nome: 'Novembro', mensagens: [] },
   '12': { nome: 'Dezembro', mensagens: [] }
 };
+export { bancoDeDados };
