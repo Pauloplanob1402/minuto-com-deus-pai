@@ -44,7 +44,7 @@ export default function Home() {
   }, []);
 
   const mainClasses =
-    'flex min-h-dvh w-full flex-col items-center justify-center p-4 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#FFFDFB] via-[#F7F3F0] to-[#EFE9E4] dark:from-zinc-900 dark:via-zinc-950 dark:to-black';
+    'flex min-h-screen w-full flex-col items-center justify-center p-4 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#FFFDFB] via-[#F7F3F0] to-[#EFE9E4] dark:from-zinc-900 dark:via-zinc-950 dark:to-black overflow-y-auto';
 
   if (!isMounted) {
     return (
@@ -64,7 +64,9 @@ export default function Home() {
             </CardContent>
             <CardFooter className="px-12 lg:px-16 pb-12 pt-8 flex flex-col items-center gap-8">
               <Skeleton className="h-8 w-24 rounded-full" />
-              <Skeleton className="h-12 w-48 rounded-full" />
+              <div className="pb-24 w-full flex justify-center">
+                <Skeleton className="h-12 w-full max-w-xs rounded-full" />
+              </div>
             </CardFooter>
           </Card>
         </div>
