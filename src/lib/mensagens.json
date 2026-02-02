@@ -1,0 +1,34 @@
+{
+  "mensagens": [
+    {
+      "id": 1,
+      "titulo": "Semeando a Fé",
+      "texto": "Não se cansem de fazer o bem, pois no tempo certo colherão, se não desanimarem.",
+      "autor": "Gálatas 6:9"
+    },
+    {
+      "id": 2,
+      "titulo": "A Força na Fraqueza",
+      "texto": "A minha graça te basta, porque o meu poder se aperfeiçoa na fraqueza.",
+      "autor": "2 Coríntios 12:9"
+    },
+    {
+      "id": 3,
+      "titulo": "Luz do Mundo",
+      "texto": "Vocês são a luz do mundo. Não se pode esconder uma cidade construída sobre um monte.",
+      "autor": "Mateus 5:14"
+    },
+    {
+      "id": 4,
+      "titulo": "Confiança Inabalável",
+      "texto": "Entregue o seu caminho ao Senhor; confie nele, e ele agirá.",
+      "autor": "Salmos 37:5"
+    },
+    {
+      "id": 5,
+      "titulo": "O Amor que Transforma",
+      "texto": "O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha.",
+      "autor": "1 Coríntios 13:4"
+    }
+  ]
+}

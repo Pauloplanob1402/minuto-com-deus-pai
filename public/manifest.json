@@ -1,0 +1,16 @@
+{
+  "name": "Minuto com Deus Pai",
+  "short_name": "Minuto com Deus",
+  "description": "Uma mensagem diária para inspirar seu dia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#A0CFEC",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
