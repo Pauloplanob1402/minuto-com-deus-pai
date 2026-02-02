@@ -10,23 +10,11 @@ export const metadata = {
   themeColor: '#FFFDFB',
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <body className={`${inter.className} antialiased`}>
         {children}
-        <script 
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.OneSignal = window.OneSignal || [];
-              OneSignal.push(function() {
-                OneSignal.init({
-                  appId: "942880a3-350b-454f-8d96-72f6763ae4ac",
-                });
-              });
-            `,
-          }}
-        />
       </body>
     </html>
   );

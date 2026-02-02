@@ -1,78 +1,50 @@
-export const bancoDeDados = {
-  '01': {
-    nome: 'Janeiro',
-    mensagens: [
-      { dia: 1, titulo: 'Página em Branco', mensagem: 'Hoje é o primeiro dia de uma página em branco. Deus oferece misericórdia fresca.', versiculo: 'Lamentações 3:22-23', promessa: 'Suas misericórdias se renovam cada manhã.' },
-      { dia: 2, titulo: 'A Linguagem do Coração', mensagem: 'Ele ouve o que nem conseguimos verbalizar. Seus suspiros são oração.', versiculo: 'Romanos 8:26-27', promessa: 'O Espírito intercede por você.' }
+{
+  "01": {
+    "nome": "Janeiro",
+    "mensagens": [
+      { 
+        "dia": 1, 
+        "titulo": "Página em Branco", 
+        "mensagem": "Hoje é o primeiro dia de uma página em branco. Deus não está contando seus erros de ontem - Ele está oferecendo misericórdia fresca para este momento.", 
+        "versiculo": "Lamentações 3:22-23", 
+        "promessa": "Suas misericórdias se renovam cada manhã." 
+      },
+      { 
+        "dia": 2, 
+        "titulo": "A Linguagem do Coração", 
+        "mensagem": "Às vezes sentimos que precisamos gritar para Deus nos ouvir. Mas Ele ouve o que nem conseguimos verbalizar. Seus suspiros são oração.", 
+        "versiculo": "Romanos 8:26-27", 
+        "promessa": "O Espírito intercede por você." 
+      }
     ]
   },
-  '02': {
-    nome: 'Fevereiro',
-    mensagens: [
-      { dia: 1, titulo: 'Um Novo Começo', mensagem: 'Bem-vindo a um novo mês. Deus oferece novas oportunidades para recomeçar.', versiculo: 'Isaías 43:18-19', promessa: 'Eis que faço uma coisa nova.' },
-      { dia: 2, titulo: 'Persistência na Fé', mensagem: 'Persistência não é falta de fé - é a maior expressão dela. Continue buscando.', versiculo: 'Lucas 18:1-8', promessa: 'Deus fará justiça aos Seus escolhidos.' }
+  "02": {
+    "nome": "Fevereiro",
+    "mensagens": [
+      { 
+        "dia": 1, 
+        "titulo": "Um Novo Começo", 
+        "mensagem": "Bem-vindo a um novo mês. Deus está oferecendo novas oportunidades e nova graça para recomeçar. Não importa como foi janeiro, hoje a página é nova.", 
+        "versiculo": "Isaías 43:18-19", 
+        "promessa": "Eis que faço uma coisa nova." 
+      },
+      { 
+        "dia": 2, 
+        "titulo": "Persistência na Fé", 
+        "mensagem": "Persistência não é falta de fé - é a maior expressão dela. Continue pedindo, continue batendo e continue buscando. Deus está ouvindo cada sussurro seu hoje.", 
+        "versiculo": "Lucas 18:1-8", 
+        "promessa": "Deus fará justiça aos Seus escolhidos que clamam a Ele." 
+      }
     ]
   },
-  '03': {
-    nome: 'Março',
-    mensagens: [
-      { dia: 1, titulo: 'Estação de Mudança', mensagem: 'As estações mudam. O que estava estagnado começa a ganhar novo fôlego.', versiculo: 'Eclesiastes 3:1', promessa: 'Para tudo há uma ocasião certa.' }
-    ]
-  },
-  '04': {
-    nome: 'Abril',
-    mensagens: [
-      { dia: 1, titulo: 'Renovação', mensagem: 'Assim como as flores, Deus quer trazer cor para áreas que pareciam mortas.', versiculo: 'Apocalipse 21:5', promessa: 'Eis que faço novas todas as coisas.' }
-    ]
-  },
-  '05': {
-    nome: 'Maio',
-    mensagens: [
-      { dia: 1, titulo: 'Plenitude', mensagem: 'Abra o coração para a abundância de Deus. Ele não opera na escassez.', versiculo: 'João 10:10', promessa: 'Eu vim para que tenham vida em abundância.' }
-    ]
-  },
-  '06': {
-    nome: 'Junho',
-    mensagens: [
-      { dia: 1, titulo: 'Rompimento', mensagem: 'Metade do ano chegou. É hora de romper com o que te impede de avançar.', versiculo: 'Gálatas 6:9', promessa: 'A seu tempo colheremos.' }
-    ]
-  },
-  '07': {
-    nome: 'Julho',
-    mensagens: [
-      { dia: 1, titulo: 'Metade do Caminho', mensagem: 'Deus não mede sucesso como você. Cada manhã de confiança é uma vitória.', versiculo: 'Salmos 37:5', promessa: 'Entrega o teu caminho ao Senhor.' }
-    ]
-  },
-  '08': {
-    nome: 'Agosto',
-    mensagens: [
-      { dia: 1, titulo: 'Novas Misericórdias', mensagem: 'Deus criou misericórdias novas para este mês de agosto. Receba-as.', versiculo: 'Lamentações 3:23', promessa: 'Grande é a Sua fidelidade.' }
-    ]
-  },
-  '09': {
-    nome: 'Setembro',
-    mensagens: [
-      { dia: 1, titulo: 'Tempo de Colheita', mensagem: 'O que foi plantado com lágrimas está sendo preparado para a colheita.', versiculo: 'Salmos 126:5', promessa: 'Os que semeiam em lágrimas segarão com alegria.' }
-    ]
-  },
-  '10': {
-    nome: 'Outubro',
-    mensagens: [
-      { dia: 1, titulo: 'Perseverança', mensagem: 'Não se canse de fazer o bem. A linha de chegada está mais próxima.', versiculo: '2 Tessalonicenses 3:13', promessa: 'Não vos canseis de fazer o bem.' }
-    ]
-  },
-  '11': {
-    nome: 'Novembro',
-    mensagens: [
-      { dia: 1, titulo: 'Gratidão Ativa', mensagem: 'A gratidão muda a atmosfera ao seu redor. Conte suas bênçãos hoje.', versiculo: '1 Tessalonicenses 5:18', promessa: 'Em tudo dai graças.' }
-    ]
-  },
-  '12': {
-    nome: 'Dezembro',
-    mensagens: [
-      { dia: 1, titulo: 'Conclusão de Ciclo', mensagem: 'Deus foi fiel em tudo. Ele te trouxe até aqui e te levará adiante.', versiculo: '1 Samuel 7:12', promessa: 'Até aqui nos ajudou o Senhor.' },
-      { dia: 25, titulo: 'O Presente', mensagem: 'Natal é sobre o Emanuel. Ele veio para nunca mais nos deixar.', versiculo: 'Mateus 1:23', promessa: 'Eis que estarei convosco todos os dias.' },
-      { dia: 31, titulo: 'Ano Novo', mensagem: 'Descanse nAquele que detém o tempo e as estações. O futuro está seguro.', versiculo: 'Apocalipse 22:13', promessa: 'Eu sou o Alfa e o Ômega.' }
-    ]
-  }
-};
+  "03": { "nome": "Março", "mensagens": [] },
+  "04": { "nome": "Abril", "mensagens": [] },
+  "05": { "nome": "Maio", "mensagens": [] },
+  "06": { "nome": "Junho", "mensagens": [] },
+  "07": { "nome": "Julho", "mensagens": [] },
+  "08": { "nome": "Agosto", "mensagens": [] },
+  "09": { "nome": "Setembro", "mensagens": [] },
+  "10": { "nome": "Outubro", "mensagens": [] },
+  "11": { "nome": "Novembro", "mensagens": [] },
+  "12": { "nome": "Dezembro", "mensagens": [] }
+}
