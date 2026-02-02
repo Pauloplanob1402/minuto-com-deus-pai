@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { bancoDeDados } from '@/data/mensagens.js';
+import { bancoDeDados } from '@/data/mensagens'; // Removido .js
 import { DailyMessage } from '@/components/daily-message';
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -11,6 +11,20 @@ export default function Home() {
 
   useEffect(() => {
     setIsMounted(true);
+    // Preload OneSignal script
+    const oneSignalScript = document.createElement('script');
+    oneSignalScript.src = "https://cdn.onesignal.com/sdks/OneSignalSDK.js";
+    oneSignalScript.async = true;
+    document.head.appendChild(oneSignalScript);
+
+    oneSignalScript.onload = () => {
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "942880a3-350b-454f-8d96-72f6763ae4ac",
+        });
+      });
+    };
   }, []);
 
   const mainClasses = "flex min-h-dvh w-full flex-col items-center justify-center p-4 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#FFFDFB] via-[#F7F3F0] to-[#EFE9E4] dark:from-zinc-900 dark:via-zinc-950 dark:to-black";
@@ -20,11 +34,8 @@ export default function Home() {
         <main className={mainClasses}>
             <div className="w-full max-w-md">
                 <Card className="w-full overflow-hidden rounded-[2.5rem] shadow-2xl shadow-black/10 bg-white/40 border border-white/30">
-                    <CardHeader className="relative text-center p-10 lg:p-14">
+                    <CardHeader className="text-center p-12 lg:p-16">
                         <Skeleton className="h-10 w-3/4 mx-auto" />
-                        <div className="absolute top-6 right-6 z-10">
-                            <Skeleton className="h-8 w-8 rounded-full" />
-                        </div>
                     </CardHeader>
                     <CardContent className="px-10 lg:px-14 pb-8">
                         <div className="space-y-4">
@@ -34,9 +45,9 @@ export default function Home() {
                         </div>
                         <Skeleton className="h-5 w-1/2 mx-auto mt-10" />
                     </CardContent>
-                    <CardFooter className="p-10 lg:p-14 pt-8 flex flex-col items-center gap-8">
+                    <CardFooter className="px-12 lg:px-16 pb-12 pt-8 flex flex-col items-center gap-8">
                        <Skeleton className="h-8 w-24 rounded-full" />
-                       <Skeleton className="h-6 w-48" />
+                       <Skeleton className="h-12 w-48 rounded-full" />
                     </CardFooter>
                 </Card>
             </div>
