@@ -6,13 +6,6 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton';
 import bancoDeDados from '@/lib/mensagens.json';
 
-// TypeScript Definitions
-declare global {
-  interface Window {
-    OneSignal: any;
-  }
-}
-
 interface Mensagem {
   dia: number;
   titulo: string;
@@ -34,13 +27,6 @@ export default function Home() {
 
   useEffect(() => {
     setIsMounted(true);
-    if (typeof window !== 'undefined' && 'OneSignal' in window) {
-        window.OneSignal.push(function () {
-            window.OneSignal.init({
-                appId: '942880a3-350b-454f-8d96-72f6763ae4ac',
-            });
-        });
-    }
   }, []);
 
   const mainClasses =

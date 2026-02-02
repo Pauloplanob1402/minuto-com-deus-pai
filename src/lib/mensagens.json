@@ -2,49 +2,76 @@
   "01": {
     "nome": "Janeiro",
     "mensagens": [
-      { 
-        "dia": 1, 
-        "titulo": "Página em Branco", 
-        "mensagem": "Hoje é o primeiro dia de uma página em branco. Deus não está contando seus erros de ontem - Ele está oferecendo misericórdia fresca para este momento.", 
-        "versiculo": "Lamentações 3:22-23", 
-        "promessa": "Suas misericórdias se renovam cada manhã." 
-      },
-      { 
-        "dia": 2, 
-        "titulo": "A Linguagem do Coração", 
-        "mensagem": "Às vezes sentimos que precisamos gritar para Deus nos ouvir. Mas Ele ouve o que nem conseguimos verbalizar. Seus suspiros são oração.", 
-        "versiculo": "Romanos 8:26-27", 
-        "promessa": "O Espírito intercede por você." 
-      }
+      { "dia": 1, "titulo": "Página em Branco", "mensagem": "Hoje é o primeiro dia de uma página em branco. Deus não está contando seus erros de ontem - Ele está oferecendo misericórdia fresca para este momento.", "versiculo": "Lamentações 3:22-23", "promessa": "Suas misericórdias se renovam cada manhã." },
+      { "dia": 2, "titulo": "A Linguagem do Coração", "mensagem": "Às vezes sentimos que precisamos gritar para Deus nos ouvir. Mas Ele ouve o que nem conseguimos verbalizar. Seus suspiros são oração.", "versiculo": "Romanos 8:26-27", "promessa": "O Espírito intercede por você." }
     ]
   },
   "02": {
     "nome": "Fevereiro",
     "mensagens": [
-      { 
-        "dia": 1, 
-        "titulo": "Um Novo Começo", 
-        "mensagem": "Bem-vindo a um novo mês. Deus está oferecendo novas oportunidades e nova graça para recomeçar. Não importa como foi janeiro, hoje a página é nova.", 
-        "versiculo": "Isaías 43:18-19", 
-        "promessa": "Eis que faço uma coisa nova." 
-      },
-      { 
-        "dia": 2, 
-        "titulo": "Persistência na Fé", 
-        "mensagem": "Persistência não é falta de fé - é a maior expressão dela. Continue pedindo, continue batendo e continue buscando. Deus está ouvindo cada sussurro seu hoje.", 
-        "versiculo": "Lucas 18:1-8", 
-        "promessa": "Deus fará justiça aos Seus escolhidos que clamam a Ele." 
-      }
+      { "dia": 1, "titulo": "Um Novo Começo", "mensagem": "Bem-vindo a um novo mês. Deus está oferecendo novas oportunidades e nova graça para recomeçar. Não importa como foi janeiro, hoje a página é nova.", "versiculo": "Isaías 43:18-19", "promessa": "Eis que faço uma coisa nova." },
+      { "dia": 2, "titulo": "Persistência na Fé", "mensagem": "Persistência não é falta de fé - é a maior expressão dela. Continue pedindo, continue batendo e continue buscando. Deus está ouvindo cada sussurro seu hoje.", "versiculo": "Lucas 18:1-8", "promessa": "Deus fará justiça aos Seus escolhidos que clamam a Ele." }
     ]
   },
-  "03": { "nome": "Março", "mensagens": [] },
-  "04": { "nome": "Abril", "mensagens": [] },
-  "05": { "nome": "Maio", "mensagens": [] },
-  "06": { "nome": "Junho", "mensagens": [] },
-  "07": { "nome": "Julho", "mensagens": [] },
-  "08": { "nome": "Agosto", "mensagens": [] },
-  "09": { "nome": "Setembro", "mensagens": [] },
-  "10": { "nome": "Outubro", "mensagens": [] },
-  "11": { "nome": "Novembro", "mensagens": [] },
-  "12": { "nome": "Dezembro", "mensagens": [] }
+  "03": {
+    "nome": "Março",
+    "mensagens": [
+      { "dia": 1, "titulo": "Tempo de Plantar", "mensagem": "Março é um tempo de plantar sementes, tanto na terra quanto no espírito. Que sementes de bondade, fé e amor você plantará hoje?", "versiculo": "Gálatas 6:7-8", "promessa": "Aquele que semeia para o Espírito, do Espírito colherá a vida eterna." }
+    ]
+  },
+  "04": {
+    "nome": "Abril",
+    "mensagens": [
+      { "dia": 1, "titulo": "Renovação da Esperança", "mensagem": "Abril traz a promessa da ressurreição. Assim como a natureza desperta, sua esperança pode ser renovada. A morte não tem a palavra final.", "versiculo": "1 Pedro 1:3", "promessa": "Ele nos deu novo nascimento para uma esperança viva." }
+    ]
+  },
+  "05": {
+    "nome": "Maio",
+    "mensagens": [
+      { "dia": 1, "titulo": "Amor Incondicional", "mensagem": "Maio é o mês que honramos as mães, um reflexo do amor protetor de Deus. Sinta-se abraçado por esse amor incondicional que nunca falha.", "versiculo": "Isaías 66:13", "promessa": "Como uma mãe consola seu filho, assim eu os consolarei." }
+    ]
+  },
+  "06": {
+    "nome": "Junho",
+    "mensagens": [
+      { "dia": 1, "titulo": "Comunhão e Unidade", "mensagem": "Junho nos lembra da importância da comunhão. Deus nos chama para perto Dele e um dos outros. Quem você pode convidar para perto hoje?", "versiculo": "1 João 1:7", "promessa": "Se andarmos na luz, temos comunhão uns com os outros." }
+    ]
+  },
+  "07": {
+    "nome": "Julho",
+    "mensagens": [
+      { "dia": 1, "titulo": "Descanso para a Alma", "mensagem": "No meio do ano, tire um tempo para descansar. Não apenas o corpo, mas a alma. Entregue suas preocupações e encontre paz no silêncio com Deus.", "versiculo": "Mateus 11:28", "promessa": "Vinde a mim, e eu vos darei descanso." }
+    ]
+  },
+  "08": {
+    "nome": "Agosto",
+    "mensagens": [
+      { "dia": 1, "titulo": "A Força que Vem do Alto", "mensagem": "Agosto pode parecer um mês longo. Quando a jornada parecer difícil, lembre-se que sua força não vem de você, mas de Deus. Ele te sustenta.", "versiculo": "Isaías 40:29-31", "promessa": "Ele fortalece o cansado e dá vigor ao que está sem forças." }
+    ]
+  },
+  "09": {
+    "nome": "Setembro",
+    "mensagens": [
+      { "dia": 1, "titulo": "Novas Estações", "mensagem": "Setembro marca a chegada de uma nova estação. A vida é feita de ciclos. Confie no Deus que governa cada estação da sua vida.", "versiculo": "Eclesiastes 3:1", "promessa": "Para tudo há uma ocasião certa; há um tempo certo para cada propósito debaixo do céu." }
+    ]
+  },
+  "10": {
+    "nome": "Outubro",
+    "mensagens": [
+      { "dia": 1, "titulo": "Gratidão que Transforma", "mensagem": "Em Outubro, pratique a gratidão. Agradeça não apenas pelas grandes bênçãos, mas pelas pequenas alegrias. A gratidão transforma a perspectiva.", "versiculo": "1 Tessalonicenses 5:18", "promessa": "Deem graças em todas as circunstâncias." }
+    ]
+  },
+  "11": {
+    "nome": "Novembro",
+    "mensagens": [
+      { "dia": 1, "titulo": "Lembrança e Esperança", "mensagem": "Novembro é um mês de lembrança. Lembramos daqueles que amamos e da fidelidade de Deus no passado. Essa lembrança alimenta nossa esperança para o futuro.", "versiculo": "Salmo 77:11", "promessa": "Recordarei os feitos do Senhor; recordarei os teus antigos milagres." }
+    ]
+  },
+  "12": {
+    "nome": "Dezembro",
+    "mensagens": [
+      { "dia": 1, "titulo": "A Luz do Mundo", "mensagem": "Dezembro chegou. O mundo se ilumina em preparação para o Natal. Lembre-se que Jesus é a verdadeira Luz que veio para iluminar as nossas trevas.", "versiculo": "João 8:12", "promessa": "Eu sou a luz do mundo. Quem me segue, nunca andará em trevas." },
+      { "dia": 31, "titulo": "Reflexão e Futuro", "mensagem": "No último dia do ano, olhe para trás com gratidão e para frente com esperança. Deus esteve com você em cada dia e estará com você no novo ano que virá.", "versiculo": "Jeremias 29:11", "promessa": "Eu sei os planos que tenho para vocês, planos de fazê-los prosperar e não de lhes causar dano." }
+    ]
+  }
 }
