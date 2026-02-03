@@ -6,20 +6,30 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton';
 import bancoDeDados from '@/lib/mensagens.json';
 
-interface Mensagem {
+// Updated TypeScript interfaces for the new JSON structure
+interface MensagemJson {
+  dia: number;
+  mensagem: string;
+  versiculo: string;
+  promessa: string;
+}
+
+interface BancoDeDados {
+  meses: {
+    [key: string]: {
+      mensagens: MensagemJson[];
+    };
+  };
+}
+
+// Interface for the object passed to the component
+interface MensagemComponent {
   dia: number;
   titulo: string;
   mensagem: string;
   versiculo: string;
   promessa: string;
-  mes?: string; // Optional month property
-}
-
-interface BancoDeDados {
-  [key: string]: {
-    nome: string;
-    mensagens: Mensagem[];
-  };
+  mes?: string;
 }
 
 export default function Home() {
@@ -38,6 +48,7 @@ export default function Home() {
         <div className="w-full max-w-md">
           <Card className="w-full overflow-hidden rounded-[2.5rem] shadow-2xl shadow-black/10 bg-white/40 border border-white/30">
             <CardHeader className="text-center p-12 lg:p-16">
+              <Skeleton className="h-6 w-1/2 mx-auto mb-4" />
               <Skeleton className="h-10 w-3/4 mx-auto" />
             </CardHeader>
             <CardContent className="px-10 lg:px-14 pb-8">
@@ -60,22 +71,38 @@ export default function Home() {
     );
   }
 
-  const typedBancoDeDados: BancoDeDados = bancoDeDados;
+  const typedBancoDeDados: BancoDeDados = bancoDeDados as any;
   const hoje = new Date();
   const mes = (hoje.getMonth() + 1).toString().padStart(2, '0');
   const dia = hoje.getDate();
 
-  const mensagemDoDia = typedBancoDeDados[mes]?.mensagens.find((m) => m.dia === dia);
+  // New robust search logic with fallback
+  const mensagensDoMes = typedBancoDeDados.meses?.[mes]?.mensagens;
+  const mensagemDoDia = mensagensDoMes?.find((m) => m.dia === dia);
 
-  const mensagem: Mensagem = mensagemDoDia
-    ? { ...mensagemDoDia, mes }
-    : {
-        dia: 0,
-        titulo: 'Mensagem não encontrada',
-        mensagem: 'Não há mensagem para o dia de hoje.',
-        versiculo: '',
-        promessa: '',
-      };
+  let mensagem: MensagemComponent;
+
+  if (mensagemDoDia) {
+    // Map the content as requested
+    mensagem = {
+      dia: mensagemDoDia.dia,
+      titulo: mensagemDoDia.promessa, // Title is the promise
+      mensagem: mensagemDoDia.mensagem, // Text is the message
+      versiculo: mensagemDoDia.versiculo, // Reference is the versicle
+      promessa: mensagemDoDia.promessa, // Promise banner still shows the promise
+      mes: mes,
+    };
+  } else {
+    // Friendly fallback if message is not found
+    mensagem = {
+      dia: dia,
+      titulo: 'Ele está no controle',
+      mensagem: 'Deus preparou algo especial para você hoje. Continue confiando!',
+      versiculo: 'Salmos 37:5',
+      promessa: 'Confie Nele',
+      mes: mes,
+    };
+  }
 
   return (
     <main className={mainClasses}>

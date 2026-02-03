@@ -1,77 +1,2298 @@
 {
-  "01": {
-    "nome": "Janeiro",
-    "mensagens": [
-      { "dia": 1, "titulo": "Página em Branco", "mensagem": "Hoje é o primeiro dia de uma página em branco. Deus não está contando seus erros de ontem - Ele está oferecendo misericórdia fresca para este momento.", "versiculo": "Lamentações 3:22-23", "promessa": "Suas misericórdias se renovam cada manhã." },
-      { "dia": 2, "titulo": "A Linguagem do Coração", "mensagem": "Às vezes sentimos que precisamos gritar para Deus nos ouvir. Mas Ele ouve o que nem conseguimos verbalizar. Seus suspiros são oração.", "versiculo": "Romanos 8:26-27", "promessa": "O Espírito intercede por você." }
-    ]
+  "app": "Minutos com Deus Pai",
+  "versao": "1.0",
+  "ano": 2026,
+  "descricao": "Mensagens diárias inspiradas por Max Lucado, Eugene Peterson e outros grandes escritores cristãos",
+  "autores_inspiracao": [
+    "Max Lucado",
+    "Eugene Peterson",
+    "Philip Yancey",
+    "Henri Nouwen",
+    "Timothy Keller",
+    "Ann Voskamp",
+    "John Piper",
+    "A.W. Tozer",
+    "Brennan Manning",
+    "Elisabeth Elliot",
+    "Oswald Chambers",
+    "Frederick Buechner"
+  ],
+  "total_dias": 365,
+  "meses": {
+    "01": {
+      "numero": "01",
+      "nome": "Janeiro",
+      "total_dias": 31,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Hoje é o primeiro dia de uma página em branco. Deus não está contando seus erros de ontem - Ele está oferecendo misericórdia fresca para este momento. Você não precisa ser perfeito para começar; precisa apenas começar. O Pai está esperando com braços abertos, não com dedos apontados. Cada nascer do sol é um convite: \"Vamos tentar de novo, juntos?\"",
+          "versiculo": "Lamentações 3:22-23",
+          "promessa": "Suas misericórdias se renovam cada manhã."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Às vezes sentimos que precisamos gritar para Deus nos ouvir. Mas Ele ouve o que nem conseguimos verbalizar. Seus suspiros, sua confusão, aquele peso no peito - tudo isso é oração. Você não precisa de palavras eloquentes. Precisa apenas de um coração sincero diante dEle. O Pai conhece a linguagem do coração quebrantado.",
+          "versiculo": "Romanos 8:26-27",
+          "promessa": "O Espírito intercede por você com gemidos inexprimíveis."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Você está carregando algo que nunca foi seu para carregar. Deus nunca pediu que você resolvesse tudo sozinho. Ele não está decepcionado com sua fraqueza - Ele a vê como uma oportunidade para mostrar Sua força. Solte. Respire. Deixe o peso escorrer de seus ombros. Ele é grande o suficiente para isso.",
+          "versiculo": "Mateus 11:28-30",
+          "promessa": "Seu jugo é suave e Seu fardo é leve."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Deus não desperdiça nada em sua vida. Aquela dor que você pensou que ia destruí-lo? Ele está transformando em sabedoria. Aquela espera frustrante? Está se tornando paciência. O Pai é o mestre artesão que usa até os cacos quebrados para criar algo belo. Confie no processo, mesmo quando não entender o propósito.",
+          "versiculo": "Romanos 8:28",
+          "promessa": "Todas as coisas cooperam para o bem daqueles que amam a Deus."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Você já parou para pensar que Deus escolheu você antes mesmo de você escolhê-Lo? Não por causa de algo que você fez ou deixou de fazer, mas porque Ele simplesmente quis. Você não é um acidente cósmico. É um filho amado, pensado desde a eternidade. E nada pode mudar isso.",
+          "versiculo": "Efésios 1:4-5",
+          "promessa": "Você foi escolhido nEle antes da fundação do mundo."
+        },
+        {
+          "dia": 6,
+          "mensagem": "O silêncio de Deus não é ausência. Às vezes, Ele está quieto porque está trabalhando nos bastidores. Outras vezes, porque quer que você aprenda a confiar sem ver. A fé não é sobre ter todas as respostas; é sobre conhecer Aquele que tem. E Ele é bom, mesmo quando é silencioso.",
+          "versiculo": "Habacuque 2:3",
+          "promessa": "A visão ainda está para o tempo determinado; espere por ela."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Sua identidade não está no que você faz, mas em quem você é para Deus. Você pode falhar no trabalho, decepcionar pessoas, cometer erros - e ainda assim ser profundamente amado. O amor do Pai não tem cláusulas de desempenho. Ele não é condicional. É escandalosamente generoso e imerecidamente constante.",
+          "versiculo": "1 João 3:1",
+          "promessa": "Veja que grande amor o Pai nos concedeu: sermos chamados filhos de Deus!"
+        },
+        {
+          "dia": 8,
+          "mensagem": "Hoje, permita-se ser humano. Você não precisa ter todas as respostas, consertar todos os problemas ou impressionar a todos. Deus não está procurando super-heróis; Ele está procurando corações disponíveis. Sua vulnerabilidade não O assusta. Na verdade, é exatamente onde Sua graça se torna mais visível.",
+          "versiculo": "2 Coríntios 12:9",
+          "promessa": "Minha graça é suficiente; Meu poder se aperfeiçoa na fraqueza."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Pare de comparar seu capítulo 3 com o capítulo 20 de outra pessoa. Deus está escrevendo uma história única em você. O que Ele está fazendo em sua vida não precisa parecer com o que Ele faz na vida de outro. Confie no timing dEle. Confie no caminho dEle. Sua jornada é sagrada exatamente como é.",
+          "versiculo": "Gálatas 6:4",
+          "promessa": "Cada um examine sua própria obra."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Existe uma diferença entre estar ocupado e estar cheio. Você pode ter uma agenda lotada e um coração vazio. Hoje, antes de correr para suas atividades, pare. Respire. Lembre-se: você foi criado para comunhão, não apenas para produtividade. O Pai quer sua presença, não apenas seu desempenho.",
+          "versiculo": "Salmos 46:10",
+          "promessa": "Aquieta-te e sabe que Eu sou Deus."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Deus não está surpreso com suas lutas. Ele sabia exatamente o que estava fazendo quando escolheu você. Suas imperfeições não são obstáculos para Ele - são oportunidades. Ele se especializa em usar vasos quebrados, pessoas comuns, histórias imperfeitas. Você está em boas mãos.",
+          "versiculo": "2 Coríntios 4:7",
+          "promessa": "Temos este tesouro em vasos de barro."
+        },
+        {
+          "dia": 12,
+          "mensagem": "Perdão não é fingir que não doeu. É escolher liberdade em vez de amargura. É confiar que Deus é justo quando você não consegue ser. Segurar ressentimento é como beber veneno e esperar que o outro morra. Hoje, solte. Não por causa deles, mas por causa de você. E deixe Deus curar o que foi ferido.",
+          "versiculo": "Efésios 4:31-32",
+          "promessa": "Perdoem-se mutuamente, assim como Deus os perdoou em Cristo."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Você ora como se Deus fosse pequeno demais para seus grandes problemas ou distante demais para suas pequenas preocupações. Mas Ele é íntimo o suficiente para conhecer cada cabelo de sua cabeça e poderoso o suficiente para mover montanhas. Nada é grande demais para Seu poder. Nada é pequeno demais para Seu cuidado.",
+          "versiculo": "Filipenses 4:6-7",
+          "promessa": "Apresentem seus pedidos a Deus, e a paz guardará seus corações."
+        },
+        {
+          "dia": 14,
+          "mensagem": "A graça de Deus não é apenas para o momento da salvação. É para esta manhã quando você acordou com medo. Para aquela conversa difícil que você precisa ter. Para o erro que você cometeu ontem. A graça é a força de Deus operando em sua fraqueza. E ela está disponível agora, não apenas \"um dia\".",
+          "versiculo": "Hebreus 4:16",
+          "promessa": "Acheguemo-nos ao trono da graça com confiança."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Às vezes, o milagre que você está pedindo já começou - você apenas não consegue ver ainda. Deus está trabalhando em lugares invisíveis, preparando corações, alinhando circunstâncias. Sua parte é continuar confiando, mesmo quando parece que nada está mudando. A fidelidade dEle não depende da sua visibilidade.",
+          "versiculo": "João 11:40",
+          "promessa": "Se você crer, verá a glória de Deus."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Você tem medo de ser um fardo para Deus? Ele criou o universo com Sua palavra e sustenta todas as coisas com Seu poder. Suas preocupações não O cansam. Suas perguntas não O irritam. Seus pedidos repetidos não O aborrecem. Ele é seu Pai, e pais que amam nunca se cansam dos filhos que precisam deles.",
+          "versiculo": "1 Pedro 5:7",
+          "promessa": "Lance sobre Ele toda a sua ansiedade, porque Ele cuida de você."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Hoje você vai enfrentar escolhas. Algumas pequenas, outras significativas. Lembre-se: Deus não está apenas interessado nos grandes momentos; Ele está presente nos ordinários. Aquela decisão sobre como responder ao colega irritante, como usar seu tempo livre, se será gentil quando estiver cansado - tudo isso importa. Viva conscientemente presente com Ele.",
+          "versiculo": "Colossenses 3:17",
+          "promessa": "Tudo o que fizerem, façam de todo o coração, como para o Senhor."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Você não precisa entender o plano inteiro. Precisa apenas dar o próximo passo. Abraão saiu sem saber para onde ia. Moisés deu o primeiro passo em direção ao Mar Vermelho antes das águas se abrirem. A fé não é sobre ter um mapa completo; é sobre conhecer o Guia. E Ele nunca perdeu ninguém.",
+          "versiculo": "Provérbios 3:5-6",
+          "promessa": "Confie no Senhor, e Ele endireitará suas veredas."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Há pessoas em sua vida que Deus colocou lá de propósito. Não é coincidência. Talvez você esteja lá para ser luz em sua escuridão. Talvez eles estejam lá para ensinar você algo sobre graça. Hoje, olhe ao redor com olhos espirituais. Quem precisa de uma palavra de encorajamento? Quem precisa ser visto?",
+          "versiculo": "Efésios 2:10",
+          "promessa": "Fomos criados em Cristo Jesus para boas obras preparadas de antemão."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Deus está mais interessado no seu coração do que na sua perfeição. Ele não fica impressionado com máscaras religiosas ou desempenhos espirituais. Ele quer verdade no íntimo. Pode tirar a máscara. Pode admitir onde está realmente lutando. A honestidade é o primeiro passo para a cura.",
+          "versiculo": "Salmos 51:6",
+          "promessa": "Eis que desejas a verdade no íntimo."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Existe alegria disponível hoje - não depois que tudo se resolver, não quando você finalmente conseguir aquilo. Agora. No meio da bagunça, da incerteza, da imperfeição. A alegria de Deus não depende de circunstâncias perfeitas. Ela brota de uma presença perfeita. E Ele está aqui, com você, neste exato momento.",
+          "versiculo": "Neemias 8:10",
+          "promessa": "A alegria do Senhor é a sua força."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Você está esperando se sentir \"pronto\" para dar aquele passo de fé? Pode esperar para sempre. A fé raramente se sente confortável. Ela geralmente parece um salto no escuro - até você perceber que Deus estava segurando você o tempo todo. Coragem não é ausência de medo; é obediência apesar do medo.",
+          "versiculo": "Josué 1:9",
+          "promessa": "Seja forte e corajoso; o Senhor está com você por onde você andar."
+        },
+        {
+          "dia": 23,
+          "mensagem": "As promessas de Deus não têm data de validade. O que Ele disse há 2000 anos ainda é verdade hoje. O que Ele prometeu na Bíblia ainda vale para você. Ele não mudou de ideia sobre você. Ele não está arrependido de tê-lo chamado. Toda palavra que Ele falou permanece firme.",
+          "versiculo": "Números 23:19",
+          "promessa": "Deus não é homem para que minta; o que Ele diz, faz."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Você está tentando provar seu valor para Deus? Pode parar. Não precisa impressioná-Lo, convencê-Lo ou ganhar Seu amor. Você já tem. Completamente. Irreversivelmente. O amor dEle não é uma recompensa pelo bom comportamento; é um presente para corações que reconhecem sua necessidade. Você é amado. Ponto.",
+          "versiculo": "Romanos 5:8",
+          "promessa": "Deus demonstra Seu amor: Cristo morreu por nós quando ainda éramos pecadores."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Hoje será imperfeito. Você dirá algo errado, esquecerá algo importante, ficará aquém em alguma área. E está tudo bem. Deus não está procurando perfeição; Ele está oferecendo graça. Sua jornada com Ele é sobre progresso, não perfeição. Levante-se, sacuda a poeira, e continue caminhando. Ele está com você.",
+          "versiculo": "Provérbios 24:16",
+          "promessa": "O justo cai sete vezes, mas se levanta."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Às vezes, Deus permite que você chegue ao fim de si mesmo para que descubra que Ele é suficiente. Quando seus recursos acabam, os recursos dEle começam. Quando sua força se esgota, a força dEle se manifesta. Você não precisa ter tudo sob controle. Precisa apenas confiar nAquele que tem.",
+          "versiculo": "Isaías 40:29-31",
+          "promessa": "Ele dá força ao cansado e poder ao fraco."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Sua história ainda está sendo escrita. O capítulo difícil que você está vivendo agora não é o final. Deus tem o hábito de transformar finais trágicos em novos começos gloriosos. Sexta-feira Santa parecia o fim - até que veio o domingo. Continue acreditando. A última palavra ainda não foi dita.",
+          "versiculo": "Filipenses 1:6",
+          "promessa": "Aquele que começou boa obra em você a completará."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Você não está atrasado. Não perdeu seu momento. Deus não tem pressa, mas nunca se atrasa. O tempo dEle é diferente do nosso, mas é sempre perfeito. Enquanto você espera, Ele está trabalhando - em você, ao seu redor, através de você. Nada está sendo desperdiçado. Confie no timing dEle.",
+          "versiculo": "Eclesiastes 3:1",
+          "promessa": "Há tempo determinado para todo propósito debaixo do céu."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Deus não vai desperdiçar sua dor. Aquilo que quase te destruiu está se tornando o testemunho que vai encorajar outros. Sua cicatriz será a prova da fidelidade dEle. Sua história de redenção vai dar esperança a alguém que ainda está no meio da luta. Continue. Sua vida vai fazer sentido para alguém que você ainda nem conhece.",
+          "versiculo": "2 Coríntios 1:3-4",
+          "promessa": "Deus nos consola para que consolemos outros com o consolo que recebemos."
+        },
+        {
+          "dia": 30,
+          "mensagem": "Pare de remoer os \"e se\" do passado. Deus já perdoou aquilo. Pare de se preocupar com os \"e se\" do futuro. Deus já está lá. O único lugar onde você pode encontrar paz é aqui, agora, neste momento. Deus se chama \"Eu Sou\", não \"Eu Era\" ou \"Eu Serei\". Ele está presente. Esteja você também.",
+          "versiculo": "Êxodo 3:14",
+          "promessa": "EU SOU O QUE SOU - Deus está presente, sempre."
+        },
+        {
+          "dia": 31,
+          "mensagem": "Você chegou ao fim de outro mês. Alguns dias foram bons, outros difíceis. Mas você chegou aqui. E Deus esteve com você em cada um deles. Naqueles momentos em que você pensou que não ia conseguir, Ele sustentou você. Nas vitórias que você nem notou, Ele estava celebrando. Agradeça. Respire. E confie: Ele continuará fiel.",
+          "versiculo": "Salmos 136:1",
+          "promessa": "Rendei graças ao Senhor, porque Ele é bom; o Seu amor dura para sempre."
+        }
+      ]
+    },
+    "02": {
+      "numero": "02",
+      "nome": "Fevereiro",
+      "total_dias": 28,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Bem-vindo a um novo mês, um novo começo. Deus não está mantendo uma planilha dos seus fracassos de janeiro. Ele está oferecendo novas oportunidades, nova graça, novos momentos para recomeçar. Cada dia com Ele é uma chance de escrever uma história diferente. Não importa como foi o mês passado - hoje é novo.",
+          "versiculo": "Isaías 43:18-19",
+          "promessa": "Eis que faço uma coisa nova; está brotando, não o percebem?"
+        },
+        {
+          "dia": 2,
+          "mensagem": "Você está orando pelas mesmas coisas há tanto tempo que começou a duvidar se Deus está ouvindo. Mas persistência não é falta de fé - é expressão dela. Continue pedindo, continue batendo, continue buscando. Deus honra a oração perseverante. Sua resposta pode estar mais perto do que você imagina.",
+          "versiculo": "Lucas 18:1-8",
+          "promessa": "Deus fará justiça aos Seus escolhidos que clamam dia e noite."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Hoje você vai interagir com pessoas que estão carregando dores invisíveis. Aquele sorriso pode estar escondendo lágrimas. Aquela rispidez pode ser um grito de socorro. Seja gentil. Seja paciente. Seja a presença de Cristo para alguém. Você pode ser a única Bíblia que alguém vai ler hoje.",
+          "versiculo": "Colossenses 4:6",
+          "promessa": "A vossa palavra seja sempre agradável, temperada com sal."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Deus não está esperando você se tornar melhor para usá-lo. Ele usa pessoas quebradas, confusas, imperfeitas. Moisés gaguejava. Pedro era impulsivo. Davi cometeu adultério. Paulo perseguiu a igreja. Se Deus esperasse perfeição, ninguém seria usado. Ele está procurando disponibilidade, não capacidade.",
+          "versiculo": "1 Coríntios 1:27-29",
+          "promessa": "Deus escolhe o fraco para confundir o forte."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Há uma diferença entre solidão e solitude. Solidão é a dor de estar sozinho. Solitude é a glória de estar a sós com Deus. Hoje, transforme seus momentos quietos em encontros sagrados. No silêncio, longe das vozes do mundo, você ouvirá a voz que mais importa - a dEle.",
+          "versiculo": "Marcos 1:35",
+          "promessa": "De madrugada, Jesus se levantou e foi orar num lugar deserto."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Você está lutando com algo que parece não ter solução? Lembre-se: o Deus que abriu o Mar Vermelho, que fez o sol parar, que ressuscitou mortos - esse mesmo Deus está trabalhando em sua situação. Ele se especializa em impossíveis. O que é complicado demais para você é apenas mais um dia de trabalho para Ele.",
+          "versiculo": "Lucas 1:37",
+          "promessa": "Nada é impossível para Deus."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Seu valor não está no que você produz. Você não é uma máquina de realizar tarefas. Você é um filho amado. Hoje, se tudo o que você conseguir fazer for respirar e continuar tentando, isso é suficiente. Deus não está decepcionado com seu ritmo. Ele está presente em seu processo.",
+          "versiculo": "Salmos 139:13-14",
+          "promessa": "Você foi formado de modo assombrosamente maravilhoso."
+        },
+        {
+          "dia": 8,
+          "mensagem": "Perdoar a si mesmo às vezes é mais difícil do que perdoar os outros. Você fica remoendo aquele erro, aquela decisão, aquela palavra. Mas se Deus já perdoou, quem é você para não perdoar? A cruz foi suficiente. Aceite o perdão que Ele oferece. Solte-se da prisão da autocrítica.",
+          "versiculo": "Salmos 103:12",
+          "promessa": "Quanto dista o Oriente do Ocidente, assim afasta de nós as nossas transgressões."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Às vezes Deus permite tempestades não para destruí-lo, mas para revelar o que há em você. É na pressão que você descobre do que é feito. É no deserto que você aprende a depender dEle. Não desperdice sua tempestade - deixe que ela o transforme em alguém mais profundo, mais forte, mais dependente de Deus.",
+          "versiculo": "Tiago 1:2-4",
+          "promessa": "A provação da vossa fé produz perseverança."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Você não precisa ter medo do futuro. O Deus que cuidou de você até aqui não vai abandoná-lo amanhã. Ele já está no seu futuro, preparando o caminho, arranjando detalhes, trabalhando em seu favor. Cada \"e se\" que te preocupa já passou pelas mãos dEle. Você está mais seguro do que imagina.",
+          "versiculo": "Jeremias 29:11",
+          "promessa": "Eu sei os planos que tenho para você - de paz e não de mal."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Hoje, agradeça pelas orações que Deus não respondeu. Aquele relacionamento que não deu certo, aquele emprego que você não conseguiu, aquele plano que fracassou - às vezes o maior presente de Deus é um \"não\". Ele vê o que você não vê. E Seu \"não\" sempre está protegendo você para um \"sim\" melhor.",
+          "versiculo": "Romanos 8:32",
+          "promessa": "Aquele que não poupou Seu próprio Filho, não nos dará também todas as coisas?"
+        },
+        {
+          "dia": 12,
+          "mensagem": "Você está esperando sentir-se mais espiritual antes de se aproximar de Deus? Venha como está. Com suas dúvidas, sua bagunça, sua confusão. Ele não é impressionado por fachadas religiosas. Ele é atraído por corações sinceros. A honestidade é mais valiosa para Deus do que a pretensão de espiritualidade.",
+          "versiculo": "Salmos 34:18",
+          "promessa": "O Senhor está perto dos que têm o coração quebrantado."
+        },
+        {
+          "dia": 13,
+          "mensagem": "O amor de Deus não é como o amor humano - condicional, volátil, baseado em desempenho. O amor dEle é imutável. Você não pode fazer nada para perdê-lo. E não pode fazer nada para ganhá-lo. Você simplesmente o tem, completamente, para sempre. Descanse nisso hoje. Você é amado, e isso nunca vai mudar.",
+          "versiculo": "Romanos 8:38-39",
+          "promessa": "Nada poderá nos separar do amor de Deus."
+        },
+        {
+          "dia": 14,
+          "mensagem": "O maior romance da história não é entre duas pessoas - é entre Deus e você. Ele perseguiu você quando você corria. Ele pagou o maior preço para tê-lo. Ele nunca desistiu, nunca se cansou, nunca Se arrependeu. Hoje, seja qual for seu status de relacionamento, lembre-se: você é completamente, apaixonadamente amado por Deus.",
+          "versiculo": "1 João 4:19",
+          "promessa": "Nós amamos porque Ele nos amou primeiro."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Suas palavras têm poder. Elas podem construir ou destruir, curar ou ferir, dar vida ou morte. Hoje, antes de falar, respire. Pergunte ao Espírito: isso é verdadeiro, necessário, gentil? Suas palavras são ferramentas que Deus quer usar para abençoar outros. Use-as com sabedoria.",
+          "versiculo": "Provérbios 18:21",
+          "promessa": "A morte e a vida estão no poder da língua."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Você está cansado de tentar ser forte? Deus nunca pediu que você fosse. Ele pediu que você fosse honesto. Está tudo bem não estar bem. Está tudo bem precisar de ajuda. Está tudo bem admitir que você está lutando. A força de Deus se aperfeiçoa exatamente aí - na sua fraqueza admitida.",
+          "versiculo": "Salmos 73:26",
+          "promessa": "A minha carne e o meu coração desfalecem, mas Deus é a fortaleza do meu coração."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Deus está mais interessado no seu crescimento do que no seu conforto. Ele vai permitir situações difíceis não porque não Se importa, mas porque Se importa demais para deixá-lo estagnado. Confie no processo. Até o desconforto tem propósito nas mãos dEle.",
+          "versiculo": "Hebreus 12:10-11",
+          "promessa": "Deus nos disciplina para o nosso bem, para sermos participantes da Sua santidade."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Você não é definido pelo seu pior momento. Você não é aquele erro, aquele pecado, aquela vergonha. Você é quem Deus diz que você é: redimido, amado, escolhido, precioso. Não deixe seu passado escrever sua identidade. Deixe que Deus o faça.",
+          "versiculo": "2 Coríntios 5:17",
+          "promessa": "Se alguém está em Cristo, é nova criatura; as coisas velhas passaram."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Hoje, escolha gratidão. Não porque tudo está perfeito, mas porque até no meio da imperfeição há presentes de Deus. Ar para respirar. Mais um dia. Misericórdia fresca. A gratidão muda sua perspectiva. Ela não nega a dor, mas reconhece que a bondade de Deus ainda está presente nela.",
+          "versiculo": "1 Tessalonicenses 5:18",
+          "promessa": "Em tudo dai graças, porque esta é a vontade de Deus."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Pare de competir. A jornada de outra pessoa não invalida a sua. Deus tem recursos suficientes para abençoar todos. O sucesso dela não rouba o seu. A provisão dele não diminui a sua. Existe espaço na mesa do Pai para todos os Seus filhos. Celebre as vitórias alheias. A sua está chegando.",
+          "versiculo": "Gálatas 6:4-5",
+          "promessa": "Cada um levará a sua própria carga."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Você está lutando com ansiedade sobre coisas que talvez nunca aconteçam? Preocupação é pagar juros sobre problemas que você pode nunca ter. Deus pede que você traga suas preocupações a Ele, não que as carregue sozinho. Ele é grande o suficiente para suas maiores ansiedades e cuidadoso o suficiente para suas menores.",
+          "versiculo": "Mateus 6:34",
+          "promessa": "Não se preocupe com o amanhã; cada dia tem seus próprios problemas."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Às vezes o milagre não é a mudança das circunstâncias - é a mudança em você no meio delas. É ter paz quando nada faz sentido. É ter esperança quando tudo parece perdido. É encontrar Deus presente quando você se sente mais sozinho. Isso também é milagre. E talvez seja o maior de todos.",
+          "versiculo": "João 16:33",
+          "promessa": "No mundo tereis aflições, mas tende bom ânimo; Eu venci o mundo."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Você não precisa entender tudo para confiar. Abraão não sabia para onde ia. José não sabia por que estava na prisão. Davi não entendia por que fugia de Saul. Mas todos confiaram no caráter de Deus quando não podiam ver o plano de Deus. A fé não exige explicações. Exige confiança.",
+          "versiculo": "Isaías 55:8-9",
+          "promessa": "Os Meus caminhos são mais altos que os vossos caminhos."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Hoje alguém precisa ouvir que não está sozinho. Talvez seja você. Talvez seja a pessoa ao seu lado. Deus coloca pessoas em nossas vidas para lembrar umas às outras de Sua presença. Você foi criado para comunidade. Não tente fazer essa jornada sozinho. Deus trabalha através de pessoas.",
+          "versiculo": "Eclesiastes 4:9-10",
+          "promessa": "Melhor é serem dois do que um; se um cair, o outro levanta o seu companheiro."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Deus não vai jogar fora a pessoa que Ele trabalhou tanto para redimir. Você não é um rascunho que Ele está considerando descartar. Você é Sua obra-prima em andamento. E Ele nunca abandona Suas obras. Ele vai completar em você o que começou. Conte com isso.",
+          "versiculo": "Efésios 2:10",
+          "promessa": "Somos feitura Sua, criados em Cristo Jesus para boas obras."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Você está se sentindo inadequado para o que Deus está pedindo? Bem-vindo ao clube dos usados por Deus. Ele tem um histórico de chamar os inadequados e torná-los capazes. Sua insuficiência é o ponto de partida dEle. Quando você para de confiar em si mesmo, começa a descobrir o que Ele pode fazer através de você.",
+          "versiculo": "2 Coríntios 3:5",
+          "promessa": "A nossa capacidade vem de Deus."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Não ignore os pequenos inícios. Deus honra os passos de fé, não importa quão pequenos. Aquela pequena obediência, aquele pequeno ato de bondade, aquela pequena escolha de confiar - tudo isso importa. Sementes de mostarda se tornam árvores. Pequenas fidelidades se tornam grandes testemunhos.",
+          "versiculo": "Filipenses 1:6",
+          "promessa": "Aquele que começou boa obra completará até o dia de Cristo Jesus."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Você chegou ao fim de fevereiro. Foi um mês de altos e baixos, de lutas e vitórias. Mas você está aqui. E Deus esteve com você em cada momento. Ele não perdeu nenhum detalhe, não desperdiçou nenhuma lágrima, não ignorou nenhuma oração. Continue confiando. Os melhores capítulos ainda estão sendo escritos.",
+          "versiculo": "Filipenses 1:6",
+          "promessa": "Aquele que começou boa obra completará até o dia de Cristo Jesus."
+        }
+      ]
+    },
+    "03": {
+      "numero": "03",
+      "nome": "Março",
+      "total_dias": 31,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Bem-vindo a março, um mês de transições. Inverno dando lugar à primavera. O velho fazendo espaço para o novo. Deus está fazendo a mesma coisa em você. Ele está trazendo vida nova onde havia morte, esperança onde havia desespero. Não subestime o que Ele pode fazer em 31 dias. Cada dia é uma oportunidade de recomeço.",
+          "versiculo": "Isaías 42:9",
+          "promessa": "Eis que as primeiras coisas passaram; coisas novas Eu anuncio."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Você está carregando culpa por algo que Deus já perdoou? Ele não está guardando rancor. Ele não está esperando você \"pagar\" pelo que fez. Jesus já pagou. Completamente. A cruz foi suficiente. Aceite o perdão. Solte a culpa. Viva livre.",
+          "versiculo": "Colossenses 2:13-14",
+          "promessa": "Ele nos perdoou todos os nossos delitos, cancelando o escrito de dívida."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Hoje, seja intencional. Deus não desperdiça nenhum momento, e você também não deveria. Cada conversa, cada interação, cada decisão - tudo pode ser uma oportunidade de glorificá-Lo. Viva este dia como se importasse. Porque importa.",
+          "versiculo": "Efésios 5:15-16",
+          "promessa": "Vejam com cuidado como vocês vivem; aproveitando ao máximo cada oportunidade."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Você está esperando condições perfeitas para obedecer a Deus? Nunca haverá condições perfeitas. Fé é dar o passo mesmo quando você não vê a escadaria completa. Obediência raramente faz sentido no momento. Mas Deus honra aqueles que confiam nEle o suficiente para obedecer sem garantias.",
+          "versiculo": "Hebreus 11:8",
+          "promessa": "Abraão obedeceu e saiu, sem saber para onde ia."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Deus não desperdiça nada - nem mesmo suas lágrimas. Ele está coletando cada uma delas, transformando sua dor em propósito, seu sofrimento em sabedoria. Nada do que você passou foi em vão. Tudo isso faz parte de uma história maior que Ele está escrevendo através de você.",
+          "versiculo": "Salmos 56:8",
+          "promessa": "Você registra cada lágrima minha."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Pare de tentar ganhar o que já lhe foi dado gratuitamente. Você não precisa se esforçar para ser aceito - você já é. Você não precisa provar seu valor - você já tem. A graça não é algo que você conquista. É algo que você recebe. Descanse nisso hoje.",
+          "versiculo": "Efésios 2:8-9",
+          "promessa": "Vocês são salvos pela graça, mediante a fé; isso não vem de vocês, é dom de Deus."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Suas orações não precisam ser eloquentes. Elas precisam ser honestas. Deus prefere sua sinceridade desajeitada à sua performance religiosa perfeita. Ele quer seu coração, não suas palavras bonitas. Fale com Ele como você falaria com alguém que realmente Se importa - porque Ele Se importa.",
+          "versiculo": "Filipenses 4:6",
+          "promessa": "Não andem ansiosos por coisa alguma; em tudo, apresentem seus pedidos a Deus."
+        },
+        {
+          "dia": 8,
+          "mensagem": "Você não está competindo com ninguém. Cada pessoa tem uma jornada única, um chamado único, um timing único. O que Deus está fazendo em você é diferente do que Ele está fazendo em outros. E está tudo bem. Pare de comparar. Comece a celebrar - sua jornada e a deles.",
+          "versiculo": "João 21:22",
+          "promessa": "Se Eu quiser que ele permaneça até que Eu venha, que te importa? Quanto a ti, segue-Me."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Hoje você vai enfrentar algo difícil. Lembre-se: Deus não prometeu que a vida seria fácil. Ele prometeu que estaria com você. E Sua presença é suficiente. Você não precisa de todas as respostas. Você precisa apenas de Sua presença. E Ele está aqui.",
+          "versiculo": "Deuteronômio 31:6",
+          "promessa": "O Senhor vai adiante de você; Ele nunca o deixará nem o abandonará."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Às vezes Deus está mais interessado em ensinar você a depender dEle do que em remover seus problemas. A dependência não é fraqueza - é sabedoria. É reconhecer que você foi criado para precisar dEle. E quando você finalmente admite isso, descobre que Ele é tudo o que você sempre precisou.",
+          "versiculo": "João 15:5",
+          "promessa": "Sem Mim, nada podeis fazer."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Você está se sentindo invisível? Deus vê você. Você está se sentindo esquecido? Deus lembra. Você está se sentindo insignificante? Para Deus, você é infinitamente valioso. Não baseie sua identidade na atenção das pessoas. Baseie-a na atenção dEle. E Ele nunca tira os olhos de você.",
+          "versiculo": "Mateus 10:29-31",
+          "promessa": "Até os cabelos da vossa cabeça estão todos contados. Não temais; mais valeis vós do que muitos pardais."
+        },
+        {
+          "dia": 12,
+          "mensagem": "Perdão é uma decisão, não um sentimento. Você pode escolher perdoar mesmo quando ainda dói. Você pode soltar a ofensa mesmo quando a outra pessoa não merece. Perdoar não é dizer que o que aconteceu foi certo. É dizer que você não vai mais deixar aquilo controlá-lo. É escolher liberdade.",
+          "versiculo": "Mateus 18:21-22",
+          "promessa": "Não sete vezes, mas setenta vezes sete."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Hoje, pratique presença. Desligue as distrações. Respire fundo. Esteja onde você está. Deus está falando - mas você está ouvindo? Ele está presente - mas você está percebendo? A vida acontece agora, não nos \"e se\" do futuro ou nos \"se ao menos\" do passado. Esteja presente.",
+          "versiculo": "Salmos 46:10",
+          "promessa": "Aquieta-te e sabe que Eu sou Deus."
+        },
+        {
+          "dia": 14,
+          "mensagem": "Você está se punindo por algo que Deus já esqueceu? Quando Ele perdoa, Ele não fica lembrando. Ele não mantém uma lista de ofensas. Ele não está esperando você tropeçar para dizer \"eu avisei\". Ele perdoa completamente, esquece intencionalmente, e ama incondicionalmente. Faça o mesmo consigo mesmo.",
+          "versiculo": "Hebreus 8:12",
+          "promessa": "Dos seus pecados não Me lembrarei mais."
+        },
+        {
+          "dia": 15,
+          "mensagem": "A fé não remove obstáculos. Às vezes a fé é acreditar que Deus está trabalhando através dos obstáculos. Aquela porta fechada pode estar protegendo você. Aquele atraso pode estar alinhando algo melhor. Aquele \"não\" pode estar guardando você para um \"sim\" maior. Confie no processo.",
+          "versiculo": "Romanos 8:28",
+          "promessa": "Sabemos que Deus age em todas as coisas para o bem daqueles que O amam."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Você foi criado para mais do que sobreviver. Deus quer que você prospere, que viva abundantemente, que experimente alegria profunda. Mas abundância não é ausência de problemas - é presença de paz no meio deles. É encontrar contentamento não nas circunstâncias, mas nAquele que está acima das circunstâncias.",
+          "versiculo": "João 10:10",
+          "promessa": "Eu vim para que tenham vida, e a tenham em abundância."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Hoje, seja generoso. Com suas palavras. Com seu tempo. Com sua graça. A generosidade não é apenas sobre dinheiro - é sobre postura do coração. Pessoas generosas vivem de forma diferente porque entendem que tudo o que têm é um presente. E presentes são feitos para serem compartilhados.",
+          "versiculo": "2 Coríntios 9:7",
+          "promessa": "Deus ama quem dá com alegria."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Você não precisa ter tudo resolvido para ajudar alguém. Pessoas feridas podem curar pessoas feridas quando apontam para o Grande Curador. Sua história não precisa estar completa para ser útil. Às vezes as pessoas precisam apenas saber que não estão sozinhas. Você pode ser isso para alguém hoje.",
+          "versiculo": "2 Coríntios 1:4",
+          "promessa": "Ele nos consola para que possamos consolar outros com o consolo que recebemos."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Deus não está procurando pessoas qualificadas. Ele está procurando pessoas disponíveis. Ele não está impressionado com seu currículo. Ele está interessado no seu \"sim\". Moisés tinha impedimento de fala. Davi era jovem demais. Ester era órfã. Mas todos disseram \"sim\". E Deus fez o resto.",
+          "versiculo": "Isaías 6:8",
+          "promessa": "Quem enviarei? Quem irá por nós? Eis-me aqui; envia-me a mim."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Às vezes você precisa deixar algo morrer para que algo novo possa nascer. Aquele sonho, aquela expectativa, aquele plano - talvez Deus esteja pedindo que você solte. Não porque Ele quer machucá-lo, mas porque Ele tem algo melhor. Confie nEle o suficiente para abrir suas mãos.",
+          "versiculo": "João 12:24",
+          "promessa": "Se o grão de trigo não cair na terra e morrer, fica só; mas se morrer, produz muito fruto."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Bem-vindo à primavera! Deus é o Deus das estações. Ele traz primavera após inverno, manhã após noite, esperança após desespero. Se você está em um inverno espiritual agora, segure firme. A primavera está chegando. Deus é especialista em trazer vida de lugares que pareciam mortos.",
+          "versiculo": "Cânticos 2:11-12",
+          "promessa": "Eis que passou o inverno; o tempo de cantar chegou."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Você está cansado das mesmas lutas? Lembre-se: transformação é um processo, não um evento. Deus está mais interessado em crescimento constante do que em mudança instantânea. Cada pequeno passo de obediência importa. Cada dia de fidelidade conta. Não desista. Você está mais longe de onde começou do que imagina.",
+          "versiculo": "2 Coríntios 3:18",
+          "promessa": "Somos transformados de glória em glória, pela ação do Senhor."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Hoje, escolha esperança. Não porque tudo está bem, mas porque Deus é bom. Esperança não é otimismo cego - é confiança fundamentada no caráter de Deus. Ele foi fiel antes. Ele está sendo fiel agora. Ele será fiel no futuro. Essa é a base da esperança verdadeira.",
+          "versiculo": "Romanos 15:13",
+          "promessa": "Que o Deus da esperança os encha de toda alegria e paz."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Você não está atrasado. Não perdeu sua chance. Deus não tem pressa, mas nunca Se atrasa. Sara teve um filho aos 90. Moisés começou seu ministério aos 80. Davi esperou anos pelo trono. O timing de Deus é diferente do seu, mas é sempre perfeito. Continue confiando. Sua hora está chegando.",
+          "versiculo": "Habacuque 2:3",
+          "promessa": "A visão tem seu tempo; espera por ela, pois certamente virá."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Às vezes o maior ato de fé é simplesmente aparecer. Levantar da cama quando você quer desistir. Continuar tentando quando você quer se esconder. Deus vê isso. Ele honra sua fidelidade nos dias ordinários tanto quanto nos extraordinários. Continue aparecendo. Deus está trabalhando mesmo quando você não sente.",
+          "versiculo": "Gálatas 6:9",
+          "promessa": "Não nos cansemos de fazer o bem, pois no tempo próprio colheremos."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Você está tentando controlar coisas que nunca foram suas para controlar? Solte. Algumas coisas você precisa entregar nas mãos de Deus e confiar. Controle é uma ilusão de qualquer forma. Mas confiança - confiança é escolher acreditar que Deus tem tudo sob controle mesmo quando você não tem.",
+          "versiculo": "Provérbios 16:9",
+          "promessa": "O coração do homem planeja o seu caminho, mas o Senhor lhe dirige os passos."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Hoje, perdoe rapidamente. A vida é curta demais para guardar rancor. O ressentimento machuca você mais do que a outra pessoa. Escolha liberdade. Escolha paz. Escolha perdoar - não porque eles merecem, mas porque você merece viver livre da amargura.",
+          "versiculo": "Colossenses 3:13",
+          "promessa": "Assim como o Senhor os perdoou, perdoem também uns aos outros."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Deus está escrevendo uma história através da sua vida. Alguns capítulos são bonitos. Outros são dolorosos. Mas todos são necessários. Não pule as páginas difíceis. É nelas que os personagens crescem, que a fé é forjada, que milagres acontecem. Confie no Autor. Ele sabe escrever finais redentores.",
+          "versiculo": "Salmos 139:16",
+          "promessa": "Todos os meus dias foram escritos no Teu livro antes de qualquer deles existir."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Você está olhando para o que falta ou para o que você tem? Gratidão muda tudo. Ela não nega os problemas, mas reconhece que mesmo no meio deles Deus está presente. Hoje, conte suas bênçãos. Nomeie-as uma a uma. Você pode se surpreender com o quanto você tem para agradecer.",
+          "versiculo": "Salmos 103:2",
+          "promessa": "Bendize ao Senhor, ó minha alma, e não te esqueças de nenhum de Seus benefícios."
+        },
+        {
+          "dia": 30,
+          "mensagem": "A semana que vem é importante para muitos - a Semana Santa se aproxima. Mas hoje também é santo. Este momento também é sagrado. Deus está tão presente agora quanto estará no domingo. Não espere por momentos \"especiais\" para encontrá-Lo. Ele está aqui, agora, esperando por você.",
+          "versiculo": "Êxodo 3:5",
+          "promessa": "Tira as sandálias dos pés, pois o lugar em que estás é terra santa."
+        },
+        {
+          "dia": 31,
+          "mensagem": "Você chegou ao fim de março. Alguns dias foram de crescimento, outros de luta. Mas você perseverou. E Deus esteve com você em cada passo. Amanhã começa abril, um mês novo, novas oportunidades. Mas hoje, respire. Agradeça. Descanse. Você fez o suficiente. Você é suficiente. E Deus está satisfeito com você.",
+          "versiculo": "Sofonias 3:17",
+          "promessa": "O Senhor se deleitará em ti com alegria; Ele te renovará no Seu amor."
+        }
+      ]
+    },
+    "04": {
+      "numero": "04",
+      "nome": "Abril",
+      "total_dias": 30,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Bem-vindo a abril, um mês de novos começos e renovação. Assim como a natureza floresce na primavera, Deus quer trazer florescimento para áreas da sua vida que pareciam secas. Ele é o Deus da ressurreição - especialista em trazer vida onde havia morte. Confie: algo novo está brotando em você.",
+          "versiculo": "Apocalipse 21:5",
+          "promessa": "Eis que faço novas todas as coisas."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Você está tentando resolver tudo sozinho? Deus nunca pretendeu que você carregasse o peso do mundo nos ombros. Ele está oferecendo ajuda, mas você precisa aceitar. Orgulho diz \"eu consigo sozinho\". Fé diz \"eu preciso de Ti\". Hoje, escolha fé. Peça ajuda - a Ele e aos outros.",
+          "versiculo": "Salmos 121:1-2",
+          "promessa": "O meu socorro vem do Senhor, que fez os céus e a terra."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Hoje, seja luz. O mundo tem escuridão suficiente - ele precisa de pessoas que reflitam a luz de Cristo. Um sorriso genuíno, uma palavra de encorajamento, um ato de bondade - essas coisas pequenas dissipam trevas. Você foi chamado para ser sal e luz. Brilhe hoje.",
+          "versiculo": "Mateus 5:14-16",
+          "promessa": "Vós sois a luz do mundo; assim brilhe a vossa luz."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Você está esperando o momento perfeito para começar? Comece imperfeito. Comece desajeitado. Comece com medo. Mas comece. Deus honra primeiros passos de fé, não planos perfeitos. Ele trabalha com o que você oferece, não com o que você gostaria de ter. Dê o que você tem. Ele fará o resto.",
+          "versiculo": "Marcos 6:41",
+          "promessa": "Ele pegou os cinco pães e os dois peixes e os multiplicou."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Às vezes Deus permite que você enfrente gigantes não para assustá-lo, mas para revelar o Gigante que está do seu lado. Davi enfrentou Golias. Você tem seus próprios gigantes. Mas lembre-se: a batalha não é sua, é do Senhor. E Ele nunca perdeu uma.",
+          "versiculo": "1 Samuel 17:47",
+          "promessa": "A batalha é do Senhor."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Você não precisa entender os caminhos de Deus para confiar nEle. Abraão não entendeu. José não entendeu. Maria não entendeu. Mas todos confiaram. Fé não exige compreensão - exige rendição. Hoje, solte a necessidade de entender e escolha confiar no caráter dEle.",
+          "versiculo": "Isaías 55:9",
+          "promessa": "Assim como os céus são mais altos que a terra, assim são os Meus caminhos."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Hoje, celebre o progresso, não a perfeição. Você não é onde quer estar, mas não é mais onde estava. Cada passo conta. Cada pequena vitória importa. Deus vê seu esforço. Ele honra sua perseverança. Continue caminhando. Você está mais perto do que imagina.",
+          "versiculo": "Provérbios 4:18",
+          "promessa": "A vereda dos justos é como a luz da aurora, que brilha mais e mais até o dia perfeito."
+        },
+        {
+          "dia": 8,
+          "mensagem": "Você está carregando vergonha por algo do passado? Jesus não. Ele levou sua vergonha na cruz. Ele não está lembrando você do que você fez. Ele está celebrando quem você está se tornando. A voz da vergonha é do inimigo. A voz de Deus sempre aponta para a redenção.",
+          "versiculo": "Isaías 61:7",
+          "promessa": "Em lugar da vergonha, tereis dupla honra."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Hoje você vai precisar de paciência - consigo mesmo e com outros. Lembre-se: todos estão lutando batalhas que você não conhece. Seja gentil. Seja gracioso. Seja a pessoa que oferece o benefício da dúvida. O mundo precisa de menos julgamento e mais compaixão. Comece com você.",
+          "versiculo": "Colossenses 3:12",
+          "promessa": "Revistam-se de compaixão, bondade, humildade, mansidão e paciência."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Deus não está surpreso com suas lutas. Ele sabia exatamente o que estava fazendo quando escolheu você. Suas fraquezas não são obstáculos para Ele - são oportunidades. Quando você é fraco, Ele é forte. Quando você é inadequado, Ele é suficiente. Pare de se desqualificar. Deus já qualificou você.",
+          "versiculo": "2 Timóteo 1:9",
+          "promessa": "Ele nos salvou e nos chamou com santa vocação, não segundo as nossas obras, mas segundo a Sua própria determinação."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Às vezes o \"não\" de Deus é o maior presente que Ele pode dar. Aquilo que você está pedindo pode não ser o melhor para você. Ele vê o quadro completo. Confie que Seus \"nãos\" estão protegendo você para um \"sim\" melhor. Ele é bom, mesmo quando diz não.",
+          "versiculo": "Salmos 84:11",
+          "promessa": "Nenhum bem sonega aos que andam retamente."
+        },
+        {
+          "dia": 12,
+          "mensagem": "Hoje, pratique perdão radical - inclusive consigo mesmo. Você cometeu erros. Todo mundo comete. Mas Deus não está mantendo uma lista. Ele ofereceu graça completa na cruz. Aceite essa graça. Estenda essa graça aos outros. E, por favor, estenda a si mesmo também.",
+          "versiculo": "Miquéias 7:19",
+          "promessa": "Ele lançará todos os nossos pecados nas profundezas do mar."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Você está se sentindo inadequado para o chamado de Deus? Junte-se ao clube. Moisés se sentiu. Jeremias se sentiu. Até Paulo se sentiu. Mas todos descobriram que a adequação vem de Deus, não de nós. Ele não chamou os qualificados. Ele qualifica os chamados.",
+          "versiculo": "2 Coríntios 3:5-6",
+          "promessa": "A nossa capacidade vem de Deus."
+        },
+        {
+          "dia": 14,
+          "mensagem": "Hoje é domingo - um lembrete de que a ressurreição é real. Jesus venceu a morte. E por causa disso, nenhuma situação em sua vida está além da redenção. Casamentos mortos podem reviver. Sonhos enterrados podem ressuscitar. Esperança perdida pode ser restaurada. Acredite nos domingos.",
+          "versiculo": "1 Coríntios 15:57",
+          "promessa": "Graças a Deus que nos dá a vitória por meio de nosso Senhor Jesus Cristo."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Você está comparando seu interior com o exterior das outras pessoas. Pare. Você vê as lutas delas através de filtros de redes sociais. Deus vê a realidade. E Ele está mais interessado em autenticidade do que em aparências. Seja real. Seja você. Isso é mais do que suficiente.",
+          "versiculo": "1 Samuel 16:7",
+          "promessa": "O homem vê a aparência, mas o Senhor vê o coração."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Hoje, escolha alegria. Não porque tudo está perfeito, mas porque a alegria não depende de circunstâncias - depende de presença. E Deus está presente. Alegria é saber que não importa o que aconteça, você não está sozinho. Isso é motivo suficiente para se alegrar.",
+          "versiculo": "Salmos 16:11",
+          "promessa": "Na Tua presença há plenitude de alegria."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Você está esperando se sentir \"digno\" antes de buscar a Deus? Nunca vai se sentir. Nenhum de nós é digno. É por isso que precisamos de graça. Venha como está - bagunçado, quebrado, imperfeito. A mesa de Deus tem lugar para todos que reconhecem sua necessidade dEle.",
+          "versiculo": "Lucas 5:31-32",
+          "promessa": "Não vim chamar justos, mas pecadores ao arrependimento."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Hoje é Sexta-feira Santa - um lembrete do preço que Jesus pagou. Ele escolheu a cruz. Escolheu a dor. Escolheu você. Quando você se sentir sem valor, lembre-se: você vale o sangue de Jesus. Esse é o seu valor. E nada pode mudar isso.",
+          "versiculo": "1 Pedro 1:18-19",
+          "promessa": "Vocês foram resgatados pelo precioso sangue de Cristo."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Hoje pode parecer um \"sábado silencioso\" - quando você está esperando entre a dor de ontem e a promessa de amanhã. Nesses momentos de espera, lembre-se: Deus está trabalhando mesmo quando você não vê. A ressurreição está chegando. Continue esperando. Continue confiando.",
+          "versiculo": "Salmos 27:14",
+          "promessa": "Espera pelo Senhor; tem bom ânimo, e fortifique-se o teu coração."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Feliz Páscoa! Hoje celebramos que o túmulo está vazio. A morte foi derrotada. O pecado foi vencido. E por causa disso, você tem esperança. Não importa quão morta sua situação pareça, sirva ao Deus da ressurreição. Ele se especializa em fazer brotar vida de túmulos vazios.",
+          "versiculo": "Lucas 24:6",
+          "promessa": "Ele não está aqui; ressuscitou!"
+        },
+        {
+          "dia": 21,
+          "mensagem": "Você está vivendo na força da ressurreição ou na sombra da sexta-feira? Jesus ressuscitou. O mesmo poder que O levantou do túmulo está disponível para você hoje. Esse poder pode ressuscitar seus sonhos, renovar sua fé, restaurar sua esperança. Creia no poder da ressurreição.",
+          "versiculo": "Efésios 1:19-20",
+          "promessa": "A suprema grandeza do Seu poder para conosco é o mesmo que ressuscitou Cristo."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Hoje, seja grato pelas pequenas coisas. A gratidão transforma o que você tem em suficiente. Ela muda sua perspectiva de escassez para abundância. Você pode não ter tudo o que quer, mas tem tudo o que precisa. E Aquele que provê ainda está provendo.",
+          "versiculo": "Filipenses 4:19",
+          "promessa": "O meu Deus suprirá todas as vossas necessidades segundo as Suas riquezas em glória."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Você está tentando forçar portas que Deus fechou? Às vezes Ele fecha portas para proteger você, para redirecionar você, para prepará-lo para algo melhor. Pare de forçar. Confie que as portas certas se abrirão no tempo certo. E enquanto espera, descanse em Sua soberania.",
+          "versiculo": "Apocalipse 3:7",
+          "promessa": "O que Ele abre ninguém fecha; o que Ele fecha ninguém abre."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Hoje, fale vida. Suas palavras têm poder para construir ou destruir, encorajar ou desencorajar. Escolha sabiamente. Fale verdade temperada com amor. Fale esperança em meio ao desespero. Suas palavras podem ser o ponto de virada no dia de alguém.",
+          "versiculo": "Provérbios 16:24",
+          "promessa": "Palavras suaves são favos de mel, doces para a alma e saúde para os ossos."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Você não está perdendo tempo enquanto espera. Deus usa tempos de espera para preparação. Ele está trabalhando em você enquanto trabalha ao seu redor. Nada está sendo desperdiçado. A espera faz parte do processo. Confie no timing dEle.",
+          "versiculo": "Isaías 40:31",
+          "promessa": "Os que esperam no Senhor renovam as suas forças."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Hoje, escolha humildade. Não é pensar menos de si mesmo - é pensar menos em si mesmo. É reconhecer que tudo o que você tem é presente de Deus. É servir sem esperar reconhecimento. É amar sem esperar retorno. Humildade é o caminho para a verdadeira grandeza.",
+          "versiculo": "Filipenses 2:3-4",
+          "promessa": "Nada façais por partidarismo, mas com humildade, considerando cada um os outros superiores."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Você está se sentindo sobrecarregado? Deus não pretendeu que você fizesse tudo. Ele não espera que você seja tudo para todos. Está tudo bem dizer não. Está tudo bem estabelecer limites. Está tudo bem descansar. Jesus descansou. Você também pode.",
+          "versiculo": "Marcos 6:31",
+          "promessa": "Vinde vós à parte, a um lugar deserto, e descansai um pouco."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Hoje, perdoe alguém que não pediu desculpas. Perdoe não porque eles merecem, mas porque você merece paz. O perdão liberta você da prisão do ressentimento. É um presente que você dá a si mesmo. E quando você perdoa, experimenta a mesma graça que Deus lhe ofereceu.",
+          "versiculo": "Marcos 11:25",
+          "promessa": "Quando estiverdes orando, perdoai se tendes alguma coisa contra alguém."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Você está vivendo com medo do futuro? Deus já está lá. Ele já preparou o caminho, já sabe o que vem, já tem a provisão pronta. Você não precisa ter medo do desconhecido quando conhece Aquele que conhece tudo. O futuro está seguro nas mãos dEle.",
+          "versiculo": "Jeremias 1:5",
+          "promessa": "Antes que te formasse no ventre, Eu te conheci."
+        },
+        {
+          "dia": 30,
+          "mensagem": "Você chegou ao fim de abril. Foi um mês de crescimento, de lutas, de pequenas vitórias. E Deus esteve presente em cada momento. Enquanto você se prepara para maio, lembre-se: o mesmo Deus que te sustentou até aqui continuará fiel. Ele não está terminando com você. Está apenas começando.",
+          "versiculo": "Lamentações 3:22-23",
+          "promessa": "As misericórdias do Senhor são a causa de não sermos consumidos; renovam-se cada manhã."
+        }
+      ]
+    },
+    "05": {
+      "numero": "05",
+      "nome": "Maio",
+      "total_dias": 31,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Bem-vindo a maio, um mês de florescimento pleno. Assim como as flores estão em plena glória, Deus quer trazer plenitude para áreas da sua vida. Ele é o Deus da abundância, não da escassez. Abra seu coração para receber tudo o que Ele tem preparado para você neste mês.",
+          "versiculo": "João 10:10",
+          "promessa": "Eu vim para que tenham vida, e a tenham em abundância."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Hoje, celebre os pequenos milagres. A respiração nos seus pulmões. O sol que nasceu. A oportunidade de recomeçar. Milagres não são apenas eventos espetaculares - são também a graça ordinária de Deus operando constantemente. Abra seus olhos. Milagres estão acontecendo ao seu redor.",
+          "versiculo": "Salmos 118:24",
+          "promessa": "Este é o dia que o Senhor fez; regozijemo-nos e alegremo-nos nele."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Você está carregando fardos que Deus nunca pediu que você carregasse? Preocupações sobre o que as pessoas pensam. Expectativas que não são suas. Padrões impossíveis de perfeição. Solte tudo isso. Carregue apenas o que Deus lhe deu. O resto não é seu.",
+          "versiculo": "1 Pedro 5:7",
+          "promessa": "Lançai sobre Ele toda a vossa ansiedade, porque Ele tem cuidado de vós."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Hoje, seja corajoso. Não porque você não tem medo, mas porque Deus está com você. Coragem não é ausência de medo - é fé que se move apesar do medo. Deus não prometeu que seria fácil. Ele prometeu que você não estaria sozinho. E isso muda tudo.",
+          "versiculo": "Josué 1:9",
+          "promessa": "Seja forte e corajoso; não temas, nem te espantes, porque o Senhor teu Deus está contigo."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Você está esperando um sinal de Deus? Às vezes o sinal é a paz que você sente. Às vezes é a porta que se abre. Às vezes é a sabedoria que vem através de outros. Deus fala de muitas maneiras. Pare. Escute. Ele está falando - você só precisa estar atento.",
+          "versiculo": "Salmos 32:8",
+          "promessa": "Instruir-te-ei e ensinar-te-ei o caminho que deves seguir."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Hoje, pratique contentamento. Não é conformismo - é saber que você tem o suficiente porque tem a Deus. Paulo aprendeu a estar contente em toda situação. Não porque tinha tudo, mas porque Deus era tudo. Contentamento não depende de circunstâncias. Depende de perspectiva.",
+          "versiculo": "Filipenses 4:11-13",
+          "promessa": "Aprendi a estar contente em toda e qualquer situação; tudo posso nAquele que me fortalece."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Você não precisa ter todas as respostas. Está tudo bem dizer \"não sei\". Está tudo bem ter dúvidas. Até João Batista teve dúvidas e ele viu o Espírito descer sobre Jesus. Deus não é ameaçado por suas perguntas. Ele as recebe. Traga suas dúvidas para Ele. Ele pode lidar com elas.",
+          "versiculo": "Mateus 11:2-6",
+          "promessa": "Bem-aventurado é aquele que não se escandalizar de Mim."
+        },
+        {
+          "dia": 8,
+          "mensagem": "Hoje, honre sua mãe - ou alguém que exerceu esse papel maternal em sua vida. O amor de mãe é um reflexo do amor de Deus - sacrificial, protetor, constante. Deus usa mães para nos ensinar sobre Seu próprio coração. Seja grato. Seja honroso. Celebre esse presente.",
+          "versiculo": "Provérbios 31:28",
+          "promessa": "Levantam-se seus filhos e lhe chamam bem-aventurada."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Você está lutando com algo que ninguém sabe? Deus sabe. Ele vê suas batalhas invisíveis, suas lutas silenciosas, suas lágrimas escondidas. Você não precisa fingir estar bem para Ele. Ele já sabe a verdade. E Ele ama você exatamente onde você está.",
+          "versiculo": "Salmos 139:1-4",
+          "promessa": "Senhor, Tu me sondaste e me conheces; conheces o meu assentar e o meu levantar."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Hoje, seja intencional com seu tempo. Você não pode gerenciar o tempo, mas pode gerenciar suas prioridades. O que realmente importa? Com quem você precisa passar tempo? O que Deus está pedindo que você faça? Viva este dia com propósito. Ele não vai voltar.",
+          "versiculo": "Efésios 5:15-17",
+          "promessa": "Tenham cuidado com a maneira como vocês vivem; aproveitando ao máximo cada oportunidade."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Você está se comparando com os outros e se sentindo inferior? Pare. Deus não faz clones. Ele faz originais. Você tem dons únicos, uma história única, um chamado único. Seu valor não está em ser melhor que os outros. Está em ser fiel a quem Deus o criou para ser.",
+          "versiculo": "Salmos 139:14",
+          "promessa": "Graças Te dou porque de um modo tão admirável e maravilhoso fui formado."
+        },
+        {
+          "dia": 12,
+          "mensagem": "Hoje, pratique generosidade radical. Não apenas com dinheiro, mas com tempo, atenção, graça. Pessoas generosas vivem mais felizes porque entendem que é mais bem-aventurado dar do que receber. Seja generoso. Você nunca pode ser mais generoso do que Deus.",
+          "versiculo": "Lucas 6:38",
+          "promessa": "Dai, e ser-vos-á dado; medida boa, recalcada, sacudida e transbordante."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Você está esperando motivação para obedecer a Deus? Obediência geralmente vem antes da motivação. Dê o passo de fé mesmo quando não sentir vontade. Faça o que é certo mesmo quando é difícil. A motivação virá depois da obediência, não antes. Confie nisso.",
+          "versiculo": "João 14:15",
+          "promessa": "Se Me amais, guardareis os Meus mandamentos."
+        },
+        {
+          "dia": 14,
+          "mensagem": "Hoje, descanse na suficiência de Cristo. Você não precisa provar nada. Você não precisa ganhar nada. Jesus já fez tudo. Sua aceitação não depende do seu desempenho. Depende da performance dEle. E Ele foi perfeito. Descanse nisso.",
+          "versiculo": "Hebreus 10:14",
+          "promessa": "Com uma única oferta, Ele aperfeiçoou para sempre os que estão sendo santificados."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Você está segurando mágoa? Isso está machucando você mais do que a outra pessoa. Perdão não é concordar com o que foi feito. É escolher liberdade em vez de prisão. É decidir que você não vai deixar aquela pessoa controlar mais um dia da sua vida. Solte. Seja livre.",
+          "versiculo": "Efésios 4:31-32",
+          "promessa": "Livrai-vos de toda amargura; antes, sede bondosos, perdoando-vos uns aos outros."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Hoje, seja um construtor de pontes, não de muros. O mundo já tem divisão suficiente. Seja alguém que une, que reconcilia, que busca entender antes de ser entendido. Jesus veio quebrar muros. Você foi chamado para fazer o mesmo.",
+          "versiculo": "Efésios 2:14",
+          "promessa": "Ele é a nossa paz, que de ambos os povos fez um, derrubando a parede da separação."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Você está vivendo no passado ou no futuro? Deus o encontra no presente. Este momento é o único que você tem. Não desperdice o agora se preocupando com ontem ou amanhã. Esteja presente. Deus está aqui, agora, querendo caminhar com você neste exato momento.",
+          "versiculo": "Mateus 6:34",
+          "promessa": "Basta a cada dia o seu próprio mal; não vos inquieteis pelo dia de amanhã."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Hoje, celebre o progresso. Você não é perfeito, mas não é mais quem era. Cada passo de obediência conta. Cada dia de fidelidade importa. Deus vê seu esforço. Ele honra seu coração. Continue. Você está indo bem.",
+          "versiculo": "Filipenses 3:13-14",
+          "promessa": "Esquecendo-me das coisas que atrás ficam, prossigo para o alvo."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Você está esperando até se sentir \"pronto\" espiritualmente? Nunca vai se sentir. Crescimento espiritual não é um destino - é uma jornada. Você não precisa ter tudo resolvido para começar. Comece onde está. Use o que tem. Deus fará o resto.",
+          "versiculo": "2 Coríntios 12:9",
+          "promessa": "A Minha graça te basta, porque o Meu poder se aperfeiçoa na fraqueza."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Hoje é Pentecostes - um lembrete de que o Espírito Santo está vivo e ativo. Ele não é uma força distante. Ele vive em você. Ele o guia, o consola, o capacita, o transforma. Você não está sozinho. Você tem o poder de Deus dentro de você.",
+          "versiculo": "Atos 1:8",
+          "promessa": "Recebereis poder ao descer sobre vós o Espírito Santo."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Você está tentando controlar resultados? Sua parte é a obediência. A parte de Deus são os resultados. Plante as sementes com fidelidade. Regue-as com oração. Confie que Deus trará a colheita no tempo certo. Seu trabalho é ser fiel. O trabalho dEle é trazer fruto.",
+          "versiculo": "1 Coríntios 3:6-7",
+          "promessa": "Eu plantei, Apolo regou, mas Deus deu o crescimento."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Hoje, escolha alegria mesmo quando não sentir vontade. Alegria não é ausência de problemas - é presença de esperança no meio deles. É escolher ver a bondade de Deus mesmo quando a vida é difícil. É uma decisão, não um sentimento. Escolha alegria.",
+          "versiculo": "Habacuque 3:17-18",
+          "promessa": "Ainda que a figueira não floresça, todavia me alegrarei no Senhor."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Você está se sentindo inadequado? Bem-vindo ao reino de Deus. Ele usa os inadequados, os quebrados, os imperfeitos. Sua inadequação é o ponto de partida dEle. Quando você reconhece que não pode, Ele mostra que Ele pode. Sua fraqueza é a plataforma para o poder dEle.",
+          "versiculo": "2 Coríntios 4:7",
+          "promessa": "Temos este tesouro em vasos de barro, para que a excelência do poder seja de Deus."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Hoje, seja paciente - consigo mesmo e com outros. Transformação leva tempo. Crescimento é processo. Ninguém muda da noite para o dia. Deus é paciente com você. Seja paciente com você também. E estenda essa mesma paciência aos outros.",
+          "versiculo": "2 Pedro 3:9",
+          "promessa": "O Senhor é paciente, não querendo que nenhum pereça."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Você está vivendo com medo de falhar? Falha não é o oposto de sucesso - é parte dele. Toda pessoa que Deus usou poderosamente falhou em algum momento. Pedro negou. Paulo perseguiu. Davi pecou. Mas todos se levantaram. A questão não é se você vai cair. É se você vai se levantar.",
+          "versiculo": "Provérbios 24:16",
+          "promessa": "Porque sete vezes cairá o justo e se levantará."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Hoje, pratique gratidão intencional. Nomeie cinco coisas pelas quais você é grato. Grandes ou pequenas. A gratidão muda sua química cerebral, melhora sua perspectiva, e honra a Deus. Não espere sentir gratidão. Escolha praticá-la. O sentimento virá depois.",
+          "versiculo": "Salmos 100:4",
+          "promessa": "Entrai por Suas portas com ações de graças."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Você está tentando ganhar o amor de Deus? Você já o tem. Completamente. Irreversivelmente. Nada que você faça pode fazê-Lo amar você mais. Nada que você faça pode fazê-Lo amar você menos. Você é amado. Ponto final. Descanse nessa verdade hoje.",
+          "versiculo": "1 João 4:10",
+          "promessa": "Nisto está o amor: não em que nós tenhamos amado a Deus, mas em que Ele nos amou."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Hoje, seja a resposta para a oração de alguém. Deus frequentemente responde orações através de pessoas. Talvez você seja a provisão que alguém está pedindo. A palavra de encorajamento. O ato de bondade. Esteja disponível para ser usado por Deus hoje.",
+          "versiculo": "1 João 3:18",
+          "promessa": "Não amemos de palavra nem de boca, mas em ação e em verdade."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Você está esperando circunstâncias perfeitas? Elas nunca virão. Deus o chama para ser fiel nas circunstâncias que você tem, não nas que você deseja ter. Pare de esperar pela vida perfeita. Viva a vida que você tem - plenamente, fielmente, com gratidão.",
+          "versiculo": "1 Tessalonicenses 5:18",
+          "promessa": "Em tudo dai graças, porque esta é a vontade de Deus para convosco."
+        },
+        {
+          "dia": 30,
+          "mensagem": "Hoje, descanse. Não apenas fisicamente, mas emocionalmente e espiritualmente. Pare de se esforçar tanto. Pare de tentar provar seu valor. Você já é valioso. Deus descansou no sétimo dia não porque estava cansado, mas para nos ensinar que o descanso é sagrado. Descanse hoje.",
+          "versiculo": "Mateus 11:28",
+          "promessa": "Vinde a Mim todos os que estais cansados, e Eu vos aliviarei."
+        },
+        {
+          "dia": 31,
+          "mensagem": "Você chegou ao fim de maio. Outro mês de fidelidade, de crescimento, de pequenas vitórias e grandes desafios. E Deus esteve com você em cada momento. Ao entrar em junho, lembre-se: o mesmo Deus que o sustentou até aqui não vai abandoná-lo agora. Continue confiando. Continue caminhando. Ele está com você.",
+          "versiculo": "Deuteronômio 31:8",
+          "promessa": "O Senhor é Aquele que vai adiante de ti; Ele será contigo, não te deixará nem te desamparará."
+        }
+      ]
+    },
+    "06": {
+      "numero": "06",
+      "nome": "Junho",
+      "total_dias": 30,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Bem-vindo a junho. Metade do ano já se foi. Você olha para trás e vê sonhos adiados, planos que não saíram como esperava, promessas que parecem atrasadas. Mas Deus não opera com o calendário humano. Ele vê o ano inteiro como um único movimento de Sua graça. Junho pode ser o mês do breakthrough. Não desista. O melhor pode estar escondido nos próximos 30 dias.",
+          "versiculo": "Gálatas 6:9",
+          "promessa": "A seu tempo colheremos, se não desfalecermos."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Hoje você vai acordar com a tentação de comparar. Seu junho com o junho deles. Seu progresso com o sucesso deles. Sua jornada com o destino deles. Pare. Você está competindo com fantasmas. Correndo uma corrida que nunca foi sua. Deus não está comparando você com ninguém. Ele está aperfeiçoando você. No Seu ritmo. No Seu tempo. Do Seu jeito único.",
+          "versiculo": "2 Coríntios 10:12",
+          "promessa": "Não nos atrevemos a nos igualar ou comparar."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Você está carregando culpa por algo que Deus já perdoou há muito tempo. Ele não está relembrando. Você está. Ele não está marcando pontos. Você está. Ele não está mantendo um registro dos seus fracassos. Você está. A cruz não foi desconto. Foi pagamento total. Completo. Definitivo. Aceite a liberdade que Cristo já conquistou. Você está perdoado. Ponto final.",
+          "versiculo": "Salmos 103:12",
+          "promessa": "Quanto dista o Oriente do Ocidente, assim afasta de nós as nossas transgressões."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Deus está fazendo algo em você que ninguém vê. Nos bastidores da sua vida. No invisível do seu coração. Ele está removendo raízes antigas, plantando sementes novas, preparando terreno fértil. Você não vê porque está debaixo da terra. Mas em breve, brotará. E todos verão o que Deus estava fazendo enquanto ninguém olhava. Confie no processo invisível.",
+          "versiculo": "Marcos 4:26-27",
+          "promessa": "O reino de Deus é como um homem que lança a semente; a semente brota e cresce, sem que ele saiba como."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Hoje você vai enfrentar uma escolha entre o confortável e o obediente. Entre o familiar e o fé. Entre o seguro e o sobrenatural. Lembre-se: Deus raramente te chama para o que é fácil. Mas sempre te capacita para o que é necessário. Coragem não é ausência de medo. É obediência apesar do medo. Dê o passo. Ele te segura.",
+          "versiculo": "Josué 1:9",
+          "promessa": "Não te mandei Eu? Sê forte e corajoso; não temas, porque o Senhor teu Deus é contigo."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Você está esperando que a dor passe para começar a viver de novo. Mas e se Deus está convidando você para viver através da dor? Para descobrir que alegria e tristeza podem coexistir? Que esperança pode brotar em solo árido? Que vida pode florescer mesmo quando você ainda está sangrando? Você não precisa estar curado para começar. Precisa apenas estar disponível.",
+          "versiculo": "2 Coríntios 4:8-9",
+          "promessa": "Atribulados, mas não angustiados; perplexos, mas não desanimados; perseguidos, mas não desamparados; abatidos, mas não destruídos."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Deus não desperdiça suas lágrimas. Cada uma que rolou foi vista. Cada soluço foi ouvido. Cada dor foi sentida por Ele. Você não chora sozinho. Ele está ali, bem perto, recolhendo cada lágrima como se fosse diamante. Porque para Ele, é. Sua dor importa. Seu coração partido importa. Você importa. E um dia, Ele enxugará pessoalmente cada lágrima.",
+          "versiculo": "Salmos 56:8",
+          "promessa": "Recolhe as minhas lágrimas no Teu odre; não estão elas no Teu livro?"
+        },
+        {
+          "dia": 8,
+          "mensagem": "Você está orando por mudança nas circunstâncias quando Deus quer transformar você no meio delas. Porque caráter forjado no fogo vale mais que conforto garantido no jardim. Ele poderia tirar você da fornalha. Mas prefere entrar na fornalha com você. E usar o calor para moldar você à imagem de Cristo. O fogo não te destrói quando o Oleiro está presente.",
+          "versiculo": "Daniel 3:25",
+          "promessa": "Eis que vejo quatro homens soltos, andando no meio do fogo, e nenhum dano sofrem; e o aspecto do quarto é semelhante ao Filho de Deus."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Hoje, pratique gratidão pelos \"quases\". Quase aconteceu aquilo. Quase você tomou aquela decisão. Quase você entrou naquele relacionamento. Mas Deus fechou a porta. Te puxou de volta. Te redirecionou. Nem sempre você vê, mas Ele está constantemente te protegendo de caminhos que pareciam bons mas levariam à destruição. Agradeça pelos \"quases\" que não aconteceram.",
+          "versiculo": "Salmos 37:23-24",
+          "promessa": "Os passos do homem são confirmados pelo Senhor; ainda que caia, não ficará prostrado, porque o Senhor o segura pela mão."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Você tem medo de que Deus te peça mais do que você pode dar. Mais sacrifício. Mais fé. Mais entrega. Mas Ele nunca pede o que Ele não capacita. Se Ele chamou, Ele equipa. Se Ele abriu a porta, Ele dá força para atravessar. Se Ele plantou o sonho, Ele provê os recursos. Sua parte é disponibilidade. A parte dEle é possibilidade. Confie nEle.",
+          "versiculo": "1 Tessalonicenses 5:24",
+          "promessa": "Fiel é o que vos chama, o qual também o fará."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Deus está escrevendo uma história com sua vida que vai glorificá-Lo e encorajar multidões. Você só vê o rascunho. Ele vê a obra-prima. Você vê os erros de digitação. Ele vê a narrativa redentora. Você vê as páginas manchadas. Ele vê o bestseller eterno. Confie no Autor. Mesmo quando a trama não faz sentido. Especialmente quando não faz sentido.",
+          "versiculo": "Efésios 2:10",
+          "promessa": "Somos feitura dEle, criados em Cristo Jesus para boas obras, as quais Deus preparou de antemão."
+        },
+        {
+          "dia": 12,
+          "mensagem": "Hoje você vai enfrentar tentação de desistir. De largar tudo. De parar no meio do caminho. Mas lembre-se de quanto você já caminhou. Olhe para trás. Veja os vales que você atravessou. As tempestades que você sobreviveu. Os gigantes que você derrotou. Você já passou por coisas piores. E Deus foi fiel então. Será fiel agora. Continue. Não pare tão perto do milagre.",
+          "versiculo": "Hebreus 10:35-36",
+          "promessa": "Não abandoneis a vossa confiança; ela tem grande galardão. Necessitais de perseverança."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Você está vivendo com mentalidade de escassez quando serve o Deus da abundância. Ele não está medindo quanto pode te dar. Está esperando ver quanto você pode receber. Sua generosidade não tem limite. Sua provisão não acaba. Sua graça não se esgota. Pare de viver com medo de faltar. Quem tem Deus como Pastor nunca fica em falta. Nunca.",
+          "versiculo": "Filipenses 4:19",
+          "promessa": "O meu Deus suprirá todas as vossas necessidades segundo as Suas riquezas na glória em Cristo Jesus."
+        },
+        {
+          "dia": 14,
+          "mensagem": "Deus vê você. Naquele lugar onde você se sente invisível. Naquele esforço que ninguém reconhece. Naquele sacrifício que ninguém aplaude. Ele vê. E está guardando registro. Nada do que você faz em amor se perde. Nenhum ato de bondade é desperdiçado. Nenhuma oração silenciosa passa despercebida. Continue fazendo o bem. Mesmo quando ninguém nota. Deus nota. E isso basta.",
+          "versiculo": "Mateus 6:4",
+          "promessa": "Teu Pai, que vê em secreto, te recompensará publicamente."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Hoje, solte o controle. Aquela situação que você está tentando forçar. Aquele relacionamento que você está tentando consertar. Aquele resultado que você está tentando manipular. Solte. Você está se desgastando tentando controlar o incontrolável. E perdendo a paz no processo. Entrega não é desistência. É sabedoria. É reconhecer que Deus é melhor no controle do que você. Sempre foi.",
+          "versiculo": "Provérbios 3:5-6",
+          "promessa": "Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento; reconhece-O em todos os teus caminhos, e Ele endireitará as tuas veredas."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Você está esperando o \"momento certo\" para obedecer. Para perdoar. Para dar aquele passo de fé. Para ter aquela conversa difícil. Mas o momento certo é agora. Obediência atrasada é desobediência disfarçada. Deus não está pedindo que você se sinta pronto. Está pedindo que você confie nEle. E aja. O sentimento vem depois da obediência, não antes.",
+          "versiculo": "Tiago 4:17",
+          "promessa": "Aquele que sabe fazer o bem e não o faz, comete pecado."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Deus está usando sua história - toda ela - para Sua glória. Não apenas os capítulos bonitos. Também os feios. Não apenas os sucessos. Também os fracassos. Não apenas as vitórias. Também as derrotas. Ele está tecendo tudo numa tapeçaria de redenção que vai inspirar gerações. Sua bagunça é Sua mensagem. Sua provação é Seu testemunho. Sua dor é Seu propósito.",
+          "versiculo": "Romanos 8:28",
+          "promessa": "Sabemos que todas as coisas cooperam para o bem daqueles que amam a Deus."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Você não precisa impressionar a Deus. Não precisa performar. Não precisa provar nada. Ele já está impressionado - com Jesus, não com você. E Jesus te cobre completamente. Sua aceitação não depende do seu desempenho. Depende da obra dEle. Terminada. Completa. Suficiente. Para sempre. Você pode parar de tentar. E começar a descansar.",
+          "versiculo": "Colossenses 2:10",
+          "promessa": "Estais aperfeiçoados nEle, que é a cabeça de todo principado e potestade."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Hoje, seja intencional com sua presença. Não apenas fisicamente presente, mas emocionalmente disponível. Aquela conversa com seu filho? Desligue o celular. Aquele tempo com seu cônjuge? Esteja totalmente ali. Aquele momento com Deus? Silencie as distrações. Presença é o maior presente que você pode dar. E o mundo está desesperado por ela.",
+          "versiculo": "Eclesiastes 3:1",
+          "promessa": "Tudo tem o seu tempo determinado, e há tempo para todo propósito debaixo do céu."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Deus não está surpreso com sua luta. Ele sabia que junho seria difícil antes de junho começar. E já providenciou graça suficiente. Não para o mês inteiro agora. Para este momento. Para esta respiração. Para este segundo. Sua graça é como o maná - fresca toda manhã. Suficiente para hoje. Você não precisa de graça para amanhã hoje. Precisa de graça para agora. E ela está aqui.",
+          "versiculo": "2 Coríntios 12:9",
+          "promessa": "A Minha graça te basta, porque o Meu poder se aperfeiçoa na fraqueza."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Você está orando pela porta certa se abrir. Mas e se Deus está fechando portas para te proteger? Nem toda porta fechada é rejeição. Às vezes é redirecionamento divino. Às vezes é proteção celestial. Às vezes é Deus dizendo \"tenho algo melhor\". Confie que Ele vê o que você não vê. E fecha o que precisa ser fechado. E abre o que precisa ser aberto.",
+          "versiculo": "Apocalipse 3:7",
+          "promessa": "Isto diz o Santo, o Verdadeiro, Aquele que tem a chave de Davi; o que abre, e ninguém fecha; e fecha, e ninguém abre."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Hoje, perdoe antes que doa demais. Aquela pessoa que te feriu. Aquele que te traiu. Aquele que te abandonou. Não porque eles merecem. Mas porque você merece liberdade. Perdão não é dizer \"está tudo bem\" quando não está. É dizer \"eu solto você porque eu quero ser livre\". Amargura é veneno que você bebe esperando que o outro morra. Solte. E viva.",
+          "versiculo": "Efésios 4:31-32",
+          "promessa": "Toda amargura seja tirada; antes, sede uns para com os outros benignos, compassivos, perdoando-vos uns aos outros, como também Deus vos perdoou em Cristo."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Deus está fazendo algo novo em você, mas você continua voltando ao velho. Velhos padrões. Velhas mentalidades. Velhos medos. Velhas estratégias. Ele está chamando você para frente. Para o novo. Para o mais. Solte o que ficou para trás. Não por ingratidão. Mas por expectativa. Porque o melhor de Deus sempre está à frente, nunca atrás.",
+          "versiculo": "Isaías 43:18-19",
+          "promessa": "Não vos lembreis das coisas passadas, nem considereis as antigas. Eis que farei uma coisa nova; agora está brotando."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Você está tão focado no que falta que não vê o que tem. Pare. Olhe ao redor. Você tem mais do que milhões. Ar nos pulmões. Teto sobre a cabeça. Comida na mesa. Pessoas que te amam. E acima de tudo, tem Deus. Que é mais do que suficiente. Contentamento não é ter tudo que você quer. É reconhecer e agradecer por tudo que você tem.",
+          "versiculo": "1 Timóteo 6:6-7",
+          "promessa": "Grande fonte de lucro é a piedade com contentamento."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Hoje, seja luz num lugar escuro. Esperança num coração desesperado. Amor numa vida solitária. Você foi chamado para ser diferença. Para ser sal. Para ser luz. Não escondido. Não diluído. Mas brilhando. Intensamente. Intencionalmente. O mundo está escuro o suficiente. Seja a luz que alguém precisa para encontrar o caminho de volta para casa.",
+          "versiculo": "Mateus 5:14-16",
+          "promessa": "Vós sois a luz do mundo. Assim resplandeça a vossa luz diante dos homens."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Deus está transformando sua bagunça em mensagem. Sua provação em testemunho. Sua dor em propósito. Nada do que você passou será desperdiçado. Aquela luta que quase te destruiu? Vai curar multidões. Aquela ferida que ainda dói? Vai trazer esperança para corações quebrados. Sua história não é só sua. É para a glória dEle e o bem de muitos.",
+          "versiculo": "2 Coríntios 1:3-4",
+          "promessa": "Deus nos consola em toda a nossa tribulação, para que possamos consolar os que estiverem em alguma tribulação."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Você não está atrasado. Não perdeu sua janela. Não desperdiçou muito tempo. Deus não tem pressa, mas nunca se atrasa. Sara teve filho aos 90. Moisés começou aos 80. Calebe conquistou aos 85. O relógio de Deus não é o seu. Mas é sempre perfeito. Nunca é tarde quando Deus está no controle. Seu melhor ainda está por vir.",
+          "versiculo": "Eclesiastes 3:11",
+          "promessa": "Tudo fez Deus formoso em seu tempo."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Hoje, escolha adoração sobre reclamação. Louvor sobre lamento. Gratidão sobre murmuração. Porque adoração muda atmosfera. Louvor silencia o inimigo. Gratidão atrai a presença de Deus. Você pode reclamar do que falta ou agradecer pelo que tem. Sua escolha determina sua perspectiva. E sua perspectiva determina sua experiência. Escolha sabiamente.",
+          "versiculo": "Salmos 22:3",
+          "promessa": "Tu, porém, és santo, entronizado entre os louvores de Israel."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Deus está preparando você para algo maior do que você imagina. Por isso o treinamento é tão intenso. A espera é tão longa. A pressão é tão grande. Ele não te confiaria grande responsabilidade sem adequada preparação. O que você está passando não é punição. É preparação. Para impacto. Para influência. Para glória que ainda será revelada. Continue. Você está quase pronto.",
+          "versiculo": "1 Pedro 5:10",
+          "promessa": "O Deus de toda a graça, que vos chamou à Sua eterna glória em Cristo, depois de haveres sofrido por um pouco, Ele mesmo vos há de aperfeiçoar, firmar, fortificar e fundamentar."
+        },
+        {
+          "dia": 30,
+          "mensagem": "Você chegou ao fim de junho. Metade do ano se foi. Alguns sonhos ainda não se realizaram. Algumas orações ainda não foram respondidas. Algumas dores ainda não passaram. Mas você está aqui. De pé. Respirando. Confiando. E isso não é pouca coisa. É vitória. Deus foi fiel por 180 dias. E será fiel pelos próximos 185. Termine o ano bem. Não desista agora.",
+          "versiculo": "Filipenses 1:6",
+          "promessa": "Aquele que começou boa obra em vós há de completá-la até ao dia de Cristo Jesus."
+        }
+      ]
+    },
+    "07": {
+      "numero": "07",
+      "nome": "Julho",
+      "total_dias": 31,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Você está na metade do ano. Talvez olhe para trás e veja sonhos não realizados, promessas que parecem atrasadas. Mas Deus não mede sucesso como você mede. Para Ele, cada manhã que você escolheu confiar, cada vez que se levantou quando queria desistir - isso é vitória. Você não está atrasado. Está exatamente onde precisa estar para o que vem a seguir.",
+          "versiculo": "Isaías 43:18-19",
+          "promessa": "Eis que faço uma coisa nova; agora está brotando."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Existe uma diferença entre estar sozinho e sentir-se solitário. Você pode estar cercado de pessoas e ainda assim sentir um vazio. Mas há Alguém que conhece cada canto escondido do seu coração - aquelas partes que você nem mostra para si mesmo. Ele está ali. Na solidão, no silêncio, na madrugada inquieta. Você nunca está tão sozinho quanto pensa.",
+          "versiculo": "Deuteronômio 31:6",
+          "promessa": "Ele nunca o deixará nem o abandonará."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Hoje você vai enfrentar algo que te assusta. Uma conversa difícil, uma decisão importante, um medo antigo. Lembre-se: coragem não é a ausência de tremor nas mãos. É dar o passo mesmo com as pernas bambas. Deus não prometeu que seria fácil. Prometeu que estaria com você. E isso muda tudo.",
+          "versiculo": "Isaías 41:10",
+          "promessa": "Não temas, porque Eu sou contigo."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Você carrega culpa por algo que Deus já jogou no fundo do mar. Por que você continua mergulhando para buscar? A cruz não foi um desconto - foi pagamento completo. Aquilo que te envergonha já foi coberto pelo sangue que lava mais branco que neve. Pare de se punir pelo que já foi perdoado. Aceite a liberdade que já é sua.",
+          "versiculo": "Miquéias 7:19",
+          "promessa": "Ele lançará todos os nossos pecados nas profundezas do mar."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Às vezes, Deus responde suas orações de formas que você não reconhece como resposta. Você pediu libertação, Ele está ensinando paciência. Você pediu provisão, Ele está revelando Sua suficiência. A resposta pode não parecer como você imaginou, mas confie: Ele sabe o que você precisa mais do que você mesmo sabe.",
+          "versiculo": "Isaías 55:8-9",
+          "promessa": "Meus pensamentos são mais altos que os seus pensamentos."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Você tem medo de decepcionar a Deus? Ele já viu seu pior dia e não foi embora. Ele conhece a versão de você que ninguém mais conhece - e escolhe ficar. Não por obrigação, mas por amor. Um amor tão escandaloso que decidiu morrer por você antes mesmo de você nascer. Isso não é compromisso. É paixão eterna.",
+          "versiculo": "Jeremias 31:3",
+          "promessa": "Com amor eterno Eu te amei."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Hoje, pratique a presença. Não apenas corra para Deus quando tudo desmorona. Convide-O para o comum: a xícara de café, o trajeto para o trabalho, a conversa com o filho. Ele não quer apenas seus momentos de crise - quer seus momentos comuns. É ali, no ordinário, que o extraordinário acontece.",
+          "versiculo": "1 Tessalonicenses 5:16-18",
+          "promessa": "Orem continuamente; deem graças em todas as circunstâncias."
+        },
+        {
+          "dia": 8,
+          "mensagem": "Sua ferida não foi desperdício. Aquela traição, aquela perda, aquele vale escuro - Deus está tecendo tudo numa tapeçaria de redenção. Você ainda não vê o desenho completo, mas Ele vê. E um dia, você olhará para trás e verá como até as linhas tortas foram usadas para criar algo belo. Continue confiando no Tecelão.",
+          "versiculo": "Gênesis 50:20",
+          "promessa": "Vocês planejaram o mal; Deus o tornou em bem."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Pare de comparar sua jornada com a timeline de Deus na vida de outro. Abraão esperou 25 anos. José passou 13 anos da promessa à realização. Davi foi ungido rei aos 15 e coroado aos 30. O tempo de Deus não é falha - é preparação. Ele está te preparando para carregar o que você está pedindo. Confie no processo.",
+          "versiculo": "Habacuque 2:3",
+          "promessa": "A visão ainda está para o tempo determinado; espere por ela, porque certamente virá."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Você acordou hoje e é um milagre. Seu coração bateu sem que você pedisse. Seus pulmões respiraram sem comando consciente. O sol nasceu sem consultar sua opinião. Antes de começar a reclamar do que falta, pare. Agradeça pelo que já está funcionando. Gratidão muda a atmosfera do seu coração.",
+          "versiculo": "Salmos 118:24",
+          "promessa": "Este é o dia que o Senhor fez; regozijemo-nos e alegremo-nos nele."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Deus não está intimidado pela sua bagunça. Ele não recua quando você mostra as partes feias, quebradas, envergonhadas. Ele se aproxima. Como um pai que abraça o filho que vem coberto de lama. Sua honestidade não O afasta - sua religiosidade sim. Venha como está. Sujo, cansado, imperfeito. Venha.",
+          "versiculo": "Lucas 15:20",
+          "promessa": "Quando ainda estava longe, seu pai o viu e, cheio de compaixão, correu ao seu encontro."
+        },
+        {
+          "dia": 12,
+          "mensagem": "Aquela pessoa que te feriu? Deus viu. Você não precisa vingar-se, provar seu ponto ou esperar que reconheçam o erro. Justiça pertence ao Senhor. Sua parte é perdoar - não porque eles merecem, mas porque você merece liberdade. Amargura é uma prisão onde você é o único prisioneiro. Solte. E seja livre.",
+          "versiculo": "Romanos 12:19",
+          "promessa": "Minha é a vingança; Eu recompensarei, diz o Senhor."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Você está orando pela porta certa se abrir. Mas e se Deus está fechando portas para proteger você de um caminho que parecia bom mas levaria à destruição? Nem toda porta fechada é rejeição. Às vezes é redirecionamento. Confie que Ele vê o que você não vê. E agradeça pelas portas que Ele fecha.",
+          "versiculo": "Apocalipse 3:7",
+          "promessa": "O que Ele abre, ninguém fecha; o que Ele fecha, ninguém abre."
+        },
+        {
+          "dia": 14,
+          "mensagem": "Hoje, alguém precisa da sua história. Não da versão editada onde você é o herói. Da versão real onde você era quebrado e Deus foi fiel. Sua vulnerabilidade pode ser a ponte que alguém precisa para acreditar que também há esperança. Não esconda suas cicatrizes. Elas são seu testemunho de que Deus cura.",
+          "versiculo": "Apocalipse 12:11",
+          "promessa": "Eles o venceram pelo sangue do Cordeiro e pela palavra do testemunho."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Existe alegria escondida no meio da sua rotina cansativa. Naquela risada inesperada, no abraço apertado, no pôr do sol que você quase não notou. Deus está semeando pequenos milagres no seu dia comum. Você só precisa parar de correr tempo suficiente para percebê-los. Abra os olhos. A vida está acontecendo agora.",
+          "versiculo": "Salmos 16:11",
+          "promessa": "Na Tua presença há plenitude de alegria."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Você não precisa entender por que está passando por isso. Às vezes, Deus não explica - Ele sustenta. Não dá respostas - dá presença. E no final, você descobre que ter a mão dEle era mais importante do que ter todas as explicações. Fé é confiar no caráter de Deus quando você não consegue ver Seu propósito.",
+          "versiculo": "Isaías 55:9",
+          "promessa": "Assim como os céus são mais altos que a terra, assim são Meus caminhos mais altos."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Sua oração não está atrasada. Deus não esqueceu. Ele está trabalhando em camadas que você não vê - alinhando pessoas, preparando corações, removendo obstáculos. O que parece silêncio é, na verdade, trabalho nos bastidores. Continue orando. Continue confiando. A resposta já está a caminho, mesmo que você ainda não a veja.",
+          "versiculo": "Daniel 10:12",
+          "promessa": "Desde o primeiro dia em que você orou, suas palavras foram ouvidas."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Você é mais forte do que pensa. Não por causa de quem você é, mas por causa de Quem está em você. A mesma força que ressuscitou Cristo dentre os mortos habita em você. Aquilo que parece impossível? Não para Ele. Aquele gigante que te amedronta? Já está derrotado. Levante-se. Você carrega o poder de Deus.",
+          "versiculo": "Efésios 3:20",
+          "promessa": "Ele pode fazer infinitamente mais do que pedimos ou pensamos."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Hoje você vai falhar em alguma coisa. Vai perder a paciência, ceder à tentação, ficar aquém do ideal. E sabe o que Deus vai fazer? Continuar te amando. O amor dEle não flutua com seu desempenho. Não diminui quando você tropeça. É constante, inalterável, eterno. Você não pode fazer nada para merecê-lo. E não pode fazer nada para perdê-lo.",
+          "versiculo": "Romanos 8:38-39",
+          "promessa": "Nada poderá nos separar do amor de Deus."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Deus está mais interessado em transformar seu caráter do que em confortar sua vida. Por isso, às vezes Ele permite pressão - não para te esmagar, mas para te refinar. O diamante precisa de pressão. O ouro precisa de fogo. E você? Precisa de provações que revelem a glória escondida dentro de você. Confie no processo.",
+          "versiculo": "1 Pedro 1:6-7",
+          "promessa": "Sua fé, mais preciosa que ouro, está sendo provada para resultar em glória."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Você está cansado de tentar e falhar? Bem-vindo ao lugar onde a graça começa a fazer sentido. Deus não está procurando pessoas que conseguem sozinhas. Está procurando pessoas que reconhecem que não conseguem - e se rendem a Ele. Sua fraqueza não é problema. É o convite para Sua força se manifestar. Pare de tentar. Comece a confiar.",
+          "versiculo": "2 Coríntios 12:9",
+          "promessa": "Minha graça é suficiente; Meu poder se aperfeiçoa na fraqueza."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Hoje, seja intencional. Não viva no automático. Aquele colega irritante? Escolha gentileza. Aquela tarefa entediante? Faça com excelência. Aquele momento de frustração? Respire antes de reagir. Pequenas escolhas intencionais constroem uma vida extraordinária. Deus está convidando você para viver desperto, presente, consciente. Aceite o convite.",
+          "versiculo": "Colossenses 3:23",
+          "promessa": "Tudo o que fizerem, façam de coração, como para o Senhor."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Deus não se impressiona com sua máscara religiosa. Ele prefere sua confusão honesta à sua perfeição fingida. Pode parar de tentar parecer que está tudo bem quando está desmoronando. Ele já sabe. E quer entrar exatamente ali, na bagunça, no caos, na dúvida. Autenticidade é a porta pela qual a graça entra.",
+          "versiculo": "Salmos 51:17",
+          "promessa": "Coração quebrantado e contrito, ó Deus, não desprezarás."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Você está esperando um grande momento para começar a viver sua fé de verdade. Mas Deus está convidando você para os pequenos momentos - agora. Aquela decisão de não fofocar. Aquele ato de generosidade que ninguém vai ver. Aquela escolha de perdoar quando ninguém saberia se você guardasse rancor. Fé genuína vive nos detalhes invisíveis.",
+          "versiculo": "Lucas 16:10",
+          "promessa": "Quem é fiel no pouco, também é fiel no muito."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Sua vida não é uma série de coincidências aleatórias. É uma narrativa cuidadosamente orquestrada pelo Autor da Vida. Aquele \"acaso\" que mudou tudo? Planejado. Aquele encontro \"casual\"? Divino. Aquela porta que se fechou no último segundo? Proteção. Você está exatamente onde deveria estar. E o próximo capítulo já está escrito.",
+          "versiculo": "Salmos 139:16",
+          "promessa": "Todos os dias ordenados para mim foram escritos em Teu livro."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Deus não vai te dar o que você quer até ter certeza de que você está pronto para carregar. Não é crueldade - é sabedoria. Ele vê o que o cumprimento prematuro faria com você. A espera não é punição. É preparação. Enquanto você espera pela promessa, Ele está preparando você para a promessa. Confie no timing dEle.",
+          "versiculo": "Salmos 37:4",
+          "promessa": "Deleite-se no Senhor, e Ele lhe concederá o desejo do seu coração."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Você está exausto de carregar o que nunca foi seu para carregar. Aquela responsabilidade pelos sentimentos de todos. Aquela necessidade de consertar tudo. Aquele peso de ser perfeito. Deus nunca pediu isso. Ele pediu que você confiasse, obedecesse e descansasse nEle. O resto? É com Ele. Solte. Respire. Descanse.",
+          "versiculo": "Mateus 11:28",
+          "promessa": "Venham a Mim, todos os cansados, e Eu lhes darei descanso."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Sua voz importa. Aquela palavra de encorajamento que você hesita em dizer pode ser exatamente o que alguém precisa ouvir hoje. Você não precisa ser eloquente ou ter todas as respostas. Precisa apenas ser disponível. Deus usa vasos dispostos, não vasos perfeitos. Hoje, seja a boca de Deus para alguém que precisa ouvir que não está sozinho.",
+          "versiculo": "Provérbios 25:11",
+          "promessa": "Palavra dita a seu tempo é como maçãs de ouro em salvas de prata."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Deus está fazendo algo novo em você, mas você continua olhando para trás. Deixe o passado onde ele pertence - atrás de você. Aqueles erros? Lições. Aquelas perdas? Redirecionamentos. Aquelas decepções? Preparação. Tudo está cooperando para o bem. Vire a página. O melhor capítulo ainda está por vir.",
+          "versiculo": "Filipenses 3:13-14",
+          "promessa": "Esquecendo o que fica atrás, avanço para o que está adiante."
+        },
+        {
+          "dia": 30,
+          "mensagem": "Você não é definido pelo seu pior momento. Não é a soma dos seus erros. Não é aquela decisão terrível que tomou anos atrás. Você é quem Deus diz que você é: amado, escolhido, redimido, perdoado, valoroso. E nada que você fez ou deixou de fazer pode mudar essa verdade. Acredite nEle, não na sua vergonha.",
+          "versiculo": "Isaías 43:1",
+          "promessa": "Eu te chamei pelo nome; tu és Meu."
+        },
+        {
+          "dia": 31,
+          "mensagem": "Mais um mês se foi. Alguns dias foram vitórias, outros foram batalhas. Mas você chegou aqui. E isso não é pouca coisa. Deus esteve com você em cada respiração, cada lágrima, cada sorriso. Ele não vai parar agora. O que Ele começou, Ele vai completar. Agradeça pelo que passou. Confie no que vem. E descanse: Ele é fiel.",
+          "versiculo": "Filipenses 1:6",
+          "promessa": "Aquele que começou boa obra em você a completará."
+        }
+      ]
+    },
+    "08": {
+      "numero": "08",
+      "nome": "Agosto",
+      "total_dias": 31,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Bem-vindo a um novo mês. Um novo começo. Deus não reciclou as misericórdias de julho - Ele criou novas para agosto. Frescas. Personalizadas. Para você. O que você deixou inacabado? Ele não desistiu. O que você perdeu? Ele pode restaurar. O que você teme? Ele já venceu. Este mês é uma página em branco. Escreva com coragem.",
+          "versiculo": "Lamentações 3:22-23",
+          "promessa": "As misericórdias do Senhor são novas cada manhã."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Você está esperando condições perfeitas para obedecer. Mas fé não espera pela ausência de medo - age apesar dele. Não espera por clareza total - confia na próxima instrução. Pedro só andou sobre as águas porque saiu do barco. Noé construiu a arca antes da chuva. Abraão partiu sem GPS. Dê o primeiro passo. Deus encontra você no caminho.",
+          "versiculo": "Hebreus 11:8",
+          "promessa": "Pela fé Abraão obedeceu, sem saber para onde ia."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Deus vê você. Naquele lugar onde você se sente invisível, esquecido, não valorizado - Ele vê. Ele conhece o esforço que ninguém nota. O sacrifício que ninguém aplaude. A batalha que você luta em silêncio. Nada escapa aos Seus olhos. E um dia, Ele vai tornar visível o que foi feito em secreto. Continue. Você está sendo visto.",
+          "versiculo": "Salmos 139:1-3",
+          "promessa": "Tu me sondas e me conheces; sabes quando me sento e quando me levanto."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Sua paz não pode depender de circunstâncias controladas. Porque você não controla as circunstâncias. Mas pode escolher em quem confiar no meio delas. Paz não é ausência de tempestade - é a presença de Deus no barco com você. E Ele está ali. Mesmo quando as ondas parecem maiores do que Ele. Especialmente quando parecem.",
+          "versiculo": "Marcos 4:39",
+          "promessa": "Ele acalmou a tempestade e disse: \"Aquieta-te!\""
+        },
+        {
+          "dia": 5,
+          "mensagem": "Você já parou para agradecer pelo que não aconteceu? Pelas portas que Deus fechou, impedindo você de entrar em relacionamentos tóxicos? Pelos planos que falharam, livrando você de caminhos destrutivos? Pelos atrasos que salvaram sua vida? Às vezes, a maior bênção de Deus é o \"não\" que você não entendeu na época.",
+          "versiculo": "Salmos 84:11",
+          "promessa": "Nenhum bem sonega aos que andam retamente."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Deus está mais interessado na sua intimidade com Ele do que na sua atividade para Ele. Você pode servir, trabalhar, produzir - e ainda assim viver com um coração distante. Hoje, antes de fazer qualquer coisa, apenas seja. Sente-se com Ele. Respire em Sua presença. Deixe-O amar você antes de você fazer qualquer coisa por Ele.",
+          "versiculo": "Lucas 10:41-42",
+          "promessa": "Apenas uma coisa é necessária; Maria escolheu a boa parte."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Você carrega cicatrizes que contam uma história de sobrevivência. Não são marcas de fraqueza - são medalhas de resistência. Aquilo que deveria ter te destruído? Você está aqui. Aquela noite que parecia interminável? Passou. Aquele vale que parecia sem saída? Você atravessou. Suas cicatrizes não são vergonha. São testemunho da fidelidade de Deus.",
+          "versiculo": "Salmos 34:17-18",
+          "promessa": "O Senhor está perto dos quebrantados de coração."
+        },
+        {
+          "dia": 8,
+          "mensagem": "Hoje, alguém vai te decepcionar. Alguém vai falhar com você. Porque pessoas são humanas, quebradas, imperfeitas - como você. Perdoe antes que doa demais. Solte antes que vire amargura. Não por causa deles, mas por causa de você. Lembre-se: você também precisa de graça. E recebe dela todos os dias. Distribua o que você recebe.",
+          "versiculo": "Mateus 6:14-15",
+          "promessa": "Se perdoarem, seu Pai celestial também os perdoará."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Você está orando por um milagre, mas Deus está operando uma transformação. Porque o milagre resolve o problema de hoje; a transformação muda quem você é para sempre. Ele poderia simplesmente mudar sua situação. Mas prefere mudar você primeiro. Porque quando você muda, tudo muda. Confie no processo, não apenas no produto.",
+          "versiculo": "2 Coríntios 3:18",
+          "promessa": "Somos transformados de glória em glória na mesma imagem."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Deus não se assusta com suas perguntas honestas. Ele prefere sua dúvida genuína à sua certeza fingida. Jó questionou. Davi gritou. Jeremias reclamou. E Deus não os rejeitou. Ele se aproximou. Pode ser honesto com Ele. Pode trazer suas confusões, seus \"por quês\", seus \"até quando\". Ele é grande o suficiente para suas perguntas mais difíceis.",
+          "versiculo": "Salmos 13:1-2",
+          "promessa": "Até quando, Senhor? Te esquecerás de mim para sempre?"
+        },
+        {
+          "dia": 11,
+          "mensagem": "Você não precisa ser forte o tempo todo. Há dias em que está tudo bem não estar bem. Em que chorar não é fraqueza - é humanidade. Em que admitir \"estou lutando\" não é falha - é honestidade. Deus não está procurando super-heróis. Está procurando filhos que confiam nEle, especialmente quando não conseguem mais fingir que estão bem.",
+          "versiculo": "Salmos 56:8",
+          "promessa": "Recolhes minhas lágrimas em Teu odre; não estão elas em Teu livro?"
+        },
+        {
+          "dia": 12,
+          "mensagem": "Pare de esperar pela \"grande oportunidade\" para começar a fazer diferença. Deus está convidando você para o aqui e agora. Aquele sorriso para o caixa estressado. Aquela ligação para o amigo solitário. Aquele perdão que ninguém está pedindo. Pequenos atos de amor são grandes no céu. Fidelidade no invisível prepara você para o visível.",
+          "versiculo": "Mateus 25:23",
+          "promessa": "Muito bem, servo bom e fiel! No pouco foste fiel, sobre muito te colocarei."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Sua jornada não vai parecer com a de ninguém. E está tudo bem. Deus é criativo demais para usar o mesmo método com todo mundo. O que funcionou para eles pode não funcionar para você. O caminho deles pode não ser o seu. Pare de copiar. Comece a confiar que Deus sabe exatamente o que está fazendo com sua história única.",
+          "versiculo": "João 21:22",
+          "promessa": "Que tens tu com isso? Quanto a ti, segue-me."
+        },
+        {
+          "dia": 14,
+          "mensagem": "Deus está escrevendo uma história maior do que você consegue ver. Você vê apenas um capítulo confuso. Ele vê o livro inteiro. Você vê apenas a dor de hoje. Ele vê a redenção de amanhã. Você vê apenas o nó. Ele vê a tapeçaria completa. Confie no Autor. Ele nunca desperdiça uma página, nem mesmo as manchadas de lágrimas.",
+          "versiculo": "Romanos 8:28",
+          "promessa": "Sabemos que Deus age em todas as coisas para o bem."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Você está tão ocupado tentando ser quem todos esperam que seja que esqueceu de ser quem Deus criou você para ser. Pare. Respire. Tire a máscara. Deus não está impressionado com suas performances. Ele se deleita em sua autenticidade. Você foi criado original. Não morra como cópia. Seja gloriosamente, corajosamente você.",
+          "versiculo": "Salmos 139:14",
+          "promessa": "Eu te louvarei, porque de um modo terrível e tão maravilhoso fui formado."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Hoje você vai enfrentar uma escolha entre o fácil e o certo. Entre o confortável e o obediente. Entre o que todos fazem e o que Deus pede. Lembre-se: o caminho estreito sempre foi solitário. Mas nunca vazio. Jesus está lá. E no final, a multidão não importará. Só importará se você ouviu \"muito bem, servo bom e fiel\".",
+          "versiculo": "Mateus 7:13-14",
+          "promessa": "Estreita é a porta e apertado o caminho que leva à vida."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Deus não está decepcionado com você. Pare de projetar nEle a voz crítica que você ouve na sua cabeça. Essa voz não é dEle. Ele não está contando seus erros. Está celebrando cada vez que você se levanta. Não está marcando suas falhas. Está apagando-as com Seu sangue. Você não precisa ser perfeito. Precisa apenas ser sincero.",
+          "versiculo": "1 João 3:20",
+          "promessa": "Mesmo que o nosso coração nos condene, Deus é maior que o nosso coração."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Você está esperando sentir-se \"merecedor\" para se aproximar de Deus. Pode esperar para sempre. Ninguém merece. Esse é exatamente o ponto. Graça não é sobre merecer - é sobre ser amado apesar de não merecer. A cruz não é plano B. É o plano desde sempre. Venha como está. Quebrado, bagunçado, indigno. Venha.",
+          "versiculo": "Efésios 2:8-9",
+          "promessa": "Pela graça sois salvos, mediante a fé; isto não vem de vós."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Sua obediência hoje está plantando sementes para a colheita de amanhã. Você pode não ver os frutos agora. Mas Deus vê. Cada \"sim\" que você dá, cada tentação que você resiste, cada verdade que você escolhe - tudo está sendo registrado. Continue semeando. A colheita vem. E será abundante além do que você imagina.",
+          "versiculo": "Gálatas 6:9",
+          "promessa": "Não nos cansemos de fazer o bem; a seu tempo colheremos."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Deus está mais perto do que você pensa. Não lá em cima, distante, desinteressado. Aqui. Agora. Nesta respiração. Neste momento. No meio da sua bagunça. Ele não está esperando você \"se arrumar\" para se aproximar. Ele está aqui, com você, na bagunça. Porque é exatamente aí que Ele faz Seu melhor trabalho.",
+          "versiculo": "Atos 17:27-28",
+          "promessa": "Ele não está longe de cada um de nós."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Você tem uma escolha hoje: viver pela opinião deles ou pela verdade dEle. Agradar as pessoas é uma prisão sem fim. Sempre haverá alguém insatisfeito. Mas viver para a audiência de Um? Isso é liberdade. Busque Sua aprovação. O resto? É apenas ruído. E ruído não merece ditar sua paz.",
+          "versiculo": "Gálatas 1:10",
+          "promessa": "Procuro agradar a homens ou a Deus?"
+        },
+        {
+          "dia": 22,
+          "mensagem": "Aquele sonho que parece ter morrido? Deus se especializa em ressurreições. Aquele relacionamento que parece perdido? Ele restaura. Aquela esperança que você enterrou? Ele a despertará. Você serve o Deus do terceiro dia. O Deus que transforma túmulos em jardins. Finais mortos em novos começos. Não é o fim. É apenas a sexta-feira. O domingo vem.",
+          "versiculo": "Ezequiel 37:5",
+          "promessa": "Eis que farei entrar em vós o espírito, e vivereis."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Hoje, escolha a gratidão antes da reclamação. O contentamento antes da comparação. A presença antes da pressa. Porque a vida que você está ocupado demais para notar é a vida que Deus está oferecendo agora. Não amanhã, quando tudo se resolver. Agora. Neste momento imperfeito, comum, ordinário. Aqui está Deus. Você O vê?",
+          "versiculo": "1 Tessalonicenses 5:18",
+          "promessa": "Em tudo dai graças, porque esta é a vontade de Deus."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Deus não desperdiçou um segundo da sua espera. Enquanto você achava que nada estava acontecendo, Ele estava: curando você, amadurecendo você, preparando você. A demora não foi crueldade. Foi sabedoria. Porque o que você está pedindo requer uma versão de você que ainda estava sendo forjada. A espera foi parte do presente.",
+          "versiculo": "Isaías 64:4",
+          "promessa": "Nunca se ouviu de um Deus que age a favor de quem nEle espera."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Você não precisa ter medo do futuro. Porque o Deus que foi fiel ontem será fiel amanhã. O Deus que te sustentou até aqui não vai te abandonar agora. Cada vale que você atravessou foi um testemunho: Ele é fiel. Cada tempestade que você sobreviveu provou: Ele está com você. Olhe para trás. Lembre. E confie para frente.",
+          "versiculo": "Josué 1:9",
+          "promessa": "Onde quer que você vá, o Senhor seu Deus estará com você."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Sua vida está impactando mais pessoas do que você imagina. Aquela palavra gentil que você já esqueceu? Alguém ainda carrega. Aquele ato de bondade que você achou insignificante? Mudou o dia de alguém. Você não precisa ser famoso para fazer diferença. Precisa apenas ser fiel. Deus usa pessoas disponíveis, não pessoas perfeitas.",
+          "versiculo": "Mateus 5:16",
+          "promessa": "Assim resplandeça a vossa luz diante dos homens."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Pare de revisar o passado como se pudesse mudá-lo. Você não pode. Mas Deus pode redimi-lo. Aqueles erros? Lições. Aquelas falhas? Oportunidades de crescimento. Aquelas cicatrizes? Testemunhos. Você não pode voltar e fazer um novo começo. Mas pode começar agora e fazer um novo final. Hoje é o único dia que você tem. Use-o bem.",
+          "versiculo": "Isaías 43:18-19",
+          "promessa": "Não vos lembreis das coisas passadas; eis que faço uma coisa nova."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Deus está convidando você para uma jornada de dependência radical. Onde você precisa dEle para cada respiração, cada decisão, cada passo. Isso não é fraqueza. É o lugar onde milagres acontecem. Porque quando você está no fim de si mesmo, está no começo dEle. Sua insuficiência é a porta para a suficiência dEle.",
+          "versiculo": "João 15:5",
+          "promessa": "Sem Mim, nada podeis fazer."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Você tem permissão para descansar. Não apenas dormir, mas verdadeiramente descansar. Parar de se esforçar, provar, performar. Deus não está marcando ponto. Ele não ama você mais quando você produz e menos quando você descansa. Seu valor não está na sua produtividade. Está no fato de que Ele te criou. E isso nunca muda.",
+          "versiculo": "Êxodo 33:14",
+          "promessa": "A Minha presença irá contigo, e Eu te darei descanso."
+        },
+        {
+          "dia": 30,
+          "mensagem": "Hoje, seja a resposta à oração de alguém. Aquela pessoa que está lutando? Envie a mensagem. Aquele amigo que você pensou? Ligue. Aquele impulso de ser generoso? Obedeça. Deus frequentemente responde orações através de pessoas dispostas. Você pode ser as mãos, os pés, a voz dEle hoje. Esteja disponível.",
+          "versiculo": "Isaías 6:8",
+          "promessa": "Quem há de ir por nós? — Eis-me aqui, envia-me a mim."
+        },
+        {
+          "dia": 31,
+          "mensagem": "Outro mês se completa. Você sobreviveu a 100% dos seus piores dias. Aquele problema que parecia impossível? Você passou por ele. Aquela dor que parecia insuportável? Você carregou. Como? Porque Deus estava com você. E vai continuar estando. Agosto acabou, mas a fidelidade dEle permanece. Para sempre.",
+          "versiculo": "Hebreus 13:8",
+          "promessa": "Jesus Cristo é o mesmo ontem, hoje e eternamente."
+        }
+      ]
+    },
+    "09": {
+      "numero": "09",
+      "nome": "Setembro",
+      "total_dias": 30,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Um novo mês. Uma nova chance. Setembro chegou com novas possibilidades nas mãos de Deus. O que você deixou inacabado? Pode retomar. O que você pensou que era tarde demais? Ainda há tempo. Deus não se cansa de dar recomeços. Cada nascer do sol é Sua forma de dizer: \"Ainda não terminamos. Ainda há mais para você.\"",
+          "versiculo": "Filipenses 1:6",
+          "promessa": "Aquele que começou boa obra em você a completará."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Você está vivendo com a mentalidade de escassez quando serve o Deus da abundância. Ele não está medindo quanto Ele pode te dar - está vendo quanto você pode receber. Seus recursos não acabam. Sua graça não tem limite. Sua misericórdia não se esgota. Pare de viver com medo de faltar. Nada falta quando Ele é seu Pastor.",
+          "versiculo": "Salmos 23:1",
+          "promessa": "O Senhor é meu pastor; nada me faltará."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Aquela pessoa difícil na sua vida? Deus a colocou lá por uma razão. Talvez para ensinar você sobre paciência. Talvez sobre amor incondicional. Talvez sobre perdão radical. As pessoas mais difíceis frequentemente são nossas melhores professoras. Não ore apenas para que Deus as mude. Ore para que Ele te transforme através delas.",
+          "versiculo": "Mateus 5:44",
+          "promessa": "Orai pelos que vos perseguem."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Hoje você vai enfrentar algo que está fora do seu controle. E vai descobrir que está nas mãos de Deus - que é exatamente onde precisa estar. Controle é uma ilusão. Confiança é uma escolha. Você não precisa entender o plano. Precisa apenas conhecer o Planejador. E Ele nunca errou. Nem uma vez. Em toda a eternidade.",
+          "versiculo": "Provérbios 19:21",
+          "promessa": "Muitos propósitos há no coração do homem, mas o conselho do Senhor permanecerá."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Deus está mais interessado no seu processo do que no seu produto. Mais na jornada do que no destino. Mais em quem você está se tornando do que no que você está alcançando. Porque você pode chegar ao topo e estar vazio por dentro. Ou pode estar no vale e estar cheio dEle. Sucesso sem transformação é tragédia.",
+          "versiculo": "1 Samuel 16:7",
+          "promessa": "O Senhor não vê como vê o homem; Ele vê o coração."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Você está guardando mágoa como se isso machucasse quem te feriu. Mas a única pessoa aprisionada é você. Perdão não é dizer \"está tudo bem\" quando não está. É dizer \"eu solto você porque eu quero ser livre\". Amargura é veneno que você bebe esperando que o outro morra. Solte. Não por eles. Por você.",
+          "versiculo": "Hebreus 12:15",
+          "promessa": "Que nenhuma raiz de amargura brote e vos perturbe."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Sua oração mais honesta é mais poderosa do que sua oração mais eloquente. Deus prefere sua confusão sincera à sua teologia impecável. Ele não se impressiona com vocabulário religioso. Ele se aproxima de corações quebrados. Pode parar de tentar soar espiritual. E começar a ser real. É ali que Ele encontra você.",
+          "versiculo": "Salmos 51:17",
+          "promessa": "Sacrifícios agradáveis a Deus são o espírito quebrantado."
+        },
+        {
+          "dia": 8,
+          "mensagem": "Aquilo que você está enfrentando hoje? Alguém precisará do seu testemunho amanhã. Sua luta não é só sua. É para a glória de Deus e o bem de outros. Você não está sofrendo em vão. Está sendo preparado para consolar alguém que vai passar pela mesma coisa. Sua história ainda está sendo escrita. E vai ajudar a reescrever a história de outro.",
+          "versiculo": "2 Coríntios 1:4",
+          "promessa": "Deus nos consola para que possamos consolar outros."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Pare de comparar seu começo com o meio da jornada de outro. Você não vê os anos de preparação, as noites de choro, os fracassos escondidos. Você vê apenas o resultado final. Mas Deus vê tudo. E Ele não está comparando você com ninguém. Ele está aperfeiçoando você. No Seu tempo. Do Seu jeito. Para Sua glória.",
+          "versiculo": "2 Coríntios 10:12",
+          "promessa": "Não nos atrevemos a comparar-nos com alguns que se recomendam a si mesmos."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Deus está fazendo algo que você não consegue ver. Nos bastidores. Nas profundezas. No invisível. Ele está movendo peças, alinhando pessoas, preparando caminhos. O que parece demora é, na verdade, preparação divina. O que parece silêncio é trabalho estratégico. Confie nEle. Mesmo quando não vê nada acontecendo. Especialmente quando não vê.",
+          "versiculo": "Isaías 45:3",
+          "promessa": "Dar-te-ei tesouros escondidos e riquezas encobertas."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Hoje, escolha alegria. Não porque tudo está perfeito. Mas porque você serve o Deus que é. Alegria não é uma emoção dependente de circunstâncias. É uma decisão ancorada em quem Deus é. As circunstâncias mudam. Ele não. E isso muda tudo. Você pode ter alegria no meio da tempestade quando sabe quem controla os ventos.",
+          "versiculo": "Habacuque 3:17-18",
+          "promessa": "Ainda que a figueira não floresça... todavia, eu me alegrarei no Senhor."
+        },
+        {
+          "dia": 12,
+          "mensagem": "Sua identidade não está no que você faz, mas em Quem você pertence. Você pode perder o emprego e ainda ser valioso. Pode falhar no projeto e ainda ser amado. Pode decepcionar pessoas e ainda ser filho de Deus. Nada que você faz ou deixa de fazer muda quem você é para Ele. Você é dEle. E isso é o suficiente.",
+          "versiculo": "João 1:12",
+          "promessa": "Deu-lhes o direito de se tornarem filhos de Deus."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Deus não está surpreso com sua luta. Ele sabia que setembro seria difícil antes de setembro começar. E já providenciou graça suficiente para cada momento. Você não precisa de graça para o mês inteiro agora. Precisa de graça para este momento. E ela está disponível. Fresca. Abundante. Suficiente. Sempre suficiente.",
+          "versiculo": "2 Coríntios 12:9",
+          "promessa": "A Minha graça te basta."
+        },
+        {
+          "dia": 14,
+          "mensagem": "Você está orando por mudança nas circunstâncias quando Deus quer mudar você no meio delas. Porque caráter forjado no fogo é mais valioso do que conforto garantido no jardim. Ele poderia tirar você da fornalha. Mas prefere entrar na fornalha com você. E te transformar através dela. O fogo não te destrói quando Deus está ali.",
+          "versiculo": "Daniel 3:25",
+          "promessa": "Vejo quatro homens soltos no fogo, e o quarto é semelhante ao Filho de Deus."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Hoje, seja intencional com sua atenção. O que você alimenta cresce. Se alimentar preocupação, ela cresce. Se alimentar fé, ela cresce. Você tem uma escolha sobre onde colocar seu foco. Escolha verdade sobre mentiras. Promessas sobre problemas. Esperança sobre desespero. Sua atenção determina sua direção.",
+          "versiculo": "Filipenses 4:8",
+          "promessa": "Tudo o que é verdadeiro, nobre, justo... nisso pensai."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Deus está usando até seus erros para cumprir Seus propósitos. José foi vendido como escravo - e salvou nações. Pedro negou Jesus - e pregou no Pentecostes. Davi cometeu adultério - e escreveu salmos de arrependimento que tocam corações até hoje. Seu erro não é o fim da sua história. Pode ser exatamente onde a redenção começa.",
+          "versiculo": "Gênesis 50:20",
+          "promessa": "Vós intentastes o mal; porém Deus o tornou em bem."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Você não precisa ter tudo resolvido para começar. Precisa apenas estar disponível. Deus usa pessoas imperfeitas. Sempre usou. Moisés gaguejava. Davi era o mais novo. Gideão se escondia. Pedro era impulsivo. Paulo perseguia cristãos. E Deus usou todos. Suas imperfeições não desqualificam você. Posicionam você para experimentar Sua suficiência.",
+          "versiculo": "1 Coríntios 1:27",
+          "promessa": "Deus escolheu as coisas fracas do mundo para envergonhar as fortes."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Pare de esperar pelo \"momento certo\" para obedecer. O momento certo é agora. Aquela conversa difícil? Tenha hoje. Aquele perdão que você está adiando? Conceda agora. Aquele passo de fé que te assusta? Dê agora. Obediência atrasada é desobediência disfarçada. Deus está esperando seu \"sim\". Não perfeição. Disponibilidade.",
+          "versiculo": "2 Coríntios 6:2",
+          "promessa": "Eis aqui agora o tempo aceitável, o dia da salvação."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Sua vida é uma oração viva. Não apenas as palavras que você diz de joelhos, mas a forma como você vive de pé. Como você trata aquela pessoa difícil. Como você responde quando ninguém está olhando. Como você usa seu tempo, dinheiro, palavras. Tudo isso é adoração. Viva de forma que sua vida toda seja uma oração.",
+          "versiculo": "Romanos 12:1",
+          "promessa": "Apresenteis os vossos corpos em sacrifício vivo, santo... vosso culto racional."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Deus não está fazendo algo novo apesar da sua dor. Ele está fazendo algo novo através dela. Aquela ferida que você carrega? Ele está transformando em fonte de cura para outros. Aquele vale escuro? Está te ensinando a depender dEle. A dor não é desperdício nas mãos de Deus. É matéria-prima para milagres.",
+          "versiculo": "Isaías 61:3",
+          "promessa": "Trocar as cinzas por uma coroa, óleo de alegria por pranto."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Você tem medo de que Deus te peça algo que você não pode fazer. Mas Ele nunca pede o que Ele não capacita. Se Ele chamou você, Ele vai equipar você. Se Ele abriu a porta, Ele vai te dar força para atravessá-la. Se Ele plantou o sonho, Ele vai prover os recursos. Sua parte é obedecer. A parte dEle é possibilitar.",
+          "versiculo": "Filipenses 4:13",
+          "promessa": "Tudo posso nAquele que me fortalece."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Hoje, pratique estar presente. Não no ontem que você não pode mudar. Não no amanhã que ainda não existe. Aqui. Agora. Nesta conversa. Nesta tarefa. Neste momento. Deus está aqui agora. Não ontem. Não amanhã. Agora. E quando você está presente, você O encontra. Na simplicidade do agora.",
+          "versiculo": "Mateus 6:34",
+          "promessa": "Não andeis ansiosos pelo dia de amanhã."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Sua fidelidade nas pequenas coisas está preparando você para as grandes. Aquela integridade quando ninguém vê. Aquela bondade quando você não recebe crédito. Aquela disciplina quando ninguém está cobrando. Deus vê. E está te confiando mais porque você foi fiel no pouco. Continue. O muito vem.",
+          "versiculo": "Lucas 16:10",
+          "promessa": "Quem é fiel no mínimo também é fiel no muito."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Deus não desperdiça suas lágrimas. Cada uma é recolhida. Cada dor é notada. Cada angústia é sentida por Ele. Você não chora sozinho. Ele está ali, bem perto, recolhendo cada lágrima como se fosse preciosa. Porque para Ele, é. Você é. E um dia, Ele vai enxugar cada uma. Pessoalmente. Com ternura infinita.",
+          "versiculo": "Apocalipse 21:4",
+          "promessa": "Deus enxugará dos olhos toda lágrima."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Você está esperando que tudo se alinhe perfeitamente antes de descansar. Mas o descanso não é uma recompensa por tudo estar resolvido. É uma necessidade para que você possa continuar. Deus descansou no sétimo dia não porque estava cansado, mas para estabelecer um padrão: descanso é sagrado. Permita-se parar. Você não é máquina.",
+          "versiculo": "Marcos 6:31",
+          "promessa": "Vinde repousar um pouco à parte."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Hoje, alguém precisa ouvir que não está sozinho. Que a luta é real, mas Deus é mais real. Que o vale é escuro, mas não é permanente. Que a dor é intensa, mas não é definitiva. Talvez você seja a voz que Deus quer usar. Não tenha medo de compartilhar sua história. Vulnerabilidade cura. Autenticidade liberta.",
+          "versiculo": "Eclesiastes 4:9-10",
+          "promessa": "Melhor é serem dois do que um; se um cair, o outro o levanta."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Deus está fazendo algo em você que o mundo inteiro precisará. Você não está sendo preparado apenas para você. Está sendo equipado para impactar gerações. Aquela dor que quase te quebrou? Vai curar multidões. Aquela lição que custou caro? Vai poupar outros de destruição. Sua vida importa mais do que você imagina.",
+          "versiculo": "Jeremias 1:5",
+          "promessa": "Antes que te formasse no ventre, te conheci."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Você não está atrasado. Não perdeu a janela. Não desperdiçou tempo demais. Deus não tem relógio - tem tempo determinado. E você está exatamente no tempo dEle. Sara teve filho aos 90. Moisés começou aos 80. Calebe conquistou aos 85. Nunca é tarde quando Deus está no controle. Seu melhor ainda está por vir.",
+          "versiculo": "Eclesiastes 3:11",
+          "promessa": "Tudo fez formoso em seu tempo."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Hoje, escolha confiança sobre controle. Entrega sobre esforço. Fé sobre medo. Porque você não foi criado para carregar o peso do mundo nos ombros. Foi criado para descansar nos braços do Pai. Solte o que não é seu para carregar. Confie o que não é seu para resolver. Deus cuida. Você pode descansar.",
+          "versiculo": "1 Pedro 5:7",
+          "promessa": "Lançai sobre Ele toda a vossa ansiedade, porque Ele tem cuidado de vós."
+        },
+        {
+          "dia": 30,
+          "mensagem": "Setembro termina, mas a fidelidade de Deus permanece. Mais um mês onde Ele provou que é confiável. Mais 30 dias de misericórdias renovadas. Olhe para trás. Veja Suas pegadas ao lado das suas. Mesmo quando você não sentiu, Ele estava lá. E em outubro? Ele continuará. Porque Ele não muda. E nunca vai te abandonar.",
+          "versiculo": "Deuteronômio 31:8",
+          "promessa": "O Senhor vai adiante de ti; Ele não te deixará nem te desamparará."
+        }
+      ]
+    },
+    "10": {
+      "numero": "10",
+      "nome": "Outubro",
+      "total_dias": 31,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Bem-vindo a outubro. Um novo mês nas mãos do Deus que faz todas as coisas novas. Talvez você esteja cansado. Talvez esteja desanimado. Mas Deus não está. Ele tem novo fôlego para você hoje. Nova força. Nova esperança. As misericórdias dEle não se esgotaram em setembro. Foram renovadas para outubro. Fresca. Suficiente. Para você.",
+          "versiculo": "Isaías 40:31",
+          "promessa": "Os que esperam no Senhor renovam as suas forças."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Você está carregando o peso de expectativas que Deus nunca colocou sobre você. Expectativas de família, sociedade, redes sociais, até suas próprias. Mas Deus não está pedindo perfeição. Está oferecendo graça. Solte o que não é dEle. E descubra a liberdade de viver apenas para a aprovação que já tem: a dEle.",
+          "versiculo": "Gálatas 1:10",
+          "promessa": "Acaso, procuro eu agradar a homens? Se agradasse ainda a homens, não seria servo de Cristo."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Hoje você vai enfrentar uma tentação de desistir. De largar tudo. De parar no meio do caminho. Mas lembre-se: você já passou por coisas piores. Já sobreviveu a 100% dos seus dias mais difíceis. Aquilo que deveria ter te destruído? Você ainda está aqui. Isso não é sorte. É a mão de Deus. E ela não vai te soltar agora.",
+          "versiculo": "Filipenses 1:6",
+          "promessa": "Aquele que começou boa obra em vós há de completá-la."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Deus está escrevendo uma história com sua vida que vai glorificá-Lo e encorajar outros. Mas você só vê o capítulo difícil. Ele vê o livro inteiro. Você vê o problema. Ele vê o propósito. Você vê o caos. Ele vê o plano. Confie no Autor. Mesmo quando não entender a trama. Especialmente quando não entender.",
+          "versiculo": "Jeremias 29:11",
+          "promessa": "Eu sei os planos que tenho para vós - planos de paz."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Você não precisa impressionar a Deus. Não precisa performar, produzir ou provar nada. Ele já está impressionado - com Jesus, não com você. E Jesus te cobre completamente. Sua aceitação não depende do seu desempenho. Depende da obra dEle. Terminada. Completa. Suficiente. Para sempre.",
+          "versiculo": "Colossenses 2:10",
+          "promessa": "Estais aperfeiçoados nEle."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Hoje, pare de tentar consertar o que Deus está usando para te transformar. Aquela situação difícil? Pode ser exatamente o contexto onde Ele está moldando seu caráter. Aquela pessoa irritante? Pode ser a lixa que está suavizando suas arestas. Nem tudo que é desconfortável precisa ser eliminado. Às vezes precisa ser suportado. Com graça.",
+          "versiculo": "Romanos 5:3-4",
+          "promessa": "A tribulação produz perseverança; a perseverança, experiência; a experiência, esperança."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Deus vê você exatamente onde você está. Naquele lugar escondido onde você luta. Naquela batalha que ninguém conhece. Naquele cansaço que você não mostra. Ele vê. E Ele se importa. Você não precisa gritar para ser ouvido. Seu suspiro é oração. Seu silêncio é eloquente. Ele entende a linguagem do coração quebrantado.",
+          "versiculo": "Salmos 34:18",
+          "promessa": "Perto está o Senhor dos que têm o coração quebrantado."
+        },
+        {
+          "dia": 8,
+          "mensagem": "Você tem medo de que seu passado te desqualifique para o futuro que Deus tem para você. Mas Ele se especializa em usar pessoas com histórias complicadas. Raabe era prostituta. Davi era adúltero. Paulo era assassino. Pedro era covarde. E Deus os usou poderosamente. Seu passado não determina seu futuro. A graça dEle determina.",
+          "versiculo": "2 Coríntios 5:17",
+          "promessa": "Se alguém está em Cristo, nova criatura é; as coisas velhas já passaram."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Hoje, pratique a presença de Deus nos momentos comuns. Ele não está apenas nos cultos, nas orações formais, nos momentos \"espirituais\". Ele está no café da manhã. No trânsito. Na conversa com o vizinho. No trabalho entediante. Convide-O para o ordinário. É ali que o extraordinário acontece. Quando você O vê em tudo.",
+          "versiculo": "Colossenses 3:17",
+          "promessa": "Tudo quanto fizerdes, fazei-o de todo o coração, como para o Senhor."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Sua obediência hoje está plantando sementes para o milagre de amanhã. Você pode não ver frutos agora. Mas a colheita vem. Cada \"sim\" que você dá a Deus, cada verdade que você escolhe, cada tentação que você resiste - tudo está sendo registrado. Nada se perde. Continue semeando. A colheita é garantida para quem não desiste.",
+          "versiculo": "Gálatas 6:9",
+          "promessa": "A seu tempo ceifaremos, se não desfalecermos."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Deus não está esperando você \"se arrumar\" para se aproximar. Ele está convidando você a vir exatamente como está. Bagunçado. Confuso. Quebrado. Imperfeito. Porque é exatamente aí que Sua graça brilha mais forte. Na sua fraqueza, não na sua força. Na sua necessidade, não na sua autossuficiência. Venha como está. Ele te recebe.",
+          "versiculo": "Mateus 11:28",
+          "promessa": "Vinde a Mim, todos os que estais cansados."
+        },
+        {
+          "dia": 12,
+          "mensagem": "Você está vivendo como se a graça de Deus tivesse limite. Como se um dia Ele fosse dizer \"chega, não aguento mais você\". Mas a graça não tem fundo. Não tem limite. Não se esgota. Você não pode cansar a paciência de Deus. Não pode esgotar Sua misericórdia. Ela se renova. Todo dia. Para você. Sempre.",
+          "versiculo": "Lamentações 3:22-23",
+          "promessa": "As misericórdias do Senhor são novas cada manhã."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Hoje você vai enfrentar escolhas. Pequenas decisões que moldam grandes destinos. Como responder àquele comentário. Como usar aquele tempo livre. Como reagir àquela provocação. Lembre-se: caráter é construído em escolhas cotidianas, não em grandes momentos. Escolha sabiamente. Deus está te observando, não para julgar, mas para capacitar.",
+          "versiculo": "Deuteronômio 30:19",
+          "promessa": "Escolhe, pois, a vida, para que vivas, tu e a tua descendência."
+        },
+        {
+          "dia": 14,
+          "mensagem": "Sua espera não é desperdício. Deus está usando este tempo para preparar você para o que Ele já preparou para você. Você não está esperando porque Ele esqueceu. Você está esperando porque Ele está trabalhando. Em você. Ao seu redor. Através de você. A espera é parte do presente. Confie no processo.",
+          "versiculo": "Salmos 27:14",
+          "promessa": "Espera no Senhor, anima-te, e Ele fortalecerá o teu coração."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Deus não vai desperdiçar nenhuma parte da sua história. Nem as páginas manchadas de lágrimas. Nem os capítulos que você quer esquecer. Nem os versículos que te envergonham. Ele está tecendo tudo numa narrativa de redenção. Onde você vê caos, Ele vê propósito. Onde você vê fim, Ele vê novo começo. Confie no Redentor da história.",
+          "versiculo": "Romanos 8:28",
+          "promessa": "Todas as coisas cooperam para o bem daqueles que amam a Deus."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Você não precisa ter todas as respostas. Precisa apenas conhecer Aquele que tem. Não precisa entender o caminho inteiro. Precisa apenas dar o próximo passo. Não precisa ver o quadro completo. Precisa apenas confiar no Pintor. Fé não é ausência de dúvida. É confiança apesar da dúvida. E Deus honra isso.",
+          "versiculo": "Provérbios 3:5-6",
+          "promessa": "Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Hoje, seja bondoso. Não porque as pessoas merecem. Mas porque você foi transformado pela bondade de Deus quando você não merecia. Bondade não é fraqueza - é força sob controle. Não é ingenuidade - é escolha consciente. Num mundo áspero, seja a suavidade que alguém precisa. Você pode não saber a batalha que eles estão enfrentando.",
+          "versiculo": "Efésios 4:32",
+          "promessa": "Sede bondosos uns para com os outros, compassivos."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Deus está mais perto do que você sente. Sentimentos mentem. Circunstâncias enganam. Mas verdade permanece: Ele prometeu nunca te deixar. E Deus não quebra promessas. Você pode não sentir Sua presença. Mas Sua presença não depende do seu sentimento. Ela é baseada na Sua palavra. E Sua palavra não muda.",
+          "versiculo": "Josué 1:5",
+          "promessa": "Não te deixarei, nem te desampararei."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Você está comparando sua realidade com a ilusão de perfeição de outros. Redes sociais mostram highlights. Deus vê bastidores. Aquela pessoa que parece ter tudo junto? Está lutando com algo que você não vê. Pare de comparar. Comece a agradecer. Sua jornada é única. Sua história é sagrada. Seu processo é necessário. Exatamente como é.",
+          "versiculo": "Gálatas 6:4",
+          "promessa": "Cada um examine a sua própria obra."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Hoje, pratique gratidão radical. Não apenas pelas bênçãos óbvias. Mas pelas lições disfarçadas de problemas. Pelas portas fechadas que te protegeram. Pelos \"nãos\" de Deus que te salvaram. Pelos atrasos que te alinharam. Gratidão muda perspectiva. E perspectiva muda tudo. Comece a ver com os olhos da fé, não apenas com os olhos da carne.",
+          "versiculo": "1 Tessalonicenses 5:18",
+          "promessa": "Em tudo dai graças."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Deus não te chamou para viver com medo. Medo do futuro. Medo de falhar. Medo de decepcionar. Medo de não ser suficiente. Ele te chamou para viver em liberdade. Liberdade que vem de saber quem você é nEle. Liberdade que vem de confiar nEle completamente. Liberdade que vem de descansar no Seu amor inabalável. Você é livre. Viva como livre.",
+          "versiculo": "2 Timóteo 1:7",
+          "promessa": "Deus não nos deu espírito de medo, mas de poder, amor e moderação."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Aquela porta que se fechou? Agradeça. Deus viu algo que você não viu. Aquele relacionamento que terminou? Proteção divina. Aquele emprego que você não conseguiu? Redirecionamento celestial. Nem todo \"não\" é rejeição. Às vezes é proteção. Confie que Deus vê o que você não vê. E fecha portas que levariam à destruição.",
+          "versiculo": "Isaías 55:8-9",
+          "promessa": "Meus pensamentos não são os vossos pensamentos."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Você está vivendo no \"e se\" do futuro quando Deus está oferecendo o \"agora\" do presente. E se eu falhar? E se não der certo? E se eu não for capaz? Mas Deus diz: \"Eu Sou\". Não \"Eu Era\" nem \"Eu Serei\". Eu Sou. Presente. Aqui. Agora. Com você. Neste momento. É o único momento que existe. Viva nele.",
+          "versiculo": "Êxodo 3:14",
+          "promessa": "EU SOU O QUE SOU."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Hoje, seja a luz que alguém precisa. Aquele sorriso genuíno. Aquela palavra de encorajamento. Aquele ato de bondade que custa pouco mas significa muito. Você não sabe quem está à beira do desistir e precisa de um sinal de que Deus ainda se importa. Você pode ser esse sinal. Seja intencional. Seja presente. Seja amor.",
+          "versiculo": "Mateus 5:16",
+          "promessa": "Assim resplandeça a vossa luz diante dos homens."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Deus está moldando você através do que você está passando. A pressão não é para te esmagar - é para te refinar. O fogo não é para te destruir - é para te purificar. A provação não é para te quebrar - é para te fortalecer. Confie no Oleiro. Ele sabe exatamente quanto de pressão você aguenta. E nunca permite mais.",
+          "versiculo": "Jeremias 18:6",
+          "promessa": "Como barro na mão do oleiro, assim sois vós na Minha mão."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Você não está sozinho na luta. Parece que sim. Parece que ninguém entende. Mas há um que entende cada dor, cada lágrima, cada angústia. Porque Ele passou por tudo isso. E mais. Jesus foi tentado. Foi rejeitado. Foi abandonado. Foi traído. Ele sabe. E Ele está com você. No meio da batalha. Não apenas assistindo. Lutando ao seu lado.",
+          "versiculo": "Hebreus 4:15",
+          "promessa": "Não temos um sumo sacerdote que não possa compadecer-se."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Hoje, solte o que você não pode controlar. O futuro. As escolhas de outros. As circunstâncias. A opinião deles. O que pode ou não acontecer. Você está se desgastando tentando controlar o incontrolável. E perdendo a paz no processo. Controle é ilusão. Confiança é sabedoria. Confie. E descanse. Deus tem o controle que você nunca teve.",
+          "versiculo": "Salmos 46:10",
+          "promessa": "Aquieta-te e sabe que Eu sou Deus."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Sua vida está sendo observada por mais pessoas do que você imagina. Não de forma invasiva, mas inspiradora. Alguém está vendo como você enfrenta a dificuldade. Como você responde à injustiça. Como você permanece fiel quando custa caro. Sua vida é testemunho. Seu caráter é sermão. Viva de forma que aponte para Aquele que te sustenta.",
+          "versiculo": "1 Pedro 2:12",
+          "promessa": "Mantende exemplar o vosso procedimento."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Deus está preparando você para algo maior do que você imagina. Por isso a preparação é tão intensa. O treinamento é tão rigoroso. A espera é tão longa. Ele não te confiaria grande responsabilidade sem adequada preparação. O que você está passando não é punição. É preparação. Para glória que ainda será revelada.",
+          "versiculo": "Romanos 8:18",
+          "promessa": "As aflições do tempo presente não se comparam com a glória a ser revelada."
+        },
+        {
+          "dia": 30,
+          "mensagem": "Você está chegando ao fim de outubro mais forte do que começou. Talvez não sinta. Mas fé não é sobre sentir - é sobre permanecer. Você permaneceu. Nos dias difíceis. Nas noites longas. Nas dúvidas profundas. Permaneceu. E permanência é vitória. Continue. Um dia de cada vez. Um passo de cada vez. Deus te sustenta.",
+          "versiculo": "Hebreus 10:36",
+          "promessa": "Necessitais de perseverança para receberdes a promessa."
+        },
+        {
+          "dia": 31,
+          "mensagem": "Outubro termina. Mas a fidelidade de Deus não. Mais um mês de provas de que Ele é confiável. Mais 31 dias de misericórdias que não falharam. Olhe para trás. Conte as bênçãos. Reconheça Sua mão. Ele esteve com você cada segundo. E em novembro? Ele continuará. Porque Ele é o Deus que não muda. Ontem. Hoje. Sempre.",
+          "versiculo": "Hebreus 13:8",
+          "promessa": "Jesus Cristo é o mesmo ontem, hoje e eternamente."
+        }
+      ]
+    },
+    "11": {
+      "numero": "11",
+      "nome": "Novembro",
+      "total_dias": 30,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Bem-vindo a novembro. O ano está quase terminando, mas Deus não terminou com você. Os melhores capítulos ainda podem ser escritos nos últimos meses. Milagres não têm calendário. Breakthroughs não têm cronograma. Deus pode fazer em novembro o que você esperou o ano inteiro. Não desista agora. A linha de chegada pode estar mais perto do que você pensa.",
+          "versiculo": "Habacuque 2:3",
+          "promessa": "A visão ainda está para o tempo determinado; virá e não tardará."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Você está tentando ganhar o que já foi dado gratuitamente. Amor de Deus. Aceitação. Perdão. Graça. Você não pode ganhar. Só pode receber. Pare de se esforçar para merecer. Comece a descansar no que Jesus já conquistou. A obra está terminada. Completa. Suficiente. Você não precisa adicionar nada. Só precisa aceitar.",
+          "versiculo": "Efésios 2:8-9",
+          "promessa": "Pela graça sois salvos, mediante a fé; isto não vem de vós."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Hoje, agradeça pelo que você tem enquanto ora pelo que você quer. Gratidão e petição podem coexistir. Você pode estar contente e ainda ter sonhos. Satisfeito e ainda ter metas. Grato pelo presente e esperançoso pelo futuro. Contentamento não é resignação. É confiança de que Deus é bom agora e será bom depois.",
+          "versiculo": "Filipenses 4:6",
+          "promessa": "Em tudo, pela oração e súplica, com ação de graças, apresentem seus pedidos a Deus."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Deus vê cada esforço que você faz. Cada sacrifício silencioso. Cada boa escolha quando ninguém está olhando. Cada vez que você escolhe obediência sobre conveniência. Nada escapa aos Seus olhos. E um dia, Ele vai recompensar publicamente o que foi feito em secreto. Continue. Seu trabalho não é em vão.",
+          "versiculo": "1 Coríntios 15:58",
+          "promessa": "Vosso trabalho não é vão no Senhor."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Você está carregando vergonha por algo que Deus já perdoou. Ele jogou no fundo do mar. Você continua mergulhando para buscar. Ele disse \"esquecido\". Você continua lembrando. Ele disse \"perdoado\". Você continua se punindo. Aceite a liberdade. Creia na graça. Ande na verdade do perdão. Você é livre. Deus disse. E Deus não mente.",
+          "versiculo": "1 João 1:9",
+          "promessa": "Se confessarmos os nossos pecados, Ele é fiel e justo para nos perdoar."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Hoje, seja intencional com suas palavras. Elas têm poder de vida e morte. Podem construir ou destruir. Encorajar ou desencorajar. Curar ou ferir. Use suas palavras para edificar. Para abençoar. Para encorajar. Para trazer vida. Você não sabe quem está à beira de desistir e precisa ouvir uma palavra de esperança. Seja você quem fala.",
+          "versiculo": "Provérbios 18:21",
+          "promessa": "A morte e a vida estão no poder da língua."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Deus está trabalhando mesmo quando você não vê. Especialmente quando você não vê. Nos bastidores. No invisível. Alinhando pessoas. Preparando caminhos. Removendo obstáculos. Sua parte é confiar. A parte dEle é trabalhar. E Ele está trabalhando. Sempre. Mesmo no silêncio. Mesmo na espera. Mesmo no mistério.",
+          "versiculo": "João 5:17",
+          "promessa": "Meu Pai trabalha até agora, e Eu trabalho também."
+        },
+        {
+          "dia": 8,
+          "mensagem": "Você não precisa ter medo do que está por vir. O mesmo Deus que te trouxe até aqui vai te levar adiante. Ele não te abandonou nos vales passados. Não vai te abandonar nos vales futuros. Cada desafio que você enfrentou foi evidência: Ele é fiel. E será fiel amanhã. E depois. E sempre. Sua fidelidade não tem data de validade.",
+          "versiculo": "Deuteronômio 31:8",
+          "promessa": "O Senhor vai adiante de ti; não te deixará."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Hoje, pratique perdão. Não porque eles merecem. Mas porque você merece liberdade. Perdão não é negar a dor. É recusar deixar a dor te prender. Não é esquecer o que aconteceu. É escolher não deixar que isso defina seu futuro. Perdoar é soltar a pessoa da prisão que você construiu - e descobrir que você era o prisioneiro.",
+          "versiculo": "Marcos 11:25",
+          "promessa": "Quando estiverdes orando, perdoai."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Deus está usando sua história - toda ela - para Sua glória. Não apenas as partes bonitas. Também as feias. Não apenas os sucessos. Também os fracassos. Não apenas as vitórias. Também as derrotas. Ele está tecendo tudo numa tapeçaria de redenção. Onde você vê desperdício, Ele vê propósito. Confie no Tecelão. Ele não desperdiça fios.",
+          "versiculo": "Joel 2:25",
+          "promessa": "Restituir-vos-ei os anos que foram consumidos."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Você está esperando grandes milagres e perdendo os pequenos. O pulmão que respira sem comando. O coração que bate sem esforço. O sol que nasce sem falhar. A provisão do dia. A força para continuar. A graça que te sustenta. Milagres não são sempre espetaculares. Às vezes são silenciosos. Mas não menos poderosos.",
+          "versiculo": "Salmos 68:19",
+          "promessa": "Bendito seja o Senhor que dia a dia nos carrega de benefícios."
+        },
+        {
+          "dia": 12,
+          "mensagem": "Hoje, escolha paz sobre preocupação. Confiança sobre ansiedade. Fé sobre medo. Porque preocupação não tira os problemas de amanhã - tira a paz de hoje. Ansiedade não resolve o futuro - rouba o presente. Medo não protege - paralisa. Escolha diferente. Escolha confiar. Escolha descansar. Escolha paz. Deus está no controle.",
+          "versiculo": "Filipenses 4:6-7",
+          "promessa": "A paz de Deus guardará vossos corações e mentes."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Deus não está surpreso com sua luta. Ele sabia que novembro seria difícil antes de você nascer. E já providenciou graça suficiente. Você não precisa de graça para todo o mês agora. Precisa de graça para este momento. E ela está aqui. Fresca. Abundante. Suficiente. Sempre suficiente para o agora.",
+          "versiculo": "2 Coríntios 12:9",
+          "promessa": "A Minha graça te basta."
+        },
+        {
+          "dia": 14,
+          "mensagem": "Você está orando por mudança quando Deus está operando transformação. Mudança é externa. Transformação é interna. Mudança é temporária. Transformação é permanente. Mudança altera circunstâncias. Transformação altera caráter. Ele poderia mudar sua situação. Mas prefere transformar você primeiro. Porque quando você muda, tudo muda.",
+          "versiculo": "Romanos 12:2",
+          "promessa": "Sede transformados pela renovação da vossa mente."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Hoje, viva com propósito. Não no automático. Aquela conversa casual? Pode mudar uma vida. Aquele ato de bondade? Pode salvar um dia. Aquele sorriso genuíno? Pode trazer esperança. Você foi colocado onde está com propósito. As pessoas ao seu redor não são coincidência. São divinas nomeações. Esteja presente. Seja intencional.",
+          "versiculo": "Ester 4:14",
+          "promessa": "Quem sabe se para tal tempo como este não chegaste a este reino?"
+        },
+        {
+          "dia": 16,
+          "mensagem": "Deus está fazendo algo novo em você. Mas você continua voltando ao velho. Velhos padrões. Velhas mentalidades. Velhos medos. Ele está chamando você para frente. Para o novo. Para o mais. Solte o que ficou para trás. Não por ingratidão pelo passado. Mas por expectativa do futuro. O melhor ainda está por vir.",
+          "versiculo": "Isaías 43:18-19",
+          "promessa": "Não vos lembreis das coisas passadas; eis que faço coisa nova."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Você não está atrasado. Não perdeu sua chance. Não desperdiçou muito tempo. O relógio de Deus não é o seu. Ele opera em kairós, não chronos. Tempo determinado, não tempo cronológico. Sara, Moisés, Calebe - todos começaram \"tarde\" segundo padrões humanos. Mas no tempo perfeito de Deus. Seu tempo vem. Confie no timing divino.",
+          "versiculo": "Eclesiastes 3:1",
+          "promessa": "Tudo tem o seu tempo determinado."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Hoje, seja grato pelas portas fechadas. Pelos planos que falharam. Pelos relacionamentos que terminaram. Pelos empregos que você não conseguiu. Porque Deus viu algo que você não viu. Aquela porta fechada te salvou de um caminho destrutivo. Aquele \"não\" te redirecionou para o \"sim\" que mudará tudo. Confie. Agradeça. Descanse.",
+          "versiculo": "Provérbios 16:9",
+          "promessa": "O coração do homem planeja o seu caminho, mas o Senhor lhe dirige os passos."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Deus está mais interessado em quem você está se tornando do que no que você está alcançando. Caráter sobre conquistas. Intimidade sobre atividade. Ser sobre fazer. Porque você pode ter tudo e ser nada. Ou ter pouco e ser muito. Sucesso sem caráter é tragédia. Mas caráter forjado em Deus é riqueza que ninguém pode roubar.",
+          "versiculo": "1 Samuel 16:7",
+          "promessa": "O Senhor vê o coração."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Você está vivendo como se a graça de Deus tivesse acabado. Como se tivesse usado demais. Como se tivesse esgotado a paciência dEle. Mas graça não se esgota. Misericórdia não acaba. Amor não tem limite. Quantas vezes você tropeçar, Ele te levanta. Quantas vezes você falhar, Ele te restaura. Quantas vezes você voltar, Ele te recebe. Sempre.",
+          "versiculo": "Salmos 103:8-10",
+          "promessa": "Não nos trata segundo os nossos pecados."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Hoje, escolha adoração sobre reclamação. Louvor sobre lamento. Gratidão sobre murmuração. Porque adoração muda atmosfera. Louvor silencia o inimigo. Gratidão atrai presença de Deus. Você pode reclamar do que falta ou agradecer pelo que tem. Sua escolha determina sua perspectiva. E sua perspectiva determina sua experiência.",
+          "versiculo": "Salmos 100:4",
+          "promessa": "Entrai por suas portas com ações de graças."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Deus está usando até seus erros para cumprir Seus propósitos. Nada se perde nas mãos dEle. Nem seus fracassos. Nem suas falhas. Nem suas quedas. Ele é o Deus que transforma derrota em vitória. Luto em dança. Cinzas em beleza. Confie no Redentor. Ele nunca desperdiça nada. Nem mesmo seus erros.",
+          "versiculo": "Romanos 8:28",
+          "promessa": "Deus age em todas as coisas para o bem."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Você não precisa entender tudo para confiar. Fé não é compreensão total. É confiança apesar da falta de compreensão. Abraão não entendeu como teria filho aos 100. Moisés não entendeu como atravessaria o mar. Maria não entendeu como conceberia sendo virgem. Mas todos confiaram. E viram milagres. Confie. Mesmo sem entender.",
+          "versiculo": "Isaías 55:9",
+          "promessa": "Meus caminhos são mais altos que os vossos caminhos."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Hoje, seja bondade num mundo áspero. Gentileza numa cultura rude. Graça numa sociedade impiedosa. Não porque os outros merecem. Mas porque você foi transformado pela bondade de Deus quando você não merecia. Bondade não é fraqueza. É força sob controle. É escolha consciente de refletir o caráter de Deus.",
+          "versiculo": "Tito 3:4-5",
+          "promessa": "Quando apareceu a bondade e o amor de Deus, Ele nos salvou."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Deus está fazendo algo em você que beneficiará gerações. Você não está sendo preparado apenas para você. Está sendo equipado para impactar muitos. Aquela lição dolorosa? Vai poupar seus filhos de erro. Aquela cura profunda? Vai libertar outros. Sua vida importa mais do que você imagina. Viva bem. Outros dependem disso.",
+          "versiculo": "Salmos 78:4",
+          "promessa": "Contaremos à vindoura geração os louvores do Senhor."
+        },
+        {
+          "dia": 26,
+          "mensagem": "Você está carregando peso que não é seu para carregar. Responsabilidade pelos sentimentos de todos. Necessidade de consertar tudo. Obrigação de ser perfeito. Solte. Deus nunca pediu isso. Ele pediu que você confiasse, obedecesse e descansasse. O resto é com Ele. Você não é Salvador. Ele é. Deixe-O fazer o trabalho dEle.",
+          "versiculo": "Mateus 11:30",
+          "promessa": "Meu jugo é suave, e Meu fardo é leve."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Hoje, pratique presença. Esteja aqui. Agora. Nesta conversa. Neste momento. Nesta tarefa. Não no ontem que passou. Não no amanhã que não chegou. Aqui. Porque Deus está aqui agora. Não ontem. Não amanhã. Agora. E quando você está presente, você O encontra. Na beleza do agora.",
+          "versiculo": "Salmos 118:24",
+          "promessa": "Este é o dia que o Senhor fez; regozijemo-nos nele."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Deus está transformando sua bagunça em mensagem. Sua provação em testemunho. Sua dor em propósito. Nada do que você passou foi desperdício. Tudo está sendo usado para equipar você para consolar outros. Para encorajar corações. Para trazer esperança. Sua história não é só sua. É para a glória de Deus e o bem de muitos.",
+          "versiculo": "2 Coríntios 1:4",
+          "promessa": "Deus nos consola para que consolemos outros."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Você não precisa ter tudo resolvido para ser usado por Deus. Moisés tinha traumas. Davi tinha cicatrizes. Pedro tinha negações. Paulo tinha passado. Mas Deus os usou poderosamente. Suas imperfeições não te desqualificam. Posicionam você para experimentar e demonstrar Sua suficiência. Você é vaso quebrado? Perfeito. É exatamente assim que Deus gosta de trabalhar.",
+          "versiculo": "2 Coríntios 4:7",
+          "promessa": "Temos este tesouro em vasos de barro."
+        },
+        {
+          "dia": 30,
+          "mensagem": "Novembro termina. Mas a fidelidade de Deus permanece. Mais um mês de evidências de que Ele é confiável. Mais 30 dias de graça que não faltou. Olhe para trás. Veja Suas pegadas ao lado das suas. Ele esteve com você cada segundo. E em dezembro? Ele continuará. Para sempre fiel. Ontem. Hoje. Eternamente.",
+          "versiculo": "1 Tessalonicenses 5:24",
+          "promessa": "Fiel é o que vos chama, o qual também o fará."
+        }
+      ]
+    },
+    "12": {
+      "numero": "12",
+      "nome": "Dezembro",
+      "total_dias": 31,
+      "mensagens": [
+        {
+          "dia": 1,
+          "mensagem": "Bem-vindo ao último mês do ano. Deus te trouxe até aqui. Através de cada tempestade. Cada vale. Cada montanha. Você sobreviveu. E não apenas sobreviveu - cresceu. Amadureceu. Foi transformado. Dezembro é tempo de colher o que foi plantado. De celebrar o que foi conquistado. De agradecer por tudo que foi vivido. Termine bem.",
+          "versiculo": "Salmos 126:3",
+          "promessa": "Grandes coisas fez o Senhor por nós, pelas quais estamos alegres."
+        },
+        {
+          "dia": 2,
+          "mensagem": "Você está chegando ao fim do ano cansado. E está tudo bem. Você carregou muito. Enfrentou muito. Suportou muito. Mas não desista agora. O último quilômetro é o mais difícil. Mas também o mais importante. Termine forte. Não porque você tem força. Mas porque Deus é sua força. E Ele não se cansa.",
+          "versiculo": "Isaías 40:31",
+          "promessa": "Os que esperam no Senhor renovam as forças."
+        },
+        {
+          "dia": 3,
+          "mensagem": "Hoje, agradeça pelas orações não respondidas. Pelos pedidos negados. Pelos planos frustrados. Porque Deus viu algo que você não viu. Aquilo que você tanto queria poderia ter te destruído. Aquele \"não\" de Deus te salvou. Sua sabedoria é maior que seu desejo. Confie nEle. Mesmo quando não entender. Especialmente quando não entender.",
+          "versiculo": "Romanos 8:26",
+          "promessa": "O Espírito intercede por nós segundo a vontade de Deus."
+        },
+        {
+          "dia": 4,
+          "mensagem": "Deus não está decepcionado com você. Pare de projetar nEle a voz crítica na sua cabeça. Ele não está contando seus erros. Está celebrando suas vitórias. Não está marcando suas falhas. Está apagando-as com Seu sangue. Não está apontando seus defeitos. Está vendo Cristo em você. Mude a narrativa. Acredite na graça.",
+          "versiculo": "Romanos 8:1",
+          "promessa": "Nenhuma condenação há para os que estão em Cristo Jesus."
+        },
+        {
+          "dia": 5,
+          "mensagem": "Você está vivendo para a aprovação de pessoas que nem importarão daqui a 10 anos. Pessoas que têm suas próprias inseguranças. Suas próprias lutas. Suas próprias opiniões mutáveis. Pare. Viva para a audiência de Um. Busque Sua aprovação. Que já tem. Completamente. Eternamente. E isso muda tudo.",
+          "versiculo": "Colossenses 3:23",
+          "promessa": "Tudo quanto fizerdes, fazei-o de coração, como para o Senhor."
+        },
+        {
+          "dia": 6,
+          "mensagem": "Hoje, escolha alegria. Não porque tudo está perfeito. Mas porque Deus é perfeito. Não porque não há problemas. Mas porque Ele é maior que todos os problemas. Alegria não é ausência de dificuldade. É presença de Deus na dificuldade. E Ele está aqui. Com você. Agora. Sempre.",
+          "versiculo": "João 16:33",
+          "promessa": "No mundo tereis aflições, mas tende bom ânimo; Eu venci o mundo."
+        },
+        {
+          "dia": 7,
+          "mensagem": "Deus está usando sua espera para te ensinar dependência. Seu vale para te ensinar confiança. Sua luta para te ensinar perseverança. Nada é desperdiçado. Cada experiência tem propósito. Cada provação tem lição. Você não está apenas passando por isso. Está crescendo através disso. E vai sair diferente. Melhor. Mais forte. Mais sábio.",
+          "versiculo": "Tiago 1:2-4",
+          "promessa": "A provação da vossa fé produz perseverança."
+        },
+        {
+          "dia": 8,
+          "mensagem": "Você está tão focado no que falta que não vê o que tem. Olhe ao redor. Você tem mais do que milhões. Ar nos pulmões. Teto sobre a cabeça. Alimento na mesa. Pessoas que te amam. E acima de tudo, tem Deus. Que é mais do que suficiente. Contentamento não é ter tudo que quer. É querer tudo que tem. Escolha gratidão.",
+          "versiculo": "Filipenses 4:11-12",
+          "promessa": "Aprendi a viver contente em toda e qualquer situação."
+        },
+        {
+          "dia": 9,
+          "mensagem": "Hoje, perdoe a si mesmo. Pelo que você fez. Pelo que não fez. Pelo que poderia ter feito melhor. Se Deus te perdoou, quem é você para não perdoar? Você está segurando a si mesmo em padrão mais alto que Deus. Ele esqueceu. Você continua lembrando. Solte. Seja tão misericordioso consigo quanto Deus é. Você merece graça também.",
+          "versiculo": "Miquéias 7:18-19",
+          "promessa": "Lançará todos os nossos pecados nas profundezas do mar."
+        },
+        {
+          "dia": 10,
+          "mensagem": "Deus está fazendo algo que vai surpreender você. Algo que você não está esperando. Algo melhor do que você pediu. Porque Ele é o Deus de exceder. De abundar. De fazer infinitamente mais. Não limite Deus à sua imaginação. Ele pensa maior. Sonha maior. Age maior. Prepare-se. O milagre vem.",
+          "versiculo": "Efésios 3:20",
+          "promessa": "Aquele que é poderoso para fazer infinitamente mais do que pedimos ou pensamos."
+        },
+        {
+          "dia": 11,
+          "mensagem": "Você não precisa ter medo do futuro. O mesmo Deus que te sustentou este ano te sustentará no próximo. Ele não te abandonou nas tempestades de janeiro. Não te deixou nas lutas de junho. Não te esqueceu nas dores de setembro. E não vai te abandonar em 2027. Sua fidelidade não tem data de validade. É eterna.",
+          "versiculo": "Malaquias 3:6",
+          "promessa": "Eu, o Senhor, não mudo."
+        },
+        {
+          "dia": 12,
+          "mensagem": "Hoje, seja luz num mundo escuro. Esperança num coração desesperado. Amor numa vida solitária. Você foi chamado para ser diferença. Para ser sal. Para ser luz. Não para se esconder. Não para se conformar. Mas para brilhar. Deixe a luz de Cristo em você iluminar os que estão ao seu redor. Brilhe.",
+          "versiculo": "Mateus 5:14-16",
+          "promessa": "Vós sois a luz do mundo... assim resplandeça a vossa luz."
+        },
+        {
+          "dia": 13,
+          "mensagem": "Deus está escrevendo uma história com sua vida que vai impactar gerações. Você não vê o quadro completo. Mas Ele vê. Você vê apenas hoje. Ele vê a eternidade. Você vê apenas sua vida. Ele vê o efeito dominó em incontáveis vidas. Viva bem. Viva fiel. Viva com propósito. Sua história importa mais do que você imagina.",
+          "versiculo": "Hebreus 11:4",
+          "promessa": "Mesmo depois de morto, ainda fala."
+        },
+        {
+          "dia": 14,
+          "mensagem": "Você está esperando se sentir \"digno\" para se aproximar de Deus. Pode esperar para sempre. Ninguém é digno. Esse é o ponto. Graça não é sobre merecer. É sobre ser amado apesar de não merecer. A cruz não foi plano B. Foi o plano desde sempre. Para pessoas indignas. Como você. Como eu. Venha como está.",
+          "versiculo": "Romanos 5:8",
+          "promessa": "Deus prova Seu amor: Cristo morreu por nós sendo ainda pecadores."
+        },
+        {
+          "dia": 15,
+          "mensagem": "Hoje, pratique a presença de Deus nos pequenos momentos. Ele não está apenas nos grandes milagres. Está no café da manhã. No abraço apertado. No sorriso genuíno. Na risada espontânea. No pôr do sol que você quase perdeu. Deus está no ordinário. Procurando você. Esperando ser notado. Abra os olhos. Ele está aqui.",
+          "versiculo": "Atos 17:27-28",
+          "promessa": "Nele vivemos, nos movemos e existimos."
+        },
+        {
+          "dia": 16,
+          "mensagem": "Deus está finalizando o ano fazendo um balanço do que Ele fez em você. Não do que você fez para Ele. Mas do que Ele fez em você. Como Ele te moldou. Cresceu. Amadureceu. Curou. Transformou. Olhe para trás. Você não é mais quem era em janeiro. Graças a Deus. A transformação é a maior evidência de Sua obra.",
+          "versiculo": "2 Coríntios 3:18",
+          "promessa": "Somos transformados de glória em glória."
+        },
+        {
+          "dia": 17,
+          "mensagem": "Você sobreviveu a mais um ano. Não foi fácil. Teve momentos em que você quis desistir. Dias em que a dor parecia insuportável. Noites em que a esperança parecia morta. Mas você está aqui. Respirando. De pé. Vivo. E isso não é pouca coisa. É testemunho vivo da fidelidade de Deus. Celebre. Você venceu.",
+          "versiculo": "Salmos 118:17",
+          "promessa": "Não morrerei; antes, viverei e contarei as obras do Senhor."
+        },
+        {
+          "dia": 18,
+          "mensagem": "Hoje, solte as expectativas que você colocou neste ano. O que você esperava que acontecesse e não aconteceu. O que você sonhou que se realizaria e não se realizou. Solte. Porque Deus tem algo melhor. Algo diferente. Algo que você nem imaginou. E Ele está trabalhando nisso. Confie no plano dEle, não no seu.",
+          "versiculo": "Jeremias 29:11",
+          "promessa": "Eu sei os planos que tenho para vós."
+        },
+        {
+          "dia": 19,
+          "mensagem": "Deus está preparando você para um novo nível. Por isso o ano foi tão intenso. O treinamento tão rigoroso. A pressão tão grande. Ele não te levaria através de tudo isso sem propósito. Você está sendo preparado. Equipado. Forjado. Para algo maior. Para mais responsabilidade. Para maior impacto. Não desista agora. Está quase pronto.",
+          "versiculo": "Isaías 48:10",
+          "promessa": "Eis que te acrisolei, mas não como a prata; provei-te na fornalha da aflição."
+        },
+        {
+          "dia": 20,
+          "mensagem": "Você está chegando ao fim do ano com cicatrizes. Marcas de batalhas. Feridas que ainda doem. Mas cada cicatriz conta uma história de sobrevivência. De fidelidade divina. De graça sustentadora. Você passou. Sobreviveu. Venceu. Suas cicatrizes não são vergonha. São medalhas de vitória. Testemunho de que Deus é fiel.",
+          "versiculo": "Salmos 34:19",
+          "promessa": "Muitas são as aflições do justo, mas o Senhor o livra de todas."
+        },
+        {
+          "dia": 21,
+          "mensagem": "Hoje, escolha paz. No meio do caos de fim de ano. Das expectativas. Das pressões. Da correria. Escolha paz. Porque paz não é ausência de agitação. É presença de Deus no meio da agitação. E Ele está aqui. Oferecendo paz que excede entendimento. Paz que guarda coração e mente. Aceite. Respire. Descanse.",
+          "versiculo": "João 14:27",
+          "promessa": "Deixo-vos a paz, a Minha paz vos dou."
+        },
+        {
+          "dia": 22,
+          "mensagem": "Deus está fazendo um inventário das bênçãos que você recebeu este ano. Não apenas as óbvias. Mas as escondidas. As portas fechadas que te protegeram. Os \"nãos\" que te salvaram. Os atrasos que te alinharam. Os vales que te fortaleceram. Quando você conta tudo, percebe: foi um ano de graça incontável.",
+          "versiculo": "Salmos 103:2",
+          "promessa": "Bendize ao Senhor, e não te esqueças de nenhum de Seus benefícios."
+        },
+        {
+          "dia": 23,
+          "mensagem": "Você não está sozinho nesta temporada. Parece que sim. Parece que todos têm alguém, menos você. Mas há Alguém que nunca te deixa. Que conhece cada dor. Cada solidão. Cada lágrima. E Ele está aqui. Mais perto do que você imagina. Emmanuel. Deus conosco. Não apenas no Natal. Mas todos os dias. Para sempre.",
+          "versiculo": "Mateus 1:23",
+          "promessa": "Eis que a virgem conceberá e dará à luz um filho, e Ele será chamado Emmanuel."
+        },
+        {
+          "dia": 24,
+          "mensagem": "Hoje, lembre-se do maior presente já dado. Não embrulhado. Não embaixo da árvore. Mas dado numa manjedoura. Jesus. O céu invadindo a terra. A eternidade entrando no tempo. Deus se fazendo carne. Para te salvar. Para te redimir. Para te dar vida eterna. Nenhum presente jamais se comparará. Nunca. Celebre o Presente.",
+          "versiculo": "João 3:16",
+          "promessa": "Deus amou o mundo de tal maneira que deu Seu Filho unigênito."
+        },
+        {
+          "dia": 25,
+          "mensagem": "Feliz Natal. Hoje o céu celebra o que aconteceu há mais de 2000 anos. Deus se fez carne. Entrou na nossa dor. Experimentou nossa luta. Carregou nossa cruz. Morreu nossa morte. Para que você pudesse ter vida. Vida abundante. Vida eterna. Vida com Ele. Este é o presente do Natal. Jesus. Emmanuel. Deus conosco.",
+          "versiculo": "Lucas 2:10-11",
+          "promessa": "Eis que vos trago boa-nova de grande alegria: nasceu-vos o Salvador."
+        },
+        {
+          "dia": 26,
+          "mensagem": "O Natal passou, mas o significado permanece. Jesus não veio apenas para um dia. Veio para sempre. Ele não está apenas na manjedoura de ontem. Está na sua vida hoje. Não é apenas memória. É presença viva. Atual. Ativa. O mesmo Jesus que nasceu em Belém vive em você. Hoje. Sempre.",
+          "versiculo": "Hebreus 13:8",
+          "promessa": "Jesus Cristo é o mesmo ontem, hoje e eternamente."
+        },
+        {
+          "dia": 27,
+          "mensagem": "Você está chegando ao fim do ano. Alguns sonhos não se realizaram. Algumas orações não foram respondidas como esperava. Algumas dores não passaram. Mas você ainda está aqui. De pé. Respirando. Confiando. E isso é vitória. Não desista. O que Deus começou em você, Ele vai completar. Talvez não no seu tempo. Mas no tempo perfeito dEle.",
+          "versiculo": "Filipenses 1:6",
+          "promessa": "Aquele que começou boa obra em vós há de completá-la."
+        },
+        {
+          "dia": 28,
+          "mensagem": "Hoje, faça um balanço do ano. Não do que faltou, mas do que foi dado. Não do que perdeu, mas do que ganhou. Não das lágrimas, mas das lições. Não da dor, mas do crescimento. Quando você muda a perspectiva, vê: foi um ano de graça. De misericórdia. De fidelidade. Agradeça. Deus foi bom. Mesmo quando foi difícil.",
+          "versiculo": "Salmos 107:1",
+          "promessa": "Rendei graças ao Senhor, porque Ele é bom; porque a Sua misericórdia dura para sempre."
+        },
+        {
+          "dia": 29,
+          "mensagem": "Deus está fechando capítulos na sua vida. Encerrando ciclos. Finalizando temporadas. Para abrir espaço para o novo. Não se apegue ao que está terminando. Celebre o que está começando. Deus não fecha portas para te punir. Fecha para te proteger e redirecionar. Confie. O melhor ainda está por vir.",
+          "versiculo": "Apocalipse 21:5",
+          "promessa": "Eis que faço novas todas as coisas."
+        },
+        {
+          "dia": 30,
+          "mensagem": "Você está a um dia de um novo ano. Um novo começo. Uma nova chance. Deus está oferecendo página em branco. Não para que você se puna pelo que escreveu errado no ano passado. Mas para que você escreva nova história. Com Ele. Pela graça dEle. No tempo dEle. Solte o passado. Abrace o futuro. Com fé. Com esperança. Com confiança.",
+          "versiculo": "Isaías 43:18-19",
+          "promessa": "Não vos lembreis das coisas passadas; eis que faço coisa nova."
+        },
+        {
+          "dia": 31,
+          "mensagem": "Você chegou ao último dia do ano. Parabéns. Você sobreviveu. Cresceu. Amadureceu. Venceu. Nem tudo foi como planejou. Mas Deus foi fiel em tudo. Ele te trouxe até aqui. E vai te levar adiante. Agradeça pelo ano que termina. Confie no ano que começa. E descanse: o mesmo Deus que foi fiel em 2026 será fiel em 2027. Para sempre.",
+          "versiculo": "1 Tessalonicenses 5:24",
+          "promessa": "Fiel é o que vos chama, o qual também o fará."
+        }
+      ]
+    }
   },
-  "02": {
-    "nome": "Fevereiro",
-    "mensagens": [
-      { "dia": 1, "titulo": "Um Novo Começo", "mensagem": "Bem-vindo a um novo mês. Deus está oferecendo novas oportunidades e nova graça para recomeçar. Não importa como foi janeiro, hoje a página é nova.", "versiculo": "Isaías 43:18-19", "promessa": "Eis que faço uma coisa nova." },
-      { "dia": 2, "titulo": "Persistência na Fé", "mensagem": "Persistência não é falta de fé - é a maior expressão dela. Continue pedindo, continue batendo e continue buscando. Deus está ouvindo cada sussurro seu hoje.", "versiculo": "Lucas 18:1-8", "promessa": "Deus fará justiça aos Seus escolhidos que clamam a Ele." }
-    ]
-  },
-  "03": {
-    "nome": "Março",
-    "mensagens": [
-      { "dia": 1, "titulo": "Tempo de Plantar", "mensagem": "Março é um tempo de plantar sementes, tanto na terra quanto no espírito. Que sementes de bondade, fé e amor você plantará hoje?", "versiculo": "Gálatas 6:7-8", "promessa": "Aquele que semeia para o Espírito, do Espírito colherá a vida eterna." }
-    ]
-  },
-  "04": {
-    "nome": "Abril",
-    "mensagens": [
-      { "dia": 1, "titulo": "Renovação da Esperança", "mensagem": "Abril traz a promessa da ressurreição. Assim como a natureza desperta, sua esperança pode ser renovada. A morte não tem a palavra final.", "versiculo": "1 Pedro 1:3", "promessa": "Ele nos deu novo nascimento para uma esperança viva." }
-    ]
-  },
-  "05": {
-    "nome": "Maio",
-    "mensagens": [
-      { "dia": 1, "titulo": "Amor Incondicional", "mensagem": "Maio é o mês que honramos as mães, um reflexo do amor protetor de Deus. Sinta-se abraçado por esse amor incondicional que nunca falha.", "versiculo": "Isaías 66:13", "promessa": "Como uma mãe consola seu filho, assim eu os consolarei." }
-    ]
-  },
-  "06": {
-    "nome": "Junho",
-    "mensagens": [
-      { "dia": 1, "titulo": "Comunhão e Unidade", "mensagem": "Junho nos lembra da importância da comunhão. Deus nos chama para perto Dele e um dos outros. Quem você pode convidar para perto hoje?", "versiculo": "1 João 1:7", "promessa": "Se andarmos na luz, temos comunhão uns com os outros." }
-    ]
-  },
-  "07": {
-    "nome": "Julho",
-    "mensagens": [
-      { "dia": 1, "titulo": "Descanso para a Alma", "mensagem": "No meio do ano, tire um tempo para descansar. Não apenas o corpo, mas a alma. Entregue suas preocupações e encontre paz no silêncio com Deus.", "versiculo": "Mateus 11:28", "promessa": "Vinde a mim, e eu vos darei descanso." }
-    ]
-  },
-  "08": {
-    "nome": "Agosto",
-    "mensagens": [
-      { "dia": 1, "titulo": "A Força que Vem do Alto", "mensagem": "Agosto pode parecer um mês longo. Quando a jornada parecer difícil, lembre-se que sua força não vem de você, mas de Deus. Ele te sustenta.", "versiculo": "Isaías 40:29-31", "promessa": "Ele fortalece o cansado e dá vigor ao que está sem forças." }
-    ]
-  },
-  "09": {
-    "nome": "Setembro",
-    "mensagens": [
-      { "dia": 1, "titulo": "Novas Estações", "mensagem": "Setembro marca a chegada de uma nova estação. A vida é feita de ciclos. Confie no Deus que governa cada estação da sua vida.", "versiculo": "Eclesiastes 3:1", "promessa": "Para tudo há uma ocasião certa; há um tempo certo para cada propósito debaixo do céu." }
-    ]
-  },
-  "10": {
-    "nome": "Outubro",
-    "mensagens": [
-      { "dia": 1, "titulo": "Gratidão que Transforma", "mensagem": "Em Outubro, pratique a gratidão. Agradeça não apenas pelas grandes bênçãos, mas pelas pequenas alegrias. A gratidão transforma a perspectiva.", "versiculo": "1 Tessalonicenses 5:18", "promessa": "Deem graças em todas as circunstâncias." }
-    ]
-  },
-  "11": {
-    "nome": "Novembro",
-    "mensagens": [
-      { "dia": 1, "titulo": "Lembrança e Esperança", "mensagem": "Novembro é um mês de lembrança. Lembramos daqueles que amamos e da fidelidade de Deus no passado. Essa lembrança alimenta nossa esperança para o futuro.", "versiculo": "Salmo 77:11", "promessa": "Recordarei os feitos do Senhor; recordarei os teus antigos milagres." }
-    ]
-  },
-  "12": {
-    "nome": "Dezembro",
-    "mensagens": [
-      { "dia": 1, "titulo": "A Luz do Mundo", "mensagem": "Dezembro chegou. O mundo se ilumina em preparação para o Natal. Lembre-se que Jesus é a verdadeira Luz que veio para iluminar as nossas trevas.", "versiculo": "João 8:12", "promessa": "Eu sou a luz do mundo. Quem me segue, nunca andará em trevas." },
-      { "dia": 31, "titulo": "Reflexão e Futuro", "mensagem": "No último dia do ano, olhe para trás com gratidão e para frente com esperança. Deus esteve com você em cada dia e estará com você no novo ano que virá.", "versiculo": "Jeremias 29:11", "promessa": "Eu sei os planos que tenho para vocês, planos de fazê-los prosperar e não de lhes causar dano." }
-    ]
-  }
+  "status": "COMPLETO - 365 dias"
 }
