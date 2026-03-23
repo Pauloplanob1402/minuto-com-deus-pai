@@ -1,28 +1,23 @@
 'use client';
-
 import { useMemo } from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Share } from 'lucide-react';
 import { Button } from './ui/button';
-
 type Message = {
   titulo: string;
   mensagem: string;
   versiculo: string;
   promessa: string;
 };
-
 interface DailyMessageProps {
   messages: Message[];
 }
-
 const fallbackMessage: Message = {
   titulo: 'Ele está no controle',
   mensagem: 'Deus preparou algo especial para você hoje. Continue confiando!',
   versiculo: 'Salmos 37:5',
   promessa: 'Confie Nele',
 };
-
 function getFormattedDate() {
   const today = new Date();
   let formattedDate = new Intl.DateTimeFormat('pt-BR', {
@@ -30,7 +25,6 @@ function getFormattedDate() {
     day: '2-digit',
     month: 'long',
   }).format(today);
-
   formattedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
   const deIndex = formattedDate.indexOf(' de ');
   if (deIndex !== -1) {
@@ -42,20 +36,15 @@ function getFormattedDate() {
   }
   return formattedDate;
 }
-
 export function DailyMessage({ messages }: DailyMessageProps) {
   const message = messages[0]?.titulo === 'Mensagem não encontrada' ? fallbackMessage : messages[0] || fallbackMessage;
-
   const formattedDate = useMemo(() => getFormattedDate(), []);
-
   const shareText = useMemo(() => {
     if (!message) return '';
-    const text = `*${message.titulo}*\n\n${message.mensagem}\n\n_${message.versiculo}_\n\nBaixe o app: https://minuto-com-deus-pai.web.app`;
+    const text = `*${message.titulo}*\n\n${message.mensagem}\n\n_${message.versiculo}_\n\nBaixe o app: https://play.google.com/store/apps/details?id=com.planob.minutocomdeuspai&hl=pt_BR`;
     return encodeURIComponent(text);
   }, [message]);
-
   const whatsappUrl = `https://api.whatsapp.com/send?text=${shareText}`;
-
   return (
     <div className="w-full max-w-md animate-in fade-in-0 slide-in-from-bottom-12 duration-1000 ease-in-out">
       <Card className="w-full overflow-hidden rounded-[2.5rem] shadow-2xl shadow-black/5 bg-white/40 dark:bg-zinc-900/40 backdrop-blur-xl border border-white/30 dark:border-zinc-800/30">
