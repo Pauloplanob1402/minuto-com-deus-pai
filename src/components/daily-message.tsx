@@ -49,75 +49,100 @@ export function DailyMessage({ messages }: DailyMessageProps) {
 
   const shareText = useMemo(() => {
     if (!message) return '';
-    const text = `*${message.titulo}*\n\n${message.mensagem}\n\n_${message.versiculo}_\n\nBaixe o app: https://play.google.com/store/apps/details?id=com.planob.minutocomdeuspai&hl=pt_BR`;
+    const text = `✝️ *${message.titulo}*\n\n${message.mensagem}\n\n_${message.versiculo}_\n\n🙏 Deus colocou essa mensagem no meu coração e eu quis compartilhar com você.\n\n📲 Baixe o app gratuito: https://play.google.com/store/apps/details?id=com.planob.minutocomdeuspai&hl=pt_BR`;
     return encodeURIComponent(text);
   }, [message]);
 
   const whatsappUrl = `https://api.whatsapp.com/send?text=${shareText}`;
 
   return (
-    <div className="w-full max-w-md animate-in fade-in-0 slide-in-from-bottom-12 duration-1000 ease-in-out px-4">
+    <div className="w-full max-w-md animate-in fade-in-0 slide-in-from-bottom-12 duration-1000 ease-in-out px-5">
 
       {/* Data */}
-      <div className="mb-4 text-center">
-        <p className="text-xs font-medium tracking-widest uppercase text-[#b59a7a]">
+      <div className="mb-5 text-center">
+        <p className="text-xs font-semibold tracking-widest uppercase text-[#b59a7a]">
           {formattedDate.split(',')[0]}
         </p>
-        <p className="text-sm text-[#a08060]">
+        <p className="text-sm text-[#a08060] mt-0.5">
           {formattedDate} · Versículo do dia
         </p>
       </div>
 
       {/* Card do versículo */}
-      <div className="relative rounded-[24px] bg-gradient-to-br from-[#fffdf9] to-[#f5ede0] border border-[#e8d9c4] px-8 py-10 mb-4 overflow-hidden">
+      <div
+        className="relative rounded-[28px] border border-[#e8d9c4] px-7 py-10 mb-4 overflow-hidden"
+        style={{ background: 'linear-gradient(145deg, #fffdf9 0%, #f5ede0 100%)' }}
+      >
         {/* Aspas decorativas */}
         <span
-          className="absolute top-[-10px] left-4 text-[90px] leading-none text-[#e8d0b0] select-none pointer-events-none"
-          style={{ fontFamily: 'var(--font-lora), Georgia, serif' }}
+          className="absolute top-[-14px] left-5 leading-none text-[#e8d0b0] select-none pointer-events-none"
+          style={{
+            fontFamily: 'var(--font-lora), Georgia, serif',
+            fontSize: '100px',
+          }}
         >
           &ldquo;
         </span>
 
         {/* Versículo */}
         <p
-          className="relative text-center text-2xl font-semibold text-[#2c1e10] leading-snug pt-6"
-          style={{ fontFamily: 'var(--font-lora), Georgia, serif' }}
+          className="relative text-center font-semibold text-[#2c1e10] leading-snug pt-8"
+          style={{
+            fontFamily: 'var(--font-lora), Georgia, serif',
+            fontSize: 'clamp(1.5rem, 5vw, 1.85rem)',
+          }}
         >
           {message.titulo}
         </p>
 
         {/* Divisor dourado */}
-        <div className="w-9 h-[2px] bg-[#c9a97a] rounded-full mx-auto my-5" />
+        <div className="w-10 h-[2px] bg-[#c9a97a] rounded-full mx-auto my-5" />
 
-        {/* Referência */}
-        <p className="text-center text-xs font-semibold tracking-widest uppercase text-[#b59a7a]">
+        {/* Referência bíblica */}
+        <p className="text-center text-xs font-bold tracking-widest uppercase text-[#b59a7a]">
           {message.versiculo}
         </p>
       </div>
 
-      {/* Card da reflexão */}
-      <div className="rounded-[20px] bg-white dark:bg-zinc-900 border border-[#ede5d8] dark:border-zinc-800 px-6 py-5 mb-6">
-        <p className="text-center text-base text-[#5a4a38] dark:text-slate-300 leading-relaxed">
+      {/* Card da reflexão — fonte grande e confortável */}
+      <div className="rounded-[20px] bg-white dark:bg-zinc-900 border border-[#ede5d8] dark:border-zinc-800 px-6 py-6 mb-5">
+        <p
+          className="text-center text-[#5a4a38] dark:text-slate-300 leading-loose"
+          style={{ fontSize: 'clamp(1.05rem, 4vw, 1.2rem)' }}
+        >
           {message.mensagem}
         </p>
       </div>
 
+      {/* Chamada para compartilhar */}
+      <div className="text-center mb-3 px-2">
+        <p className="text-sm font-semibold text-[#2c7a4b]">
+          🕊️ Você pode ser instrumento de Deus hoje
+        </p>
+        <p className="text-xs text-[#a08060] mt-1 leading-relaxed">
+          Compartilhe essa mensagem — ela pode chegar em quem mais precisa.
+        </p>
+      </div>
+
       {/* Botões */}
-      <div className="flex gap-3 pb-24">
+      <div className="flex gap-3 pb-28">
         <a
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1"
         >
-          <button className="w-full flex items-center justify-center gap-2 bg-[#2c7a4b] hover:bg-[#235f3b] active:scale-95 text-white font-medium text-sm rounded-[14px] px-5 py-4 transition-all duration-200">
-            <Share className="h-4 w-4" />
+          <button
+            className="w-full flex items-center justify-center gap-2 bg-[#2c7a4b] hover:bg-[#235f3b] active:scale-95 text-white font-semibold rounded-[16px] px-5 py-4 transition-all duration-200 shadow-lg shadow-green-900/20"
+            style={{ fontSize: 'clamp(0.9rem, 3vw, 1rem)' }}
+          >
+            <Share className="h-5 w-5 shrink-0" />
             Compartilhar no WhatsApp
           </button>
         </a>
 
         <button
-          className="w-14 h-14 flex items-center justify-center bg-white dark:bg-zinc-900 border border-[#e0d0bc] dark:border-zinc-700 rounded-[14px] text-[#b59a7a] hover:bg-[#fdf6ee] active:scale-95 transition-all duration-200"
+          className="w-14 h-14 flex items-center justify-center bg-white dark:bg-zinc-900 border border-[#e0d0bc] dark:border-zinc-700 rounded-[16px] text-[#b59a7a] hover:bg-[#fdf6ee] active:scale-95 transition-all duration-200"
           title="Salvar"
         >
           <Bookmark className="h-5 w-5" />
