@@ -1,6 +1,6 @@
 'use client';
-import { useMemo } from 'react';
-import { Share, Bookmark } from 'lucide-react';
+import { useMemo, useState, useEffect } from 'react';
+import { Share, Bookmark, BookmarkCheck, Flame } from 'lucide-react';
 
 type Message = {
   titulo: string;
@@ -20,23 +20,44 @@ const fallbackMessage: Message = {
   promessa: 'Confie Nele',
 };
 
-function getFormattedDate() {
+function getDateParts() {
   const today = new Date();
-  let formattedDate = new Intl.DateTimeFormat('pt-BR', {
-    weekday: 'long',
-    day: '2-digit',
-    month: 'long',
-  }).format(today);
-  formattedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
-  const deIndex = formattedDate.indexOf(' de ');
-  if (deIndex !== -1) {
-    const monthIndex = deIndex + 4;
-    formattedDate =
-      formattedDate.slice(0, monthIndex) +
-      formattedDate.charAt(monthIndex).toUpperCase() +
-      formattedDate.slice(monthIndex + 1);
+  const weekday = new Intl.DateTimeFormat('pt-BR', { weekday: 'long' }).format(today);
+  const dayMonth = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'long' }).format(today);
+  return {
+    weekday: weekday.charAt(0).toUpperCase() + weekday.slice(1),
+    dayMonth: dayMonth.charAt(0).toUpperCase() + dayMonth.slice(1),
+  };
+}
+
+function getStreak(): number {
+  if (typeof window === 'undefined') return 0;
+  try {
+    const data = JSON.parse(localStorage.getItem('mcdup_streak') || '{}');
+    const today = new Date().toDateString();
+    const lastVisit = data.lastVisit;
+    const yesterday = new Date(Date.now() - 86400000).toDateString();
+
+    if (lastVisit === today) return data.count || 1;
+    if (lastVisit === yesterday) {
+      const newCount = (data.count || 1) + 1;
+      localStorage.setItem('mcdup_streak', JSON.stringify({ lastVisit: today, count: newCount }));
+      return newCount;
+    }
+    localStorage.setItem('mcdup_streak', JSON.stringify({ lastVisit: today, count: 1 }));
+    return 1;
+  } catch {
+    return 1;
   }
-  return formattedDate;
+}
+
+function getSaved(): boolean {
+  if (typeof window === 'undefined') return false;
+  try {
+    return localStorage.getItem('mcdup_saved_today') === new Date().toDateString();
+  } catch {
+    return false;
+  }
 }
 
 export function DailyMessage({ messages }: DailyMessageProps) {
@@ -45,7 +66,25 @@ export function DailyMessage({ messages }: DailyMessageProps) {
       ? fallbackMessage
       : messages[0] || fallbackMessage;
 
-  const formattedDate = useMemo(() => getFormattedDate(), []);
+  const { weekday, dayMonth } = useMemo(() => getDateParts(), []);
+  const [streak, setStreak] = useState(0);
+  const [saved, setSaved] = useState(false);
+  const [justSaved, setJustSaved] = useState(false);
+
+  useEffect(() => {
+    setStreak(getStreak());
+    setSaved(getSaved());
+  }, []);
+
+  function handleSave() {
+    if (saved) return;
+    try {
+      localStorage.setItem('mcdup_saved_today', new Date().toDateString());
+    } catch {}
+    setSaved(true);
+    setJustSaved(true);
+    setTimeout(() => setJustSaved(false), 1800);
+  }
 
   const shareText = useMemo(() => {
     if (!message) return '';
@@ -58,55 +97,86 @@ export function DailyMessage({ messages }: DailyMessageProps) {
   return (
     <div className="w-full max-w-md animate-in fade-in-0 slide-in-from-bottom-12 duration-1000 ease-in-out px-5">
 
-      {/* Data */}
-      <div className="mb-4 text-center">
-        <p className="text-xs font-semibold tracking-widest uppercase text-[#b59a7a]">
-          {formattedDate.split(',')[0]}
+      {/* Streak — Hooked: recompensa visível, hábito reforçado */}
+      {streak > 1 && (
+        <div className="flex items-center justify-center gap-1.5 mb-4">
+          <Flame
+            className="h-4 w-4"
+            style={{ color: '#e07a30', filter: 'drop-shadow(0 0 4px #e07a3088)' }}
+          />
+          <p
+            className="font-semibold text-[#c0692a]"
+            style={{ fontSize: '0.82rem', letterSpacing: '0.03em' }}
+          >
+            {streak} dias seguidos
+          </p>
+        </div>
+      )}
+
+      {/* Data — uma só vez, hierarquia real */}
+      <div className="mb-5 text-center">
+        <p
+          className="font-bold tracking-wide text-[#2c1e10]"
+          style={{
+            fontFamily: 'var(--font-lora), Georgia, serif',
+            fontSize: 'clamp(1.3rem, 5vw, 1.6rem)',
+          }}
+        >
+          {weekday}
         </p>
-        <p className="text-sm text-[#a08060] mt-0.5">
-          {formattedDate} · Versículo do dia
+        <p
+          className="text-[#b59a7a] mt-1"
+          style={{ fontSize: 'clamp(0.9rem, 3.5vw, 1rem)' }}
+        >
+          {dayMonth}
         </p>
       </div>
 
-      {/* Card do versículo — aspas integradas ao layout, não flutuando */}
+      {/* Card versículo — screenshot-friendly: Contagious */}
+      {/* Refactoring UI: elevation 3, sombra quente e direcional */}
       <div
-        className="relative rounded-[28px] border border-[#e8d9c4] px-7 pt-6 pb-8 mb-4 overflow-hidden"
-        style={{ background: 'linear-gradient(145deg, #fffdf9 0%, #f5ede0 100%)' }}
+        className="relative rounded-[28px] border border-[#e8d9c4] px-7 pt-5 pb-8 mb-4"
+        style={{
+          background: 'linear-gradient(145deg, #fffdf9 0%, #f5ede0 100%)',
+          boxShadow:
+            '0 2px 4px rgba(180,130,60,0.06), 0 8px 24px rgba(180,130,60,0.13), 0 1px 0 rgba(255,255,255,0.9) inset',
+        }}
       >
-        {/* Aspas decorativas — menores, integradas ao fluxo */}
         <p
-          className="text-center leading-none text-[#e0c9a8] select-none mb-1"
-          style={{
-            fontFamily: 'var(--font-lora), Georgia, serif',
-            fontSize: '52px',
-            lineHeight: '0.7',
-          }}
+          className="text-center text-[#dfc8a0] leading-none mb-2 select-none"
+          style={{ fontFamily: 'var(--font-lora), Georgia, serif', fontSize: '2rem' }}
         >
-          &ldquo;
+          ❝
         </p>
 
-        {/* Versículo — fonte maior e com mais presença */}
         <p
-          className="relative text-center font-semibold text-[#2c1e10] leading-snug mt-3"
+          className="text-center font-semibold text-[#2c1e10] leading-snug"
           style={{
             fontFamily: 'var(--font-lora), Georgia, serif',
-            fontSize: 'clamp(1.7rem, 5.5vw, 2.1rem)',
+            fontSize: 'clamp(1.75rem, 5.5vw, 2.15rem)',
           }}
         >
           {message.titulo}
         </p>
 
-        {/* Divisor dourado */}
-        <div className="w-10 h-[2px] bg-[#c9a97a] rounded-full mx-auto my-5" />
+        <div className="w-8 h-[2px] bg-[#c9a97a] rounded-full mx-auto my-4" />
 
-        {/* Referência bíblica */}
-        <p className="text-center text-xs font-bold tracking-widest uppercase text-[#b59a7a]">
+        <p
+          className="text-center font-bold tracking-widest uppercase text-[#b59a7a]"
+          style={{ fontSize: '0.72rem' }}
+        >
           {message.versiculo}
         </p>
       </div>
 
-      {/* Card da reflexão — fonte maior e mais respirada */}
-      <div className="rounded-[20px] bg-white dark:bg-zinc-900 border border-[#ede5d8] dark:border-zinc-800 px-6 py-6 mb-5">
+      {/* Card reflexão */}
+      <div
+        className="rounded-[20px] bg-white dark:bg-zinc-900 border border-[#ede5d8] dark:border-zinc-800 px-6 py-6 mb-5"
+        style={{
+          boxShadow:
+            '0 2px 8px rgba(180,130,60,0.06), 0 1px 0 rgba(255,255,255,0.8) inset',
+        }}
+      >
         <p
           className="text-center text-[#5a4a38] dark:text-slate-300 leading-relaxed"
           style={{ fontSize: 'clamp(1.15rem, 4.2vw, 1.3rem)' }}
@@ -115,17 +185,20 @@ export function DailyMessage({ messages }: DailyMessageProps) {
         </p>
       </div>
 
-      {/* Chamada para compartilhar */}
-      <div className="text-center mb-3 px-2">
-        <p className="text-sm font-semibold text-[#2c7a4b]">
+      {/* Chamada */}
+      <div className="text-center mb-4 px-2">
+        <p
+          className="font-semibold text-[#2c7a4b]"
+          style={{ fontSize: 'clamp(0.9rem, 3.5vw, 1rem)' }}
+        >
           🕊️ Você pode ser instrumento de Deus hoje
         </p>
         <p className="text-xs text-[#a08060] mt-1 leading-relaxed">
-          Compartilhe essa mensagem — ela pode chegar em quem mais precisa.
+          Compartilhe — essa mensagem pode chegar em quem mais precisa.
         </p>
       </div>
 
-      {/* Botões */}
+      {/* Botões — Don Norman: feedback imediato no salvar */}
       <div className="flex gap-3 pb-28">
         <a
           href={whatsappUrl}
@@ -142,12 +215,36 @@ export function DailyMessage({ messages }: DailyMessageProps) {
           </button>
         </a>
 
+        {/* Bookmark com feedback visual — Don Norman: o usuário SABE que salvou */}
         <button
-          className="w-14 h-14 flex items-center justify-center bg-white dark:bg-zinc-900 border border-[#e0d0bc] dark:border-zinc-700 rounded-[16px] text-[#b59a7a] hover:bg-[#fdf6ee] active:scale-95 transition-all duration-200"
-          title="Salvar"
+          onClick={handleSave}
+          className={`
+            w-14 h-14 flex items-center justify-center rounded-[16px] border transition-all duration-300
+            ${saved
+              ? 'bg-[#2c7a4b] border-[#2c7a4b] text-white shadow-md shadow-green-900/20 scale-105'
+              : 'bg-white dark:bg-zinc-900 border-[#e0d0bc] dark:border-zinc-700 text-[#b59a7a] hover:bg-[#fdf6ee] active:scale-95'
+            }
+            ${justSaved ? 'scale-110' : ''}
+          `}
+          title={saved ? 'Mensagem salva' : 'Salvar mensagem'}
         >
-          <Bookmark className="h-5 w-5" />
+          {saved
+            ? <BookmarkCheck className="h-5 w-5" />
+            : <Bookmark className="h-5 w-5" />
+          }
         </button>
+      </div>
+
+      {/* Toast de confirmação — Don Norman: affordance clara */}
+      <div
+        className={`
+          fixed bottom-8 left-1/2 -translate-x-1/2 z-50
+          bg-[#2c1e10] text-white text-sm font-medium px-5 py-3 rounded-2xl
+          shadow-xl transition-all duration-500
+          ${justSaved ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}
+        `}
+      >
+        ✨ Mensagem salva com carinho
       </div>
     </div>
   );
