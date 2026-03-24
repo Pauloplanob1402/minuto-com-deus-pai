@@ -59,7 +59,7 @@ export function DailyMessage({ messages }: DailyMessageProps) {
     <div className="w-full max-w-md animate-in fade-in-0 slide-in-from-bottom-12 duration-1000 ease-in-out px-5">
 
       {/* Data */}
-      <div className="mb-5 text-center">
+      <div className="mb-4 text-center">
         <p className="text-xs font-semibold tracking-widest uppercase text-[#b59a7a]">
           {formattedDate.split(',')[0]}
         </p>
@@ -68,28 +68,29 @@ export function DailyMessage({ messages }: DailyMessageProps) {
         </p>
       </div>
 
-      {/* Card do versículo */}
+      {/* Card do versículo — aspas integradas ao layout, não flutuando */}
       <div
-        className="relative rounded-[28px] border border-[#e8d9c4] px-7 py-10 mb-4 overflow-hidden"
+        className="relative rounded-[28px] border border-[#e8d9c4] px-7 pt-6 pb-8 mb-4 overflow-hidden"
         style={{ background: 'linear-gradient(145deg, #fffdf9 0%, #f5ede0 100%)' }}
       >
-        {/* Aspas decorativas */}
-        <span
-          className="absolute top-[-14px] left-5 leading-none text-[#e8d0b0] select-none pointer-events-none"
+        {/* Aspas decorativas — menores, integradas ao fluxo */}
+        <p
+          className="text-center leading-none text-[#e0c9a8] select-none mb-1"
           style={{
             fontFamily: 'var(--font-lora), Georgia, serif',
-            fontSize: '100px',
+            fontSize: '52px',
+            lineHeight: '0.7',
           }}
         >
           &ldquo;
-        </span>
+        </p>
 
-        {/* Versículo */}
+        {/* Versículo — fonte maior e com mais presença */}
         <p
-          className="relative text-center font-semibold text-[#2c1e10] leading-snug pt-8"
+          className="relative text-center font-semibold text-[#2c1e10] leading-snug mt-3"
           style={{
             fontFamily: 'var(--font-lora), Georgia, serif',
-            fontSize: 'clamp(1.5rem, 5vw, 1.85rem)',
+            fontSize: 'clamp(1.7rem, 5.5vw, 2.1rem)',
           }}
         >
           {message.titulo}
@@ -104,11 +105,11 @@ export function DailyMessage({ messages }: DailyMessageProps) {
         </p>
       </div>
 
-      {/* Card da reflexão — fonte grande e confortável */}
+      {/* Card da reflexão — fonte maior e mais respirada */}
       <div className="rounded-[20px] bg-white dark:bg-zinc-900 border border-[#ede5d8] dark:border-zinc-800 px-6 py-6 mb-5">
         <p
-          className="text-center text-[#5a4a38] dark:text-slate-300 leading-loose"
-          style={{ fontSize: 'clamp(1.05rem, 4vw, 1.2rem)' }}
+          className="text-center text-[#5a4a38] dark:text-slate-300 leading-relaxed"
+          style={{ fontSize: 'clamp(1.15rem, 4.2vw, 1.3rem)' }}
         >
           {message.mensagem}
         </p>
