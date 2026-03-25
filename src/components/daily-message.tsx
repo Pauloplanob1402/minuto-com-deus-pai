@@ -1,6 +1,6 @@
 'use client';
-import { useMemo, useState, useEffect } from 'react';
-import { Share, Bookmark, BookmarkCheck, Flame } from 'lucide-react';
+import { useMemo, useEffect, useState } from 'react';
+import { Share, Bookmark } from 'lucide-react';
 
 type Message = {
   titulo: string;
@@ -20,71 +20,144 @@ const fallbackMessage: Message = {
   promessa: 'Confie Nele',
 };
 
-function getDateParts() {
+const STORAGE_KEY = 'minuto_mensagem_salva';
+const STORAGE_DATE_KEY = 'minuto_mensagem_data';
+
+// Frases de gatilho para notificação das 6:30
+const FRASES_NOTIFICACAO = [
+  'Deus quer um minuto com você ☀️',
+  'Seu minuto com Deus está pronto 🙏',
+  'Comece seu dia com o Pai — Ele tem uma palavra para você 📖',
+  'Antes de qualquer coisa, um minuto com Deus ✨',
+  'Bom dia! Seu Pai Celestial reservou uma mensagem especial para você 💛',
+  'O dia começa melhor quando começa com Deus ☀️🙏',
+  'Um minuto com Deus pode mudar seu dia inteiro 📖',
+];
+
+function getFormattedDate() {
   const today = new Date();
-  const weekday = new Intl.DateTimeFormat('pt-BR', { weekday: 'long' }).format(today);
-  const dayMonth = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'long' }).format(today);
-  return {
-    weekday: weekday.charAt(0).toUpperCase() + weekday.slice(1),
-    dayMonth: dayMonth.charAt(0).toUpperCase() + dayMonth.slice(1),
-  };
+  let formattedDate = new Intl.DateTimeFormat('pt-BR', {
+    weekday: 'long',
+    day: '2-digit',
+    month: 'long',
+  }).format(today);
+  formattedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+  const deIndex = formattedDate.indexOf(' de ');
+  if (deIndex !== -1) {
+    const monthIndex = deIndex + 4;
+    formattedDate =
+      formattedDate.slice(0, monthIndex) +
+      formattedDate.charAt(monthIndex).toUpperCase() +
+      formattedDate.slice(monthIndex + 1);
+  }
+  return formattedDate;
 }
 
-function getStreak(): number {
-  if (typeof window === 'undefined') return 0;
-  try {
-    const data = JSON.parse(localStorage.getItem('mcdup_streak') || '{}');
-    const today = new Date().toDateString();
-    const lastVisit = data.lastVisit;
-    const yesterday = new Date(Date.now() - 86400000).toDateString();
-
-    if (lastVisit === today) return data.count || 1;
-    if (lastVisit === yesterday) {
-      const newCount = (data.count || 1) + 1;
-      localStorage.setItem('mcdup_streak', JSON.stringify({ lastVisit: today, count: newCount }));
-      return newCount;
-    }
-    localStorage.setItem('mcdup_streak', JSON.stringify({ lastVisit: today, count: 1 }));
-    return 1;
-  } catch {
-    return 1;
-  }
+function getTodayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
 }
 
-function getSaved(): boolean {
-  if (typeof window === 'undefined') return false;
+// Salvar mensagem no localStorage
+function salvarMensagemLocal(msg: Message) {
   try {
-    return localStorage.getItem('mcdup_saved_today') === new Date().toDateString();
-  } catch {
-    return false;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(msg));
+    localStorage.setItem(STORAGE_DATE_KEY, getTodayKey());
+  } catch (_) {}
+}
+
+// Carregar mensagem salva (hoje ou ontem)
+function carregarMensagemLocal(): Message | null {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) return JSON.parse(saved);
+  } catch (_) {}
+  return null;
+}
+
+// Agendar notificação local às 6:30
+async function agendarNotificacao() {
+  if (!('Notification' in window) || !('serviceWorker' in navigator)) return;
+
+  const permission = await Notification.requestPermission();
+  if (permission !== 'granted') return;
+
+  const frase = FRASES_NOTIFICACAO[Math.floor(Math.random() * FRASES_NOTIFICACAO.length)];
+
+  // Calcular ms até próximo 6:30
+  const agora = new Date();
+  const proximo630 = new Date();
+  proximo630.setHours(6, 30, 0, 0);
+  if (agora >= proximo630) {
+    proximo630.setDate(proximo630.getDate() + 1);
   }
+  const msAte630 = proximo630.getTime() - agora.getTime();
+
+  // Salvar no localStorage para o service worker usar
+  try {
+    localStorage.setItem('minuto_notif_frase', frase);
+    localStorage.setItem('minuto_notif_delay', String(msAte630));
+    localStorage.setItem('minuto_notif_agendada', 'true');
+  } catch (_) {}
+
+  // Disparar via setTimeout (funciona quando o app está aberto)
+  setTimeout(() => {
+    new Notification('Minuto com Deus Pai 🙏', {
+      body: frase,
+      icon: '/icon-192x192.png',
+      badge: '/icon-192x192.png',
+    });
+    // Re-agendar para o dia seguinte
+    agendarNotificacao();
+  }, msAte630);
 }
 
 export function DailyMessage({ messages }: DailyMessageProps) {
-  const message =
+  const [mensagemExibida, setMensagemExibida] = useState<Message | null>(null);
+  const [isOffline, setIsOffline] = useState(false);
+
+  const messageFromProps =
     messages[0]?.titulo === 'Mensagem não encontrada'
       ? fallbackMessage
       : messages[0] || fallbackMessage;
 
-  const { weekday, dayMonth } = useMemo(() => getDateParts(), []);
-  const [streak, setStreak] = useState(0);
-  const [saved, setSaved] = useState(false);
-  const [justSaved, setJustSaved] = useState(false);
-
   useEffect(() => {
-    setStreak(getStreak());
-    setSaved(getSaved());
+    // Verificar conexão
+    const online = navigator.onLine;
+    setIsOffline(!online);
+
+    if (online) {
+      // Online: usar mensagem do dia e salvar
+      setMensagemExibida(messageFromProps);
+      salvarMensagemLocal(messageFromProps);
+    } else {
+      // Offline: carregar mensagem salva
+      const salva = carregarMensagemLocal();
+      setMensagemExibida(salva || fallbackMessage);
+    }
+
+    // Escutar mudanças de conexão
+    const handleOnline = () => {
+      setIsOffline(false);
+      setMensagemExibida(messageFromProps);
+      salvarMensagemLocal(messageFromProps);
+    };
+    const handleOffline = () => setIsOffline(true);
+
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+
+    // Agendar notificação das 6:30
+    agendarNotificacao();
+
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
   }, []);
 
-  function handleSave() {
-    if (saved) return;
-    try {
-      localStorage.setItem('mcdup_saved_today', new Date().toDateString());
-    } catch {}
-    setSaved(true);
-    setJustSaved(true);
-    setTimeout(() => setJustSaved(false), 1800);
-  }
+  const message = mensagemExibida || messageFromProps;
+  const formattedDate = useMemo(() => getFormattedDate(), []);
 
   const shareText = useMemo(() => {
     if (!message) return '';
@@ -95,156 +168,110 @@ export function DailyMessage({ messages }: DailyMessageProps) {
   const whatsappUrl = `https://api.whatsapp.com/send?text=${shareText}`;
 
   return (
-    <div className="w-full max-w-md animate-in fade-in-0 slide-in-from-bottom-12 duration-1000 ease-in-out px-5">
-
-      {/* Streak — Hooked: recompensa visível, hábito reforçado */}
-      {streak > 1 && (
-        <div className="flex items-center justify-center gap-1.5 mb-4">
-          <Flame
-            className="h-4 w-4"
-            style={{ color: '#e07a30', filter: 'drop-shadow(0 0 4px #e07a3088)' }}
-          />
-          <p
-            className="font-semibold text-[#c0692a]"
-            style={{ fontSize: '0.82rem', letterSpacing: '0.03em' }}
-          >
-            {streak} dias seguidos
-          </p>
+    <div
+      className="flex flex-col w-full max-w-md"
+      style={{ minHeight: '100dvh', padding: '0' }}
+    >
+      {/* Indicador offline */}
+      {isOffline && (
+        <div className="w-full text-center py-1 text-xs font-medium bg-amber-100 text-amber-700">
+          📵 Modo offline — exibindo mensagem salva
         </div>
       )}
 
-      {/* Data — uma só vez, hierarquia real */}
-      <div className="mb-5 text-center">
-        <p
-          className="font-bold tracking-wide text-[#2c1e10]"
-          style={{
-            fontFamily: 'var(--font-lora), Georgia, serif',
-            fontSize: 'clamp(1.3rem, 5vw, 1.6rem)',
-          }}
-        >
-          {weekday}
-        </p>
-        <p
-          className="text-[#b59a7a] mt-1"
-          style={{ fontSize: 'clamp(0.9rem, 3.5vw, 1rem)' }}
-        >
-          {dayMonth}
-        </p>
-      </div>
-
-      {/* Card versículo — screenshot-friendly: Contagious */}
-      {/* Refactoring UI: elevation 3, sombra quente e direcional */}
+      {/* Conteúdo principal — ocupa toda a tela */}
       <div
-        className="relative rounded-[28px] border border-[#e8d9c4] px-7 pt-5 pb-8 mb-4"
-        style={{
-          background: 'linear-gradient(145deg, #fffdf9 0%, #f5ede0 100%)',
-          boxShadow:
-            '0 2px 4px rgba(180,130,60,0.06), 0 8px 24px rgba(180,130,60,0.13), 0 1px 0 rgba(255,255,255,0.9) inset',
-        }}
+        className="flex flex-col flex-1 w-full animate-in fade-in-0 slide-in-from-bottom-8 duration-700 ease-in-out"
+        style={{ padding: '20px 20px 0' }}
       >
-        <p
-          className="text-center text-[#dfc8a0] leading-none mb-2 select-none"
-          style={{ fontFamily: 'var(--font-lora), Georgia, serif', fontSize: '2rem' }}
-        >
-          ❝
-        </p>
+        {/* Data */}
+        <div className="text-center mb-4">
+          <p className="text-xs font-semibold tracking-widest uppercase text-[#b59a7a]">
+            {formattedDate.split(',')[0]}
+          </p>
+          <p className="text-sm text-[#a08060] mt-0.5">
+            {formattedDate} · Versículo do dia
+          </p>
+        </div>
 
-        <p
-          className="text-center font-semibold text-[#2c1e10] leading-snug"
-          style={{
-            fontFamily: 'var(--font-lora), Georgia, serif',
-            fontSize: 'clamp(1.75rem, 5.5vw, 2.15rem)',
-          }}
+        {/* Card do versículo — cresce para preencher espaço */}
+        <div
+          className="relative flex-1 flex flex-col justify-center rounded-[28px] border border-[#e8d9c4] px-7 py-8 mb-4 overflow-hidden"
+          style={{ background: 'linear-gradient(145deg, #fffdf9 0%, #f5ede0 100%)', minHeight: '280px' }}
         >
-          {message.titulo}
-        </p>
-
-        <div className="w-8 h-[2px] bg-[#c9a97a] rounded-full mx-auto my-4" />
-
-        <p
-          className="text-center font-bold tracking-widest uppercase text-[#b59a7a]"
-          style={{ fontSize: '0.72rem' }}
-        >
-          {message.versiculo}
-        </p>
-      </div>
-
-      {/* Card reflexão */}
-      <div
-        className="rounded-[20px] bg-white dark:bg-zinc-900 border border-[#ede5d8] dark:border-zinc-800 px-6 py-6 mb-5"
-        style={{
-          boxShadow:
-            '0 2px 8px rgba(180,130,60,0.06), 0 1px 0 rgba(255,255,255,0.8) inset',
-        }}
-      >
-        <p
-          className="text-center text-[#5a4a38] dark:text-slate-300 leading-relaxed"
-          style={{ fontSize: 'clamp(1.15rem, 4.2vw, 1.3rem)' }}
-        >
-          {message.mensagem}
-        </p>
-      </div>
-
-      {/* Chamada */}
-      <div className="text-center mb-4 px-2">
-        <p
-          className="font-semibold text-[#2c7a4b]"
-          style={{ fontSize: 'clamp(0.9rem, 3.5vw, 1rem)' }}
-        >
-          🕊️ Você pode ser instrumento de Deus hoje
-        </p>
-        <p className="text-xs text-[#a08060] mt-1 leading-relaxed">
-          Compartilhe — essa mensagem pode chegar em quem mais precisa.
-        </p>
-      </div>
-
-      {/* Botões — Don Norman: feedback imediato no salvar */}
-      <div className="flex gap-3 pb-28">
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1"
-        >
-          <button
-            className="w-full flex items-center justify-center gap-2 bg-[#2c7a4b] hover:bg-[#235f3b] active:scale-95 text-white font-semibold rounded-[16px] px-5 py-4 transition-all duration-200 shadow-lg shadow-green-900/20"
-            style={{ fontSize: 'clamp(0.9rem, 3vw, 1rem)' }}
+          {/* Aspas decorativas */}
+          <span
+            className="absolute top-[-14px] left-5 leading-none text-[#e8d0b0] select-none pointer-events-none"
+            style={{ fontFamily: 'var(--font-lora), Georgia, serif', fontSize: '100px' }}
           >
-            <Share className="h-5 w-5 shrink-0" />
-            Compartilhar no WhatsApp
-          </button>
-        </a>
+            &ldquo;
+          </span>
 
-        {/* Bookmark com feedback visual — Don Norman: o usuário SABE que salvou */}
-        <button
-          onClick={handleSave}
-          className={`
-            w-14 h-14 flex items-center justify-center rounded-[16px] border transition-all duration-300
-            ${saved
-              ? 'bg-[#2c7a4b] border-[#2c7a4b] text-white shadow-md shadow-green-900/20 scale-105'
-              : 'bg-white dark:bg-zinc-900 border-[#e0d0bc] dark:border-zinc-700 text-[#b59a7a] hover:bg-[#fdf6ee] active:scale-95'
-            }
-            ${justSaved ? 'scale-110' : ''}
-          `}
-          title={saved ? 'Mensagem salva' : 'Salvar mensagem'}
+          {/* Versículo */}
+          <p
+            className="relative text-center font-semibold text-[#2c1e10] leading-snug pt-6"
+            style={{
+              fontFamily: 'var(--font-lora), Georgia, serif',
+              fontSize: 'clamp(1.5rem, 5vw, 1.85rem)',
+            }}
+          >
+            {message.titulo}
+          </p>
+
+          {/* Divisor dourado */}
+          <div className="w-10 h-[2px] bg-[#c9a97a] rounded-full mx-auto my-5" />
+
+          {/* Referência bíblica */}
+          <p className="text-center text-xs font-bold tracking-widest uppercase text-[#b59a7a]">
+            {message.versiculo}
+          </p>
+        </div>
+
+        {/* Card da reflexão — também cresce */}
+        <div
+          className="flex-1 flex items-center rounded-[20px] bg-white dark:bg-zinc-900 border border-[#ede5d8] dark:border-zinc-800 px-6 py-5 mb-5"
+          style={{ minHeight: '140px' }}
         >
-          {saved
-            ? <BookmarkCheck className="h-5 w-5" />
-            : <Bookmark className="h-5 w-5" />
-          }
-        </button>
+          <p
+            className="text-center text-[#5a4a38] dark:text-slate-300 leading-relaxed w-full"
+            style={{ fontSize: 'clamp(1rem, 3.8vw, 1.15rem)' }}
+          >
+            {message.mensagem}
+          </p>
+        </div>
       </div>
 
-      {/* Toast de confirmação — Don Norman: affordance clara */}
-      <div
-        className={`
-          fixed bottom-8 left-1/2 -translate-x-1/2 z-50
-          bg-[#2c1e10] text-white text-sm font-medium px-5 py-3 rounded-2xl
-          shadow-xl transition-all duration-500
-          ${justSaved ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}
-        `}
-      >
-        ✨ Mensagem salva com carinho
+      {/* Rodapé fixo — chamada + botões */}
+      <div style={{ padding: '0 20px 0' }}>
+        {/* Chamada para compartilhar */}
+        <div className="text-center mb-3 px-2">
+          <p className="text-sm font-semibold text-[#2c7a4b]">
+            🕊️ Você pode ser instrumento de Deus hoje
+          </p>
+          <p className="text-xs text-[#a08060] mt-1 leading-relaxed">
+            Compartilhe — essa mensagem pode chegar em quem mais precisa.
+          </p>
+        </div>
+
+        {/* Botões */}
+        <div className="flex gap-3 pb-8" style={{ paddingBottom: 'max(2rem, env(safe-area-inset-bottom))' }}>
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+            <button
+              className="w-full flex items-center justify-center gap-2 bg-[#2c7a4b] hover:bg-[#235f3b] active:scale-95 text-white font-semibold rounded-[16px] px-5 py-4 transition-all duration-200 shadow-lg shadow-green-900/20"
+              style={{ fontSize: 'clamp(0.9rem, 3vw, 1rem)' }}
+            >
+              <Share className="h-5 w-5 shrink-0" />
+              Compartilhar no WhatsApp
+            </button>
+          </a>
+
+          <button
+            className="w-14 h-14 flex items-center justify-center bg-white dark:bg-zinc-900 border border-[#e0d0bc] dark:border-zinc-700 rounded-[16px] text-[#b59a7a] hover:bg-[#fdf6ee] active:scale-95 transition-all duration-200"
+            title="Salvar"
+          >
+            <Bookmark className="h-5 w-5" />
+          </button>
+        </div>
       </div>
     </div>
   );
