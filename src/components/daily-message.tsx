@@ -21,9 +21,7 @@ const fallbackMessage: Message = {
 };
 
 const STORAGE_KEY = 'minuto_mensagem_salva';
-const STORAGE_DATE_KEY = 'minuto_mensagem_data';
 
-// Frases de gatilho para notificação das 6:30
 const FRASES_NOTIFICACAO = [
   'Deus quer um minuto com você ☀️',
   'Seu minuto com Deus está pronto 🙏',
@@ -53,20 +51,12 @@ function getFormattedDate() {
   return formattedDate;
 }
 
-function getTodayKey() {
-  const d = new Date();
-  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
-}
-
-// Salvar mensagem no localStorage
 function salvarMensagemLocal(msg: Message) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(msg));
-    localStorage.setItem(STORAGE_DATE_KEY, getTodayKey());
   } catch (_) {}
 }
 
-// Carregar mensagem salva (hoje ou ontem)
 function carregarMensagemLocal(): Message | null {
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -75,39 +65,24 @@ function carregarMensagemLocal(): Message | null {
   return null;
 }
 
-// Agendar notificação local às 6:30
 async function agendarNotificacao() {
-  if (!('Notification' in window) || !('serviceWorker' in navigator)) return;
-
+  if (!('Notification' in window)) return;
   const permission = await Notification.requestPermission();
   if (permission !== 'granted') return;
 
   const frase = FRASES_NOTIFICACAO[Math.floor(Math.random() * FRASES_NOTIFICACAO.length)];
-
-  // Calcular ms até próximo 6:30
   const agora = new Date();
   const proximo630 = new Date();
   proximo630.setHours(6, 30, 0, 0);
-  if (agora >= proximo630) {
-    proximo630.setDate(proximo630.getDate() + 1);
-  }
+  if (agora >= proximo630) proximo630.setDate(proximo630.getDate() + 1);
   const msAte630 = proximo630.getTime() - agora.getTime();
 
-  // Salvar no localStorage para o service worker usar
-  try {
-    localStorage.setItem('minuto_notif_frase', frase);
-    localStorage.setItem('minuto_notif_delay', String(msAte630));
-    localStorage.setItem('minuto_notif_agendada', 'true');
-  } catch (_) {}
-
-  // Disparar via setTimeout (funciona quando o app está aberto)
   setTimeout(() => {
     new Notification('Minuto com Deus Pai 🙏', {
       body: frase,
       icon: '/icon-192x192.png',
       badge: '/icon-192x192.png',
     });
-    // Re-agendar para o dia seguinte
     agendarNotificacao();
   }, msAte630);
 }
@@ -122,34 +97,24 @@ export function DailyMessage({ messages }: DailyMessageProps) {
       : messages[0] || fallbackMessage;
 
   useEffect(() => {
-    // Verificar conexão
     const online = navigator.onLine;
     setIsOffline(!online);
-
     if (online) {
-      // Online: usar mensagem do dia e salvar
       setMensagemExibida(messageFromProps);
       salvarMensagemLocal(messageFromProps);
     } else {
-      // Offline: carregar mensagem salva
       const salva = carregarMensagemLocal();
       setMensagemExibida(salva || fallbackMessage);
     }
-
-    // Escutar mudanças de conexão
     const handleOnline = () => {
       setIsOffline(false);
       setMensagemExibida(messageFromProps);
       salvarMensagemLocal(messageFromProps);
     };
     const handleOffline = () => setIsOffline(true);
-
     window.addEventListener('online', handleOnline);
     window.addEventListener('offline', handleOffline);
-
-    // Agendar notificação das 6:30
     agendarNotificacao();
-
     return () => {
       window.removeEventListener('online', handleOnline);
       window.removeEventListener('offline', handleOffline);
@@ -170,7 +135,7 @@ export function DailyMessage({ messages }: DailyMessageProps) {
   return (
     <div
       className="flex flex-col w-full max-w-md"
-      style={{ minHeight: '100dvh', padding: '0' }}
+      style={{ minHeight: '100dvh' }}
     >
       {/* Indicador offline */}
       {isOffline && (
@@ -179,40 +144,27 @@ export function DailyMessage({ messages }: DailyMessageProps) {
         </div>
       )}
 
-      {/* Conteúdo principal — ocupa toda a tela */}
-      <div
-        className="flex flex-col flex-1 w-full animate-in fade-in-0 slide-in-from-bottom-8 duration-700 ease-in-out"
-        style={{ padding: '20px 20px 0' }}
-      >
-        {/* Data */}
-        <div className="text-center mb-4">
-          <p className="text-xs font-semibold tracking-widest uppercase text-[#b59a7a]">
-            {formattedDate.split(',')[0]}
-          </p>
-          <p className="text-sm text-[#a08060] mt-0.5">
-            {formattedDate} · Versículo do dia
+      {/* Conteúdo principal */}
+      <div className="flex flex-col flex-1 px-5 pt-6 pb-0">
+
+        {/* Data — apenas uma vez, sem "Versículo do dia" */}
+        <div className="text-center mb-5">
+          <p className="text-sm font-semibold tracking-widest uppercase text-[#b59a7a]">
+            {formattedDate}
           </p>
         </div>
 
-        {/* Card do versículo — cresce para preencher espaço */}
+        {/* Card do versículo — sem aspas, padding reduzido */}
         <div
-          className="relative flex-1 flex flex-col justify-center rounded-[28px] border border-[#e8d9c4] px-7 py-8 mb-4 overflow-hidden"
-          style={{ background: 'linear-gradient(145deg, #fffdf9 0%, #f5ede0 100%)', minHeight: '280px' }}
+          className="relative flex-1 flex flex-col justify-center rounded-[24px] border border-[#e8d9c4] px-6 py-7 mb-4 overflow-hidden"
+          style={{ background: 'linear-gradient(145deg, #fffdf9 0%, #f5ede0 100%)', minHeight: '220px' }}
         >
-          {/* Aspas decorativas */}
-          <span
-            className="absolute top-[-14px] left-5 leading-none text-[#e8d0b0] select-none pointer-events-none"
-            style={{ fontFamily: 'var(--font-lora), Georgia, serif', fontSize: '100px' }}
-          >
-            &ldquo;
-          </span>
-
-          {/* Versículo */}
+          {/* Versículo — fonte grande para impacto máximo */}
           <p
-            className="relative text-center font-semibold text-[#2c1e10] leading-snug pt-6"
+            className="text-center font-semibold text-[#2c1e10] leading-snug"
             style={{
               fontFamily: 'var(--font-lora), Georgia, serif',
-              fontSize: 'clamp(1.5rem, 5vw, 1.85rem)',
+              fontSize: 'clamp(1.6rem, 5.5vw, 2rem)',
             }}
           >
             {message.titulo}
@@ -227,34 +179,37 @@ export function DailyMessage({ messages }: DailyMessageProps) {
           </p>
         </div>
 
-        {/* Card da reflexão — também cresce */}
+        {/* Card da reflexão — fonte grande e impactante */}
         <div
-          className="flex-1 flex items-center rounded-[20px] bg-white dark:bg-zinc-900 border border-[#ede5d8] dark:border-zinc-800 px-6 py-5 mb-5"
-          style={{ minHeight: '140px' }}
+          className="flex-1 flex items-center rounded-[20px] bg-white dark:bg-zinc-900 border border-[#ede5d8] dark:border-zinc-800 px-6 py-6 mb-5"
+          style={{ minHeight: '160px' }}
         >
           <p
-            className="text-center text-[#5a4a38] dark:text-slate-300 leading-relaxed w-full"
-            style={{ fontSize: 'clamp(1rem, 3.8vw, 1.15rem)' }}
+            className="text-center text-[#3d2e1e] dark:text-slate-200 leading-relaxed w-full font-medium"
+            style={{ fontSize: 'clamp(1.1rem, 4.2vw, 1.3rem)' }}
           >
             {message.mensagem}
           </p>
         </div>
       </div>
 
-      {/* Rodapé fixo — chamada + botões */}
-      <div style={{ padding: '0 20px 0' }}>
+      {/* Rodapé */}
+      <div className="px-5">
         {/* Chamada para compartilhar */}
-        <div className="text-center mb-3 px-2">
+        <div className="text-center mb-3">
           <p className="text-sm font-semibold text-[#2c7a4b]">
             🕊️ Você pode ser instrumento de Deus hoje
           </p>
-          <p className="text-xs text-[#a08060] mt-1 leading-relaxed">
+          <p className="text-xs text-[#a08060] mt-1">
             Compartilhe — essa mensagem pode chegar em quem mais precisa.
           </p>
         </div>
 
         {/* Botões */}
-        <div className="flex gap-3 pb-8" style={{ paddingBottom: 'max(2rem, env(safe-area-inset-bottom))' }}>
+        <div
+          className="flex gap-3"
+          style={{ paddingBottom: 'max(1.5rem, env(safe-area-inset-bottom))' }}
+        >
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
             <button
               className="w-full flex items-center justify-center gap-2 bg-[#2c7a4b] hover:bg-[#235f3b] active:scale-95 text-white font-semibold rounded-[16px] px-5 py-4 transition-all duration-200 shadow-lg shadow-green-900/20"
@@ -264,7 +219,6 @@ export function DailyMessage({ messages }: DailyMessageProps) {
               Compartilhar no WhatsApp
             </button>
           </a>
-
           <button
             className="w-14 h-14 flex items-center justify-center bg-white dark:bg-zinc-900 border border-[#e0d0bc] dark:border-zinc-700 rounded-[16px] text-[#b59a7a] hover:bg-[#fdf6ee] active:scale-95 transition-all duration-200"
             title="Salvar"
