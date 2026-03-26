@@ -89,21 +89,22 @@ function roundRect(ctx: CanvasRenderingContext2D, x: number, y: number, w: numbe
   ctx.closePath();
 }
 
-async function generateCardImage(message: Message, dayMonth: string): Promise<string> {
+async function generateCardBlob(message: Message, dayMonth: string): Promise<Blob> {
   const scale = 2;
   const W = 640;
-  const canvas = document.createElement('canvas');
-  await document.fonts.ready;
 
-  // Calcula altura dinâmica
-  const tempCtx = document.createElement('canvas').getContext('2d')!;
-  tempCtx.font = `600 36px Georgia, serif`;
-  const titleLines = wrapText(tempCtx, message.titulo, W - 100);
+  // Canvas temporário só para medir o texto
+  const measure = document.createElement('canvas').getContext('2d')!;
+  measure.font = `600 36px Georgia, serif`;
+  const titleLines = wrapText(measure, message.titulo, W - 100);
   const titleHeight = titleLines.length * 48;
   const H = 100 + titleHeight + 130 + 50;
 
+  const canvas = document.createElement('canvas');
   canvas.width = W * scale;
   canvas.height = H * scale;
+
+  await document.fonts.ready;
 
   const ctx = canvas.getContext('2d')!;
   ctx.scale(scale, scale);
@@ -154,24 +155,45 @@ async function generateCardImage(message: Message, dayMonth: string): Promise<st
   ctx.textAlign = 'center';
   ctx.fillText(message.versiculo.toUpperCase(), W / 2, dividerY + 32);
 
-  // Rodapé discreto
+  // Rodapé
   ctx.fillStyle = '#c9a97a';
   ctx.font = `400 12px Arial, sans-serif`;
   ctx.textAlign = 'center';
   ctx.fillText(dayMonth + ' · Minuto com Deus Pai', W / 2, H - 20);
 
-  // Retorna como URL para download
-  return canvas.toDataURL('image/png');
+  // Retorna Blob (não dataURL) — sem popup no Android
+  return new Promise((resolve, reject) =>
+    canvas.toBlob(
+      (b) => (b ? resolve(b) : reject(new Error('canvas vazio'))),
+      'image/png'
+    )
+  );
 }
 
-// Salva a imagem direto na galeria do celular
-function downloadImage(dataUrl: string) {
+async function saveImageToGallery(blob: Blob) {
+  // Tenta Web Share API com arquivo (Android Chrome / iOS Safari modernos)
+  if (navigator.canShare && navigator.canShare({ files: [new File([blob], 'x.png', { type: 'image/png' })] })) {
+    try {
+      await navigator.share({
+        files: [new File([blob], 'minuto-com-deus-pai.png', { type: 'image/png' })],
+      });
+      return;
+    } catch (err) {
+      if ((err as Error).name === 'AbortError') return;
+      // se falhar, cai no download via Blob URL
+    }
+  }
+
+  // Fallback: Blob URL — silencioso, sem popup de nome feio
+  const blobUrl = URL.createObjectURL(blob);
   const link = document.createElement('a');
-  link.href = dataUrl;
+  link.href = blobUrl;
   link.download = 'minuto-com-deus-pai.png';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+  // Libera memória após o download iniciar
+  setTimeout(() => URL.revokeObjectURL(blobUrl), 3000);
 }
 
 export function DailyMessage({ messages }: DailyMessageProps) {
@@ -200,7 +222,6 @@ export function DailyMessage({ messages }: DailyMessageProps) {
     setTimeout(() => setJustSaved(false), 1800);
   }
 
-  // Botão 1 — mensagem completa no WhatsApp com link da Play Store
   function handleShareWhatsApp() {
     const text = encodeURIComponent(
       `✝️ *${message.titulo}*\n\n${message.mensagem}\n\n_${message.versiculo}_\n\n🙏 Deus colocou essa mensagem no meu coração e eu quis compartilhar com você.\n\n📲 Baixe o app gratuito: https://play.google.com/store/apps/details?id=com.planob.minutocomdeuspai&hl=pt_BR`
@@ -208,17 +229,16 @@ export function DailyMessage({ messages }: DailyMessageProps) {
     window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
   }
 
-  // Botão 2 — gera imagem e salva na galeria
   async function handleSaveImage() {
     if (generatingImage) return;
     setGeneratingImage(true);
     try {
-      const dataUrl = await generateCardImage(message, dayMonth);
-      downloadImage(dataUrl);
+      const blob = await generateCardBlob(message, dayMonth);
+      await saveImageToGallery(blob);
       setImageSaved(true);
       setTimeout(() => setImageSaved(false), 3000);
     } catch {
-      // silencioso — nunca trava o app
+      // silencioso
     }
     setGeneratingImage(false);
   }
@@ -315,7 +335,7 @@ export function DailyMessage({ messages }: DailyMessageProps) {
           </span>
         </button>
 
-        {/* Botão 2 — Salvar imagem para o Status */}
+        {/* Botão 2 — Salvar imagem */}
         <button
           onClick={handleSaveImage}
           disabled={generatingImage}
@@ -348,7 +368,7 @@ export function DailyMessage({ messages }: DailyMessageProps) {
         </button>
       </div>
 
-      {/* Toast — imagem salva na galeria */}
+      {/* Toast — imagem salva */}
       <div
         className={`
           fixed bottom-8 left-1/2 -translate-x-1/2 z-50
